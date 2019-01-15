@@ -7,7 +7,7 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-
+#include <iostream>
 enum snakeDirection {
     Top,
     Bottom,
@@ -18,7 +18,7 @@ enum snakeDirection {
 class Snake {
 
 public:
-    Snake();
+    Snake(int screenLength);
     ~Snake();
 
     void moveSnake();
@@ -27,12 +27,13 @@ public:
     void increase_length();
     void createSnake();
 
+    int getLength();
+    std::vector<std::pair<int, int>> getBody();
     snakeDirection getHeadDirection();
     snakeDirection getTailDirection();
-    int getLength();
 
 private:
-    int length;
+    int length, screenLength;
     snakeDirection headDirection;
     snakeDirection tailDirection;
     std::vector<std::pair<int, int>> body; //(x1, y1),....(xn, yn) .push_back(std::make_pair(1,2));
