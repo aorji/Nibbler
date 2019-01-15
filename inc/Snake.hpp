@@ -25,6 +25,7 @@ public:
     void extendTail();
     bool checkCollisions();
     void increase_length();
+    void createSnake();
 
     snakeDirection getHeadDirection();
     snakeDirection getTailDirection();

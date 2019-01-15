@@ -5,15 +5,22 @@
 #include "../inc/Snake.hpp"
 
 Snake::Snake(): length(4),
-                headDirection(snakeDirection(std::rand() %4 + 1)),
-                tailDirection(headDirection) {}
+                headDirection(snakeDirection(std::rand() % 4 + 1)),
+                tailDirection(headDirection) { createSnake(); }
 
 Snake::~Snake() {}
 
 void
+Snake::createSnake() {
+//push_back()
+}
+
+void
 Snake::moveSnake() {
     //Tail
-    extendTail();
+    for (int i = length - 1; i > 0 ; --i) {
+        body.at(i) = std::make_pair(body.at(i - 1).first, body.at(i - 1).second);
+    }
     //Head
     switch (headDirection) {
         case 0: //Top
