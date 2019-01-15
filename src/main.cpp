@@ -3,9 +3,10 @@
 //
 
 #include "../inc/Snake.hpp"
+#include <iostream>
 
 int main(){
     std::srand(unsigned(std::time(0)));
     Snake snake;
-    snake.getDirection();
+    std::cout << snake.getHeadDirection();
 }

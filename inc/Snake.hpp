@@ -22,15 +22,18 @@ public:
     ~Snake();
 
     void moveSnake();
+    void extendTail();
     bool checkCollisions();
     void increase_length();
 
-    snakeDirection getDirection();
+    snakeDirection getHeadDirection();
+    snakeDirection getTailDirection();
     int getLength();
 
 private:
     int length;
-    snakeDirection direction;
+    snakeDirection headDirection;
+    snakeDirection tailDirection;
     std::vector<std::pair<int, int>> body; //(x1, y1),....(xn, yn) .push_back(std::make_pair(1,2));
 };
 
