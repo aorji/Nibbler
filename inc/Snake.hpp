@@ -26,12 +26,18 @@ enum turnKey {
 class Snake {
 
 public:
-    explicit Snake(unsigned screenLength, snakeDirection direction);
+    explicit Snake(unsigned screenLengthn);
     ~Snake();
 
     void createSnake();
-    void extendTail();
+
     void moveSnake(turnKey key);
+    void moveHeadByDirection();
+    void moveHeadUpDown(turnKey key);
+    void moveHeadLeftRight(turnKey key);
+
+    void extendTail();
+
     bool headBodyCollision();
     bool borderHeadCollision();
 
@@ -44,7 +50,7 @@ public:
 
 private:
     Snake();
-    unsigned length;
+    int length;
     int screenLength;
     snakeDirection headDirection;
     snakeDirection tailDirection;

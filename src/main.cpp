@@ -8,7 +8,7 @@
 int main(){
 
     std::srand(unsigned(std::time(0)));
-    Snake snake(5, snakeDirection((std::rand() % 4) - 2));
+    Snake snake(5);
 
     snakeDirection sd = snake.getHeadDirection();
     switch (sd) {
@@ -25,7 +25,6 @@ int main(){
             std::cout << "Right" << std::endl;
             break;
     }
-    std::cout <<"head = " <<snake.getHeadDirection() << std::endl;
 
     snake.showBodyCoordinates();
 
@@ -34,9 +33,17 @@ int main(){
     std::cout << "length = " << snake.getLength() << std::endl;
     snake.showBodyCoordinates();
 
-    turnKey key = UpArrow;
-    snake.moveSnake(key);
-//    std::cout << "moved"<< std::endl;
+    std::cout << "move" << std::endl;
+    snake.moveSnake(UpArrow);
+    snake.showBodyCoordinates();
+
+    snake.extendTail();
+    std::cout << "extended"<< std::endl;
+    std::cout << "length = " << snake.getLength() << std::endl;
+    snake.showBodyCoordinates();
+
+    std::cout << "move" << std::endl;
+    snake.moveSnake(LeftArrow);
     snake.showBodyCoordinates();
 
     std::cout <<  "headBodyCollision = " << std::boolalpha << snake.headBodyCollision() << std::endl;
