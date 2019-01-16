@@ -10,23 +10,23 @@
 #include <iostream>
 
 enum snakeDirection {
-    Top,
-    Bottom,
-    Left,
-    Right
+    Top = 1,
+    Bottom = -1,
+    Left = 2,
+    Right = -2
 };
 
 enum turnKey {
-    UpArrow, //38
-    DownArrow, //40
-    LeftArrow, //37
-    RightArrow //39
+    UpArrow = 1, //38
+    DownArrow = -1, //40
+    LeftArrow = 2, //37
+    RightArrow = -2 //39
 };
 
 class Snake {
 
 public:
-    explicit Snake(unsigned screenLength);
+    explicit Snake(unsigned screenLength, snakeDirection direction);
     ~Snake();
 
     void createSnake();

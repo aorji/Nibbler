@@ -4,10 +4,10 @@
 
 #include "../inc/Snake.hpp"
 
-Snake::Snake(unsigned length): length(4),
+Snake::Snake(unsigned length, snakeDirection direction): length(4),
                           screenLength(length),
-                          headDirection(snakeDirection(std::rand() % 4)),
-                          tailDirection(headDirection)
+                          headDirection(direction),
+                          tailDirection(direction)
                           { createSnake(); }
 
 Snake::Snake() = default;
@@ -17,11 +17,11 @@ void
 Snake::createSnake() {
     int i = screenLength/2; //should be more accurate
     switch (headDirection) {
-        case 0: //Top
+        case 1: //Top
             for(int d = -1; d <= 2; ++d)
                 body.emplace_back(std::make_pair(i, i + d));
             break;
-        case 1: //Bottom
+        case -1: //Bottom
             for(int d = 2; d >= -1; --d)
                 body.emplace_back(std::make_pair(i, i + d));
             break;
@@ -29,7 +29,7 @@ Snake::createSnake() {
             for(int d = -1; d <= 2; ++d)
                 body.emplace_back(std::make_pair(i + d, i));
             break;
-        case 3: //Right
+        case -2: //Right
             for(int d = 2; d >= -1; --d)
                 body.emplace_back(std::make_pair(i + d, i));
             break;
@@ -39,13 +39,13 @@ Snake::createSnake() {
 void
 Snake::extendTail() {
     switch (tailDirection) {
-        case 0: body.emplace_back(std::make_pair(body.at(length - 1).first, body.at(length - 1).second + 1));
+        case 1: body.emplace_back(std::make_pair(body.at(length - 1).first, body.at(length - 1).second + 1));
             break; //Top
-        case 1: body.emplace_back(std::make_pair(body.at(length - 1).first, body.at(length - 1).second - 1));
+        case -1: body.emplace_back(std::make_pair(body.at(length - 1).first, body.at(length - 1).second - 1));
             break; //Bottom
         case 2: body.emplace_back(std::make_pair(body.at(length - 1).first + 1, body.at(length - 1).second));
             break; //Left
-        case 3: body.emplace_back(std::make_pair(body.at(length - 1).first - 1, body.at(length - 1).second));
+        case -2: body.emplace_back(std::make_pair(body.at(length - 1).first - 1, body.at(length - 1).second));
             break; //Right
     }
     this->length++;
@@ -53,25 +53,30 @@ Snake::extendTail() {
 
 void
 Snake::moveSnake(turnKey key) {
+    std::cout << (int)key << " =? " << (int)headDirection << std::endl;
     if ((int)key == (int)headDirection) {
-        //Tail
-        for (unsigned long i = length - 1; i > 0; --i)
+        for (unsigned long i = length - 1; i > 0; --i) //Tail
             body.at(i) = std::make_pair(body.at(i - 1).first, body.at(i - 1).second);
-        //Head
-        switch (headDirection) {
-            case 0: body.at(0) = std::make_pair(body.at(0).first, body.at(0).second - 1);
+        switch (headDirection) {  //Head
+            case 1: body.at(0) = std::make_pair(body.at(0).first, body.at(0).second - 1);
                 break; //Top
-            case 1: body.at(0) = std::make_pair(body.at(0).first, body.at(0).second + 1);
+            case -1: body.at(0) = std::make_pair(body.at(0).first, body.at(0).second + 1);
                 break; //Bottom
             case 2: body.at(0) = std::make_pair(body.at(0).first - 1, body.at(0).second);
                 break; //Left
-            case 3: body.at(0) = std::make_pair(body.at(0).first + 1, body.at(0).second);
+            case -2: body.at(0) = std::make_pair(body.at(0).first + 1, body.at(0).second);
                 break; //Right
         }
+        std::cout << "moved" << std::endl;
     }
-//    else if () {
-//        headDirection
-//    }
+    else if ((int)key == -(int)headDirection) {
+        std::cout << "move is forbidden" << std::endl;
+        return;
+    }
+    else {
+        std::cout << "move is undef" << std::endl;
+        return;
+    }
 }
 
 bool

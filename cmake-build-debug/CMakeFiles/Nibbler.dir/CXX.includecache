@@ -16,9 +16,9 @@ ctime
 iostream
 -
 
-/Users/aorji/Desktop/Nibbler/src/Game.cpp
-
-/Users/aorji/Desktop/Nibbler/src/Snake.cpp
+/Users/aorji/Desktop/Nibbler/src/main.cpp
 ../inc/Snake.hpp
 /Users/aorji/Desktop/Nibbler/inc/Snake.hpp
+iostream
+-
 
