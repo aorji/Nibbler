@@ -45,15 +45,13 @@ public:
 
     int getLength();
     snakeDirection getHeadDirection();
-    snakeDirection getTailDirection();
     std::vector<std::pair<int, int>> getBody();
 
 private:
     Snake();
-    int length;
-    int screenLength;
+    long length;
+    long screenLength;
     snakeDirection headDirection;
-    snakeDirection tailDirection;
     std::vector<std::pair<int, int>> body; //(x1, y1),....(xn, yn) .push_back(std::make_pair(1,2));
 };
 

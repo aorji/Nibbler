@@ -5,6 +5,7 @@ CMakeFiles/Nibbler.dir/src/Barrier.cpp.o: ../src/Barrier.cpp
 
 CMakeFiles/Nibbler.dir/src/Food.cpp.o: ../src/Food.cpp
 
+CMakeFiles/Nibbler.dir/src/Game.cpp.o: ../inc/Game.hpp
 CMakeFiles/Nibbler.dir/src/Game.cpp.o: ../src/Game.cpp
 
 CMakeFiles/Nibbler.dir/src/Score.cpp.o: ../src/Score.cpp
@@ -12,6 +13,7 @@ CMakeFiles/Nibbler.dir/src/Score.cpp.o: ../src/Score.cpp
 CMakeFiles/Nibbler.dir/src/Snake.cpp.o: ../inc/Snake.hpp
 CMakeFiles/Nibbler.dir/src/Snake.cpp.o: ../src/Snake.cpp
 
+CMakeFiles/Nibbler.dir/src/main.cpp.o: ../inc/Game.hpp
 CMakeFiles/Nibbler.dir/src/main.cpp.o: ../inc/Snake.hpp
 CMakeFiles/Nibbler.dir/src/main.cpp.o: ../src/main.cpp
 

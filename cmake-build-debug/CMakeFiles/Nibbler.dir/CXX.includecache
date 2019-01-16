@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/aorji/Desktop/Nibbler/inc/Game.hpp
+vector
+-
+iostream
+-
+
 /Users/aorji/Desktop/Nibbler/inc/Snake.hpp
 vector
 -
@@ -19,6 +25,8 @@ iostream
 /Users/aorji/Desktop/Nibbler/src/main.cpp
 ../inc/Snake.hpp
 /Users/aorji/Desktop/Nibbler/inc/Snake.hpp
+../inc/Game.hpp
+/Users/aorji/Desktop/Nibbler/inc/Game.hpp
 iostream
 -
 

@@ -6,8 +6,7 @@
 
 Snake::Snake(unsigned length): length(4),
                           screenLength(length),
-                          headDirection(Left),
-                          tailDirection(Left)
+                          headDirection(Left)
                           { createSnake(); }
 
 Snake::Snake() = default;
@@ -15,7 +14,7 @@ Snake::~Snake() = default;
 
 void
 Snake::createSnake() {
-    int i = screenLength/2; //should be more accurate
+    int i = screenLength/2;
     switch (headDirection) {
         case 1: //Top
             for(int d = -1; d <= 2; ++d)
@@ -127,17 +126,15 @@ Snake::showBodyCoordinates() {
 //get
 int
 Snake::getLength() {
-    return this->length;
+    int len = 0;
+    for(auto v : body)
+        len++;
+    return len;
 }
 
 snakeDirection
 Snake::getHeadDirection() {
     return headDirection;
-}
-
-snakeDirection
-Snake::getTailDirection() {
-    return tailDirection;
 }
 
 std::vector<std::pair<int, int>>

@@ -3,12 +3,14 @@
 //
 
 #include "../inc/Snake.hpp"
+#include "../inc/Game.hpp"
 #include <iostream>
 
 int main(){
+Game game(10);
 
-    std::srand(unsigned(std::time(0)));
-    Snake snake(5);
+
+    Snake snake(10);
 
     snakeDirection sd = snake.getHeadDirection();
     switch (sd) {
@@ -25,27 +27,46 @@ int main(){
             std::cout << "Right" << std::endl;
             break;
     }
-
-    snake.showBodyCoordinates();
+    game.update(snake.getBody());
+    game.printMap();
+//    snake.showBodyCoordinates();
 
     snake.extendTail();
     std::cout << "extended"<< std::endl;
     std::cout << "length = " << snake.getLength() << std::endl;
-    snake.showBodyCoordinates();
+    game.update(snake.getBody());
+    game.printMap();
+//    snake.showBodyCoordinates();
 
-    std::cout << "move" << std::endl;
+    std::cout << "move Up" << std::endl;
     snake.moveSnake(UpArrow);
-    snake.showBodyCoordinates();
+    std::cout << "length = " << snake.getLength() << std::endl;
+    game.update(snake.getBody());
+    game.printMap();
+//    snake.showBodyCoordinates();
 
     snake.extendTail();
     std::cout << "extended"<< std::endl;
     std::cout << "length = " << snake.getLength() << std::endl;
-    snake.showBodyCoordinates();
+    game.update(snake.getBody());
+    game.printMap();
+//    snake.showBodyCoordinates();
 
-    std::cout << "move" << std::endl;
+    std::cout << "moveLeft" << std::endl;
     snake.moveSnake(LeftArrow);
-    snake.showBodyCoordinates();
+    std::cout << "length = " << snake.getLength() << std::endl;
+    game.update(snake.getBody());
+    game.printMap();
+
+
+    std::cout << "moveLeft" << std::endl;
+    snake.moveSnake(LeftArrow);
+    std::cout << "length = " << snake.getLength() << std::endl;
+    game.update(snake.getBody());
+    game.printMap();
+//    snake.showBodyCoordinates();
 
     std::cout <<  "headBodyCollision = " << std::boolalpha << snake.headBodyCollision() << std::endl;
     std::cout <<  "borderHeadCollision = " << std::boolalpha << snake.borderHeadCollision() << std::endl;
+
 }
