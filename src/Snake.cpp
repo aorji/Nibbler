@@ -15,24 +15,8 @@ Snake::~Snake() = default;
 void
 Snake::createSnake() {
     int i = screenLength/2;
-    switch (headDirection) {
-        case 1: //Top
-            for(int d = -1; d <= 2; ++d)
-                body.emplace_back(std::make_pair(i, i + d));
-            break;
-        case -1: //Bottom
-            for(int d = 2; d >= -1; --d)
-                body.emplace_back(std::make_pair(i, i + d));
-            break;
-        case 2: //Left
-            for(int d = -1; d <= 2; ++d)
-                body.emplace_back(std::make_pair(i + d, i));
-            break;
-        case -2: //Right
-            for(int d = 2; d >= -1; --d)
-                body.emplace_back(std::make_pair(i + d, i));
-            break;
-    }
+    for(int d = -2; d <= 1; ++d)
+        body.emplace_back(std::make_pair(i + d, i));
 }
 
 void

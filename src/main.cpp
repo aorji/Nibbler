@@ -7,10 +7,10 @@
 #include <iostream>
 
 int main(){
-Game game(10);
+Game game(11);
 
 
-    Snake snake(10);
+    Snake snake(11);
 
     snakeDirection sd = snake.getHeadDirection();
     switch (sd) {
