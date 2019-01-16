@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/aorji/Desktop/Nibbler/inc/Snake.hpp
+vector
+-
+cstdlib
+-
+ctime
+-
+iostream
+-
+
+/Users/aorji/Desktop/Nibbler/src/Game.cpp
+
+/Users/aorji/Desktop/Nibbler/src/Snake.cpp
+../inc/Snake.hpp
+/Users/aorji/Desktop/Nibbler/inc/Snake.hpp
+

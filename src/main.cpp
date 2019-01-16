@@ -6,6 +6,7 @@
 #include <iostream>
 
 int main(){
+
     std::srand(unsigned(std::time(0)));
     Snake snake(5);
 
@@ -24,9 +25,20 @@ int main(){
             std::cout << "Right" << std::endl;
             break;
     }
-//    std::cout <<"head = " <<snake.getHeadDirection() << std::endl;
+    std::cout <<"head = " <<snake.getHeadDirection() << std::endl;
 
-    std::vector<std::pair<int, int>> body = snake.getBody();
-    for(auto it = body.rbegin(); it != body.rend(); ++it)
-        std::cout << (*it).first << "," << (*it).second << std::endl;
+    snake.showBodyCoordinates();
+
+    snake.extendTail();
+    std::cout << "extended"<< std::endl;
+    std::cout << "length = " << snake.getLength() << std::endl;
+    snake.showBodyCoordinates();
+
+    turnKey key = UpArrow;
+    snake.moveSnake(key);
+    std::cout << "moved"<< std::endl;
+    snake.showBodyCoordinates();
+
+    std::cout <<  "headBodyCollision = " << std::boolalpha << snake.headBodyCollision() << std::endl;
+    std::cout <<  "borderHeadCollision = " << std::boolalpha << snake.borderHeadCollision() << std::endl;
 }
