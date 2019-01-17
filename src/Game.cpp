@@ -1,6 +1,3 @@
-//
-// Created by Anastasiia ORJI on 2019-01-16.
-//
 
 #include "../inc/Game.hpp"
 
@@ -12,7 +9,7 @@ Game::Game(long screenLength) {
     createMap();
     snake = Snake(screenLength);
     fillMap();
-    createBarriers();
+    createBarriers(screenLength * screenLength / 30);
     createFood();
 }
 
@@ -50,9 +47,7 @@ Game::printMap() {
 bool
 Game::update(std::string c) {
     std::cout << "Score = " << score << std::endl;
-//  changeLevel
-    if (!(score % 10))
-        changeLevel();
+
 //  extendTail
     static int flag = 0;
     if (flag) {
@@ -76,6 +71,10 @@ Game::update(std::string c) {
     snakeBody = snake.getBody();
     if (map[snakeBody.at(0).second][snakeBody.at(0).first] == 'f' && ++score){
         flag = 1;
+        if (!(score % 5))
+            changeLevel();
+        for(auto v : snakeBody)
+            map[v.second][v.first] = 's';
         createFood();
     }
 //  checkCollisions
@@ -90,6 +89,7 @@ Game::update(std::string c) {
 void
 Game::changeLevel() {
     level++;
+    createBarriers(screenLength / 4);
 }
 
 bool
@@ -109,9 +109,8 @@ Game::destroyMap() {
 }
 
 void
-Game::createBarriers()
+Game::createBarriers(long size)
 {
-    long size = screenLength * screenLength / 30;
     long x, y;
 
     for (auto i = 0; i < size; ++i)
@@ -145,6 +144,7 @@ Game::createFood()
     }
     while (map[x][y] != '.');
 
+    std::cout << "FOOD:" << x << " " << y << std::endl;
     map[x][y] = 'f';
 }
 
