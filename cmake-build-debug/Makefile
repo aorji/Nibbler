@@ -123,6 +123,33 @@ nibbler_/fast:
 	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/build
 .PHONY : nibbler_/fast
 
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 src/Game.o: src/Game.cpp.o
 
 .PHONY : src/Game.o
@@ -149,6 +176,33 @@ src/Game.s: src/Game.cpp.s
 src/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
+
+src/SFML.o: src/SFML.cpp.o
+
+.PHONY : src/SFML.o
+
+# target to build an object file
+src/SFML.cpp.o:
+	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/SFML.cpp.o
+.PHONY : src/SFML.cpp.o
+
+src/SFML.i: src/SFML.cpp.i
+
+.PHONY : src/SFML.i
+
+# target to preprocess a source file
+src/SFML.cpp.i:
+	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/SFML.cpp.i
+.PHONY : src/SFML.cpp.i
+
+src/SFML.s: src/SFML.cpp.s
+
+.PHONY : src/SFML.s
+
+# target to generate assembly for a file
+src/SFML.cpp.s:
+	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/SFML.cpp.s
+.PHONY : src/SFML.cpp.s
 
 src/Snake.o: src/Snake.cpp.o
 
@@ -177,33 +231,6 @@ src/Snake.cpp.s:
 	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Snake.cpp.s
 .PHONY : src/Snake.cpp.s
 
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... nibbler_"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
+	@echo "... src/SFML.o"
+	@echo "... src/SFML.i"
+	@echo "... src/SFML.s"
 	@echo "... src/Snake.o"
 	@echo "... src/Snake.i"
 	@echo "... src/Snake.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 .PHONY : help
 
 

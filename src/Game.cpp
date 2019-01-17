@@ -51,7 +51,7 @@ bool
 Game::update(std::string c) {
     std::cout << "Score = " << score << std::endl;
 //  changeLevel
-    if (!(score % 10))
+    if (!(score % 10) && score > 0)
         changeLevel();
 //  extendTail
     static int flag = 0;
@@ -111,7 +111,7 @@ Game::destroyMap() {
 void
 Game::createBarriers()
 {
-    long size = screenLength * screenLength / 30;
+    long size = screenLength * screenLength / 60;
     long x, y;
 
     for (auto i = 0; i < size; ++i)

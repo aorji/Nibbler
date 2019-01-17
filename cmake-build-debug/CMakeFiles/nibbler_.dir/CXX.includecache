@@ -6,23 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/aorji/Desktop/nibbler_/inc/Game.hpp
-Snake.hpp
-/Users/aorji/Desktop/nibbler_/inc/Snake.hpp
-string
--
-
-/Users/aorji/Desktop/nibbler_/inc/Snake.hpp
-vector
--
-cstdlib
--
-ctime
--
-iostream
--
-
-/Users/aorji/Desktop/nibbler_/src/Game.cpp
-../inc/Game.hpp
-/Users/aorji/Desktop/nibbler_/inc/Game.hpp
+/Users/aorji/Desktop/nibbler_/main.cpp
+SFML/SFML/Graphics.hpp
+/Users/aorji/Desktop/nibbler_/SFML/SFML/Graphics.hpp
 

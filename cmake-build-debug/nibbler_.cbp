@@ -87,16 +87,22 @@
 		<Unit filename="/Users/aorji/Desktop/nibbler_/inc/Game.hpp">
 			<Option target="nibbler_"/>
 		</Unit>
+		<Unit filename="/Users/aorji/Desktop/nibbler_/inc/SFML.hpp">
+			<Option target="nibbler_"/>
+		</Unit>
 		<Unit filename="/Users/aorji/Desktop/nibbler_/inc/Snake.hpp">
+			<Option target="nibbler_"/>
+		</Unit>
+		<Unit filename="/Users/aorji/Desktop/nibbler_/main.cpp">
 			<Option target="nibbler_"/>
 		</Unit>
 		<Unit filename="/Users/aorji/Desktop/nibbler_/src/Game.cpp">
 			<Option target="nibbler_"/>
 		</Unit>
-		<Unit filename="/Users/aorji/Desktop/nibbler_/src/Snake.cpp">
+		<Unit filename="/Users/aorji/Desktop/nibbler_/src/SFML.cpp">
 			<Option target="nibbler_"/>
 		</Unit>
-		<Unit filename="/Users/aorji/Desktop/nibbler_/src/main.cpp">
+		<Unit filename="/Users/aorji/Desktop/nibbler_/src/Snake.cpp">
 			<Option target="nibbler_"/>
 		</Unit>
 		<Unit filename="/Users/aorji/Desktop/nibbler_/CMakeLists.txt">

@@ -9,5 +9,5 @@ add_executable(nibbler_
         inc/Game.hpp
         inc/Snake.hpp
         src/Game.cpp
-        src/main.cpp
-        src/Snake.cpp)
+#        src/main.cpp
+        src/Snake.cpp src/SFML.cpp inc/SFML.hpp main.cpp)
