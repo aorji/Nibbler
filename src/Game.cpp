@@ -115,17 +115,20 @@ Game::createBarriers()
 
     for (auto i = 0; i < size; ++i)
     {
-        do
+        while (1)
         {
             x = rand() % screenLength;
             y = rand() % screenLength;
+            if ((x < screenLength - 1 && y < screenLength - 1) &&
+                (map[x][y] == '.' && map[x + 1][y] == '.' && map[x][y + 1] == '.' && map[x + 1][y + 1] == '.'))
+            {
+                map[x][y] = 'b';
+                map[x + 1][y] = 'b';
+                map[x][y + 1] = 'b';
+                map[x + 1][y + 1] = 'b';
+                break;
+            }
         }
-        while ((x >= screenLength - 1 || y >= screenLength - 1) || (map[x][y] != '.' ||
-                map[x + 1][y] != '.' || map[x][y + 1] != '.' || map[x + 1][y + 1] != '.'));
-        map[x][y] = 'b';
-        map[x + 1][y] = 'b';
-        map[x][y + 1] = 'b';
-        map[x + 1][y + 1] = 'b';
     }
 }
 
