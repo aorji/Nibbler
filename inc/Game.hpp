@@ -1,9 +1,6 @@
-//
-// Created by Anastasiia ORJI on 2019-01-16.
-//
 
-#ifndef NIBBLER_GAME_HPP
-#define NIBBLER_GAME_HPP
+#ifndef GAME_HPP
+#define GAME_HPP
 
 #include "Snake.hpp"
 #include <string>
@@ -20,7 +17,7 @@ public:
     void printMap();
 
     void createFood();
-    void createBarriers();
+    void createBarriers(long size);
 
     bool checkCollisions();
 
