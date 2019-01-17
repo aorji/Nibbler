@@ -8,6 +8,8 @@ Game::Game(long screenLength) {
     this->screenLength = screenLength;
     createMap();
     snake = Snake(screenLength);
+    createBarriers();
+    createFood();
 }
 
 Game::Game() = default;
@@ -41,7 +43,9 @@ Game::printMap() {
 
 void
 Game::update(std::string c) {
-    resetMap();
+    std::vector<std::pair<int, int>> snakeBody = snake.getBody();
+    for(auto v : snakeBody)
+        map[v.second][v.first] = '.';
     if (c == "w")
         snake.moveSnake(UpArrow);
     else if (c == "s")
@@ -50,11 +54,11 @@ Game::update(std::string c) {
         snake.moveSnake(LeftArrow);
     else if (c == "d")
         snake.moveSnake(RightArrow);
-    std::vector<std::pair<int, int>> snakeBody = snake.getBody();
+    snakeBody = snake.getBody();
     for(auto v : snakeBody)
         map[v.second][v.first] = 's';
-    std::cout <<  "headBodyCollision = " << std::boolalpha << snake.headBodyCollision() << std::endl;
-    std::cout <<  "borderHeadCollision = " << std::boolalpha << snake.borderHeadCollision() << std::endl;
+//    std::cout <<  "headBodyCollision = " << std::boolalpha << snake.headBodyCollision() << std::endl;
+//    std::cout <<  "borderHeadCollision = " << std::boolalpha << snake.borderHeadCollision() << std::endl;
 
 }
 
@@ -68,8 +72,8 @@ Game::destroyMap() {
 void
 Game::createBarriers()
 {
-    int size = screenLength * screenLength / 30;
-    int x, y;
+    long size = screenLength * screenLength / 30;
+    long x, y;
 
     for (auto i = 0; i < size; ++i)
     {
@@ -86,20 +90,12 @@ Game::createBarriers()
         map[x][y + 1] = 'b';
         map[x + 1][y + 1] = 'b';
     }
-
-    // for (auto i = 0; i < size; ++i)
-    // {
-    //     map[barriers[i].get_place().first][barriers[i].get_place().second] = 'b';
-    //     map[barriers[i].get_place().first + 1][barriers[i].get_place().second] = 'b';
-    //     map[barriers[i].get_place().first][barriers[i].get_place().second + 1] = 'b';
-    //     map[barriers[i].get_place().first + 1][barriers[i].get_place().second + 1] = 'b';
-    // }
 }
 
 void
 Game::createFood()
 {
-    int x, y;
+    long x, y;
 
     do
     {
