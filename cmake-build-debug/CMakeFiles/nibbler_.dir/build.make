@@ -57,35 +57,9 @@ include CMakeFiles/nibbler_.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/nibbler_.dir/flags.make
 
-CMakeFiles/nibbler_.dir/src/Barrier.cpp.o: CMakeFiles/nibbler_.dir/flags.make
-CMakeFiles/nibbler_.dir/src/Barrier.cpp.o: ../src/Barrier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nibbler_.dir/src/Barrier.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nibbler_.dir/src/Barrier.cpp.o -c /Users/aorji/Desktop/nibbler_/src/Barrier.cpp
-
-CMakeFiles/nibbler_.dir/src/Barrier.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nibbler_.dir/src/Barrier.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/nibbler_/src/Barrier.cpp > CMakeFiles/nibbler_.dir/src/Barrier.cpp.i
-
-CMakeFiles/nibbler_.dir/src/Barrier.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nibbler_.dir/src/Barrier.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/nibbler_/src/Barrier.cpp -o CMakeFiles/nibbler_.dir/src/Barrier.cpp.s
-
-CMakeFiles/nibbler_.dir/src/Food.cpp.o: CMakeFiles/nibbler_.dir/flags.make
-CMakeFiles/nibbler_.dir/src/Food.cpp.o: ../src/Food.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nibbler_.dir/src/Food.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nibbler_.dir/src/Food.cpp.o -c /Users/aorji/Desktop/nibbler_/src/Food.cpp
-
-CMakeFiles/nibbler_.dir/src/Food.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nibbler_.dir/src/Food.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/nibbler_/src/Food.cpp > CMakeFiles/nibbler_.dir/src/Food.cpp.i
-
-CMakeFiles/nibbler_.dir/src/Food.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nibbler_.dir/src/Food.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/nibbler_/src/Food.cpp -o CMakeFiles/nibbler_.dir/src/Food.cpp.s
-
 CMakeFiles/nibbler_.dir/src/Game.cpp.o: CMakeFiles/nibbler_.dir/flags.make
 CMakeFiles/nibbler_.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nibbler_.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nibbler_.dir/src/Game.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nibbler_.dir/src/Game.cpp.o -c /Users/aorji/Desktop/nibbler_/src/Game.cpp
 
 CMakeFiles/nibbler_.dir/src/Game.cpp.i: cmake_force
@@ -96,22 +70,9 @@ CMakeFiles/nibbler_.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nibbler_.dir/src/Game.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/nibbler_/src/Game.cpp -o CMakeFiles/nibbler_.dir/src/Game.cpp.s
 
-CMakeFiles/nibbler_.dir/src/IObject.cpp.o: CMakeFiles/nibbler_.dir/flags.make
-CMakeFiles/nibbler_.dir/src/IObject.cpp.o: ../src/IObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nibbler_.dir/src/IObject.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nibbler_.dir/src/IObject.cpp.o -c /Users/aorji/Desktop/nibbler_/src/IObject.cpp
-
-CMakeFiles/nibbler_.dir/src/IObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nibbler_.dir/src/IObject.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/nibbler_/src/IObject.cpp > CMakeFiles/nibbler_.dir/src/IObject.cpp.i
-
-CMakeFiles/nibbler_.dir/src/IObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nibbler_.dir/src/IObject.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/nibbler_/src/IObject.cpp -o CMakeFiles/nibbler_.dir/src/IObject.cpp.s
-
 CMakeFiles/nibbler_.dir/src/main.cpp.o: CMakeFiles/nibbler_.dir/flags.make
 CMakeFiles/nibbler_.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nibbler_.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nibbler_.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nibbler_.dir/src/main.cpp.o -c /Users/aorji/Desktop/nibbler_/src/main.cpp
 
 CMakeFiles/nibbler_.dir/src/main.cpp.i: cmake_force
@@ -122,22 +83,9 @@ CMakeFiles/nibbler_.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nibbler_.dir/src/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/nibbler_/src/main.cpp -o CMakeFiles/nibbler_.dir/src/main.cpp.s
 
-CMakeFiles/nibbler_.dir/src/Score.cpp.o: CMakeFiles/nibbler_.dir/flags.make
-CMakeFiles/nibbler_.dir/src/Score.cpp.o: ../src/Score.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nibbler_.dir/src/Score.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nibbler_.dir/src/Score.cpp.o -c /Users/aorji/Desktop/nibbler_/src/Score.cpp
-
-CMakeFiles/nibbler_.dir/src/Score.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nibbler_.dir/src/Score.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/nibbler_/src/Score.cpp > CMakeFiles/nibbler_.dir/src/Score.cpp.i
-
-CMakeFiles/nibbler_.dir/src/Score.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nibbler_.dir/src/Score.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/nibbler_/src/Score.cpp -o CMakeFiles/nibbler_.dir/src/Score.cpp.s
-
 CMakeFiles/nibbler_.dir/src/Snake.cpp.o: CMakeFiles/nibbler_.dir/flags.make
 CMakeFiles/nibbler_.dir/src/Snake.cpp.o: ../src/Snake.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nibbler_.dir/src/Snake.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nibbler_.dir/src/Snake.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/nibbler_.dir/src/Snake.cpp.o -c /Users/aorji/Desktop/nibbler_/src/Snake.cpp
 
 CMakeFiles/nibbler_.dir/src/Snake.cpp.i: cmake_force
@@ -150,27 +98,19 @@ CMakeFiles/nibbler_.dir/src/Snake.cpp.s: cmake_force
 
 # Object files for target nibbler_
 nibbler__OBJECTS = \
-"CMakeFiles/nibbler_.dir/src/Barrier.cpp.o" \
-"CMakeFiles/nibbler_.dir/src/Food.cpp.o" \
 "CMakeFiles/nibbler_.dir/src/Game.cpp.o" \
-"CMakeFiles/nibbler_.dir/src/IObject.cpp.o" \
 "CMakeFiles/nibbler_.dir/src/main.cpp.o" \
-"CMakeFiles/nibbler_.dir/src/Score.cpp.o" \
 "CMakeFiles/nibbler_.dir/src/Snake.cpp.o"
 
 # External object files for target nibbler_
 nibbler__EXTERNAL_OBJECTS =
 
-nibbler_: CMakeFiles/nibbler_.dir/src/Barrier.cpp.o
-nibbler_: CMakeFiles/nibbler_.dir/src/Food.cpp.o
 nibbler_: CMakeFiles/nibbler_.dir/src/Game.cpp.o
-nibbler_: CMakeFiles/nibbler_.dir/src/IObject.cpp.o
 nibbler_: CMakeFiles/nibbler_.dir/src/main.cpp.o
-nibbler_: CMakeFiles/nibbler_.dir/src/Score.cpp.o
 nibbler_: CMakeFiles/nibbler_.dir/src/Snake.cpp.o
 nibbler_: CMakeFiles/nibbler_.dir/build.make
 nibbler_: CMakeFiles/nibbler_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable nibbler_"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable nibbler_"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nibbler_.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

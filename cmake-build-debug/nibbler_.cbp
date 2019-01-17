@@ -84,37 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/aorji/Desktop/nibbler_/inc/Barrier.hpp">
-			<Option target="nibbler_"/>
-		</Unit>
-		<Unit filename="/Users/aorji/Desktop/nibbler_/inc/Food.hpp">
-			<Option target="nibbler_"/>
-		</Unit>
 		<Unit filename="/Users/aorji/Desktop/nibbler_/inc/Game.hpp">
-			<Option target="nibbler_"/>
-		</Unit>
-		<Unit filename="/Users/aorji/Desktop/nibbler_/inc/IObject.hpp">
-			<Option target="nibbler_"/>
-		</Unit>
-		<Unit filename="/Users/aorji/Desktop/nibbler_/inc/Score.hpp">
 			<Option target="nibbler_"/>
 		</Unit>
 		<Unit filename="/Users/aorji/Desktop/nibbler_/inc/Snake.hpp">
 			<Option target="nibbler_"/>
 		</Unit>
-		<Unit filename="/Users/aorji/Desktop/nibbler_/src/Barrier.cpp">
-			<Option target="nibbler_"/>
-		</Unit>
-		<Unit filename="/Users/aorji/Desktop/nibbler_/src/Food.cpp">
-			<Option target="nibbler_"/>
-		</Unit>
 		<Unit filename="/Users/aorji/Desktop/nibbler_/src/Game.cpp">
-			<Option target="nibbler_"/>
-		</Unit>
-		<Unit filename="/Users/aorji/Desktop/nibbler_/src/IObject.cpp">
-			<Option target="nibbler_"/>
-		</Unit>
-		<Unit filename="/Users/aorji/Desktop/nibbler_/src/Score.cpp">
 			<Option target="nibbler_"/>
 		</Unit>
 		<Unit filename="/Users/aorji/Desktop/nibbler_/src/Snake.cpp">

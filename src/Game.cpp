@@ -5,7 +5,9 @@
 #include "../inc/Game.hpp"
 
 Game::Game(long screenLength) {
+    srand(unsigned(std::time(0)));
     this->screenLength = screenLength;
+    score = 0;
     createMap();
     snake = Snake(screenLength);
     createBarriers();
@@ -30,6 +32,9 @@ Game::fillMap() {
             map[i][j] = '.';
         }
     }
+    std::vector<std::pair<int, int>> snakeBody = snake.getBody();
+    for(auto v : snakeBody)
+        map[v.second][v.first] = 's';
 }
 
 void
@@ -43,6 +48,13 @@ Game::printMap() {
 
 void
 Game::update(std::string c) {
+    std::cout << "Score = " << score << std::endl;
+    static int flag = 0;
+    if (flag) {
+        snake.extendTail();
+        createFood();
+        flag = 0;
+    }
     std::vector<std::pair<int, int>> snakeBody = snake.getBody();
     for(auto v : snakeBody)
         map[v.second][v.first] = '.';
@@ -54,8 +66,12 @@ Game::update(std::string c) {
         snake.moveSnake(LeftArrow);
     else if (c == "d")
         snake.moveSnake(RightArrow);
-    std::cout <<  "Collision = " << std::boolalpha << checkCollisions() << std::endl;
     snakeBody = snake.getBody();
+    if (map[snakeBody.at(0).second][snakeBody.at(0).first] == 'f') {
+        flag = 1;
+        score++;
+    }
+    std::cout <<  "Collision = " << std::boolalpha << checkCollisions() << std::endl;
     for(auto v : snakeBody)
         map[v.second][v.first] = 's';
 }
@@ -64,7 +80,7 @@ bool
 Game::checkCollisions(){
     std::vector<std::pair<int, int>> snakeBody = snake.getBody();
     for(auto v : snakeBody)
-        if (map[v.second][v.first] == 'b' || snake.borderHeadCollision())
+        if (map[v.second][v.first] == 'b' || snake.borderHeadCollision() || snake.headBodyCollision())
             return true;
     return false;
 }

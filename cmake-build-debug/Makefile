@@ -123,60 +123,6 @@ nibbler_/fast:
 	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/build
 .PHONY : nibbler_/fast
 
-src/Barrier.o: src/Barrier.cpp.o
-
-.PHONY : src/Barrier.o
-
-# target to build an object file
-src/Barrier.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Barrier.cpp.o
-.PHONY : src/Barrier.cpp.o
-
-src/Barrier.i: src/Barrier.cpp.i
-
-.PHONY : src/Barrier.i
-
-# target to preprocess a source file
-src/Barrier.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Barrier.cpp.i
-.PHONY : src/Barrier.cpp.i
-
-src/Barrier.s: src/Barrier.cpp.s
-
-.PHONY : src/Barrier.s
-
-# target to generate assembly for a file
-src/Barrier.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Barrier.cpp.s
-.PHONY : src/Barrier.cpp.s
-
-src/Food.o: src/Food.cpp.o
-
-.PHONY : src/Food.o
-
-# target to build an object file
-src/Food.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Food.cpp.o
-.PHONY : src/Food.cpp.o
-
-src/Food.i: src/Food.cpp.i
-
-.PHONY : src/Food.i
-
-# target to preprocess a source file
-src/Food.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Food.cpp.i
-.PHONY : src/Food.cpp.i
-
-src/Food.s: src/Food.cpp.s
-
-.PHONY : src/Food.s
-
-# target to generate assembly for a file
-src/Food.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Food.cpp.s
-.PHONY : src/Food.cpp.s
-
 src/Game.o: src/Game.cpp.o
 
 .PHONY : src/Game.o
@@ -203,60 +149,6 @@ src/Game.s: src/Game.cpp.s
 src/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
-
-src/IObject.o: src/IObject.cpp.o
-
-.PHONY : src/IObject.o
-
-# target to build an object file
-src/IObject.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/IObject.cpp.o
-.PHONY : src/IObject.cpp.o
-
-src/IObject.i: src/IObject.cpp.i
-
-.PHONY : src/IObject.i
-
-# target to preprocess a source file
-src/IObject.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/IObject.cpp.i
-.PHONY : src/IObject.cpp.i
-
-src/IObject.s: src/IObject.cpp.s
-
-.PHONY : src/IObject.s
-
-# target to generate assembly for a file
-src/IObject.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/IObject.cpp.s
-.PHONY : src/IObject.cpp.s
-
-src/Score.o: src/Score.cpp.o
-
-.PHONY : src/Score.o
-
-# target to build an object file
-src/Score.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Score.cpp.o
-.PHONY : src/Score.cpp.o
-
-src/Score.i: src/Score.cpp.i
-
-.PHONY : src/Score.i
-
-# target to preprocess a source file
-src/Score.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Score.cpp.i
-.PHONY : src/Score.cpp.i
-
-src/Score.s: src/Score.cpp.s
-
-.PHONY : src/Score.s
-
-# target to generate assembly for a file
-src/Score.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Score.cpp.s
-.PHONY : src/Score.cpp.s
 
 src/Snake.o: src/Snake.cpp.o
 
@@ -321,21 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... nibbler_"
-	@echo "... src/Barrier.o"
-	@echo "... src/Barrier.i"
-	@echo "... src/Barrier.s"
-	@echo "... src/Food.o"
-	@echo "... src/Food.i"
-	@echo "... src/Food.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
-	@echo "... src/IObject.o"
-	@echo "... src/IObject.i"
-	@echo "... src/IObject.s"
-	@echo "... src/Score.o"
-	@echo "... src/Score.i"
-	@echo "... src/Score.s"
 	@echo "... src/Snake.o"
 	@echo "... src/Snake.i"
 	@echo "... src/Snake.s"

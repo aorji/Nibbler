@@ -26,6 +26,7 @@ public:
 private:
     Game();
     long screenLength;
+    long score;
     char **map;
     Snake snake;
 

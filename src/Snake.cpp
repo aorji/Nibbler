@@ -95,8 +95,8 @@ Snake::headBodyCollision() {
 bool
 Snake::borderHeadCollision() {
     for(auto i = 0; i < length ; ++i)
-        if (body.at(i).first == screenLength - 1 || body.at(i).second == screenLength - 1 ||
-                body.at(i).first == 0 || body.at(i).second == 0)
+        if (body.at(i).first == screenLength || body.at(i).second == screenLength ||
+                body.at(i).first == -1 || body.at(i).second == -1)
             return true;
     return false;
 }
