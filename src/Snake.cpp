@@ -86,7 +86,7 @@ Snake::extendTail() {
 bool
 Snake::headBodyCollision() {
     std::pair<int, int> head = body.at(0);
-    for(unsigned long i = 1; i < length ; ++i)
+    for(auto i = 1; i < length ; ++i)
         if (head == body.at(i))
             return true;
     return false;
@@ -94,7 +94,7 @@ Snake::headBodyCollision() {
 
 bool
 Snake::borderHeadCollision() {
-    for(unsigned long i = 0; i < length ; ++i)
+    for(auto i = 0; i < length ; ++i)
         if (body.at(i).first == screenLength - 1 || body.at(i).second == screenLength - 1 ||
                 body.at(i).first == 0 || body.at(i).second == 0)
             return true;
@@ -110,10 +110,7 @@ Snake::showBodyCoordinates() {
 //get
 int
 Snake::getLength() {
-    int len = 0;
-    for(auto v : body)
-        len++;
-    return len;
+    return body.size();
 }
 
 snakeDirection
