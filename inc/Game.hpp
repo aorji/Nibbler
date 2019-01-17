@@ -15,11 +15,13 @@ public:
     void update(std::string c);
     void createMap();
     void destroyMap();
-    void resetMap();
+    void fillMap();
     void printMap();
 
     void createFood();
     void createBarriers();
+
+    bool checkCollisions();
 
 private:
     Game();

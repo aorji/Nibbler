@@ -20,11 +20,11 @@ Game::createMap() {
     map = new char *[screenLength];
     for (auto i = 0; i != screenLength; ++i)
         map[i] = new char[screenLength];
-    resetMap();
+    fillMap();
 }
 
 void
-Game::resetMap() {
+Game::fillMap() {
     for (auto i = 0; i < screenLength; ++i) {
         for (auto j = 0; j < screenLength; ++j) {
             map[i][j] = '.';
@@ -54,12 +54,19 @@ Game::update(std::string c) {
         snake.moveSnake(LeftArrow);
     else if (c == "d")
         snake.moveSnake(RightArrow);
+    std::cout <<  "Collision = " << std::boolalpha << checkCollisions() << std::endl;
     snakeBody = snake.getBody();
     for(auto v : snakeBody)
         map[v.second][v.first] = 's';
-//    std::cout <<  "headBodyCollision = " << std::boolalpha << snake.headBodyCollision() << std::endl;
-//    std::cout <<  "borderHeadCollision = " << std::boolalpha << snake.borderHeadCollision() << std::endl;
+}
 
+bool
+Game::checkCollisions(){
+    std::vector<std::pair<int, int>> snakeBody = snake.getBody();
+    for(auto v : snakeBody)
+        if (map[v.second][v.first] == 'b' || snake.borderHeadCollision())
+            return true;
+    return false;
 }
 
 void
@@ -82,9 +89,8 @@ Game::createBarriers()
             x = rand() % screenLength;
             y = rand() % screenLength;
         }
-        while ((x >= screenLength - 1 || y >= screenLength - 1) || (map[x][y] != '.' || map[x + 1][y] != '.' || map[x][y + 1] != '.' || map[x + 1][y + 1] != '.'));
-
-        // barriers.push_back(Barrier(x, y));
+        while ((x >= screenLength - 1 || y >= screenLength - 1) || (map[x][y] != '.' ||
+                map[x + 1][y] != '.' || map[x][y + 1] != '.' || map[x + 1][y + 1] != '.'));
         map[x][y] = 'b';
         map[x + 1][y] = 'b';
         map[x][y + 1] = 'b';
