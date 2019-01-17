@@ -14,7 +14,7 @@ Snake::~Snake() = default;
 
 void
 Snake::createSnake() {
-    int i = screenLength/2;
+    long i = screenLength/2;
     for(int d = -2; d <= 1; ++d)
         body.emplace_back(std::make_pair(i + d, i));
 }

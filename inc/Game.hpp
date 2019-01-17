@@ -5,23 +5,27 @@
 #ifndef NIBBLER_GAME_HPP
 #define NIBBLER_GAME_HPP
 
-#include <vector>
-#include <iostream>
+#include "Snake.hpp"
+#include <string>
 
 class Game{
 public:
     Game( long screenLength );
     ~Game();
-    void update(std::vector<std::pair<int, int>> snake);
+    void update(std::string c);
     void createMap();
     void destroyMap();
     void resetMap();
     void printMap();
 
+    void createFood();
+    void createBarriers();
+
 private:
     Game();
     long screenLength;
     char **map;
+    Snake snake;
 
 };
 

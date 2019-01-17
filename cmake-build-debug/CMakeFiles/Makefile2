@@ -59,45 +59,45 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/aorji/Desktop/Nibbler
+CMAKE_SOURCE_DIR = /Users/aorji/Desktop/nibbler_
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/aorji/Desktop/Nibbler/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/aorji/Desktop/nibbler_/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/Nibbler.dir
+# Target rules for target CMakeFiles/nibbler_.dir
 
 # All Build rule for target.
-CMakeFiles/Nibbler.dir/all:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/depend
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Nibbler"
-.PHONY : CMakeFiles/Nibbler.dir/all
+CMakeFiles/nibbler_.dir/all:
+	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/depend
+	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target nibbler_"
+.PHONY : CMakeFiles/nibbler_.dir/all
 
 # Include target in all.
-all: CMakeFiles/Nibbler.dir/all
+all: CMakeFiles/nibbler_.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Nibbler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Nibbler.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Nibbler.dir/rule
+CMakeFiles/nibbler_.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nibbler_.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/nibbler_.dir/rule
 
 # Convenience name for target.
-Nibbler: CMakeFiles/Nibbler.dir/rule
+nibbler_: CMakeFiles/nibbler_.dir/rule
 
-.PHONY : Nibbler
-
-# clean rule for target.
-CMakeFiles/Nibbler.dir/clean:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/clean
-.PHONY : CMakeFiles/Nibbler.dir/clean
+.PHONY : nibbler_
 
 # clean rule for target.
-clean: CMakeFiles/Nibbler.dir/clean
+CMakeFiles/nibbler_.dir/clean:
+	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/clean
+.PHONY : CMakeFiles/nibbler_.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/nibbler_.dir/clean
 
 .PHONY : clean
 

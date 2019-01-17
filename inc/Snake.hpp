@@ -4,6 +4,7 @@
 
 #ifndef NIBBLER_SNAKE_HPP
 #define NIBBLER_SNAKE_HPP
+
 #include <vector>
 #include <cstdlib>
 #include <ctime>
@@ -27,6 +28,7 @@ class Snake {
 
 public:
     explicit Snake(unsigned screenLengthn);
+    Snake();
     ~Snake();
 
     void createSnake();
@@ -48,7 +50,6 @@ public:
     std::vector<std::pair<int, int>> getBody();
 
 private:
-    Snake();
     long length;
     long screenLength;
     snakeDirection headDirection;
