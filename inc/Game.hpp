@@ -12,7 +12,8 @@ class Game{
 public:
     Game( long screenLength );
     ~Game();
-    void update(std::string c);
+
+    bool update(std::string c);
     void createMap();
     void destroyMap();
     void fillMap();
@@ -23,10 +24,15 @@ public:
 
     bool checkCollisions();
 
+    void changeLevel();
+
+    char **getMap();
+
 private:
     Game();
     long screenLength;
-    long score;
+    int score;
+    int level;
     char **map;
     Snake snake;
 

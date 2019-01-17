@@ -12,7 +12,8 @@ int main(){
     while(1){
         std::string myInput;
         std::getline (std::cin,myInput);
-        game.update(myInput);
+        if (!game.update(myInput))
+            break;
         game.printMap();
         if (myInput == "q")
             break;
