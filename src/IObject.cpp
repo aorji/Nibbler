@@ -20,3 +20,14 @@ IObject & IObject::operator=(IObject const &rv)
 	}
 	return *this;
 }
+
+std::pair<int, int> IObject::get_place()
+{
+	return place;
+}
+
+void				IObject::set_place(int x, int y)
+{
+	place.first = x;
+	place.second = y;
+}

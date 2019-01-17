@@ -13,6 +13,9 @@ public:
 	virtual ~IObject();
 
 	IObject & operator=(IObject const &rv);
+
+	std::pair<int, int> get_place();
+	void				set_place(int x, int y);
 };
 
 #endif
