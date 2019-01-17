@@ -51,18 +51,17 @@ bool
 Game::update(std::string c) {
     std::cout << "Score = " << score << std::endl;
 //  changeLevel
-    if (!(score%10))
+    if (!(score % 10))
         changeLevel();
 //  extendTail
     static int flag = 0;
     if (flag) {
         snake.extendTail();
-        createFood();
         flag = 0;
     }
 //  refill snake by '.'
     std::vector<std::pair<int, int>> snakeBody = snake.getBody();
-    for(auto v : snakeBody)
+    for (auto v : snakeBody)
         map[v.second][v.first] = '.';
 //  move snake
     if (c == "w")
@@ -75,8 +74,10 @@ Game::update(std::string c) {
         snake.moveSnake(RightArrow);
     //else snake.moveHeadByDirection()
     snakeBody = snake.getBody();
-    if (map[snakeBody.at(0).second][snakeBody.at(0).first] == 'f' && ++score)
+    if (map[snakeBody.at(0).second][snakeBody.at(0).first] == 'f' && ++score){
         flag = 1;
+        createFood();
+    }
 //  checkCollisions
     if (checkCollisions())
         return false;

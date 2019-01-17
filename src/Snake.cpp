@@ -23,7 +23,7 @@ void
 Snake::moveSnake(turnKey key) {
     if ((int)key == -(int)headDirection)
         return;
-    for (int i = length - 1; i > 0; --i) //Tail
+    for (auto i = length - 1; i > 0; --i) //Tail
         body.at(i) = std::make_pair(body.at(i - 1).first, body.at(i - 1).second);
     //Head
     if ((int)key == (int)headDirection)
@@ -108,7 +108,7 @@ Snake::showBodyCoordinates() {
 }
 
 //get
-int
+long
 Snake::getLength() {
     return body.size();
 }

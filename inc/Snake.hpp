@@ -45,7 +45,7 @@ public:
 
     void showBodyCoordinates();
 
-    int getLength();
+    long getLength();
     snakeDirection getHeadDirection();
     std::vector<std::pair<int, int>> getBody();
 
