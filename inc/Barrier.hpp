@@ -5,4 +5,12 @@
 #ifndef NIBBLER_BARRIER_HPP
 #define NIBBLER_BARRIER_HPP
 
+class Barrier : public IObject
+{
+public:
+	Barrier();
+	~Barrier();
+	
+};
+
 #endif //NIBBLER_BARRIER_HPP
