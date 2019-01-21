@@ -95,7 +95,7 @@ Game::update(char c) {
 void
 Game::changeLevel() {
     level++;
-    createBarriers(screenLength / 4);
+    createBarriers(2);
 }
 
 bool

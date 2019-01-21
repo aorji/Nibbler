@@ -10,7 +10,7 @@ public:
     Game( long screenLength );
     ~Game();
 
-    bool update(std::string c);
+    bool update(char c);
     void createMap();
     void destroyMap();
     void fillMap();
@@ -24,6 +24,7 @@ public:
     void changeLevel();
 
     char **getMap();
+    int getLevel();
 
 private:
     Game();

@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/aorji/Desktop/nibbler_
+CMAKE_SOURCE_DIR = /Users/aorji/Desktop/Nibbler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/aorji/Desktop/nibbler_/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/aorji/Desktop/Nibbler/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles /Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles /Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/nibbler_/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named nibbler_
+# Target rules for targets named Nibbler
 
 # Build rule for target.
-nibbler_: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nibbler_
-.PHONY : nibbler_
+Nibbler: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Nibbler
+.PHONY : Nibbler
 
 # fast build rule for target.
-nibbler_/fast:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/build
-.PHONY : nibbler_/fast
+Nibbler/fast:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/build
+.PHONY : Nibbler/fast
 
-main.o: main.cpp.o
+SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.o: SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o
 
-.PHONY : main.o
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/main.cpp.o
-.PHONY : main.cpp.o
+SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o
 
-main.i: main.cpp.i
+SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.i: SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.i
 
-.PHONY : main.i
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/main.cpp.i
-.PHONY : main.cpp.i
+SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.i
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.i
 
-main.s: main.cpp.s
+SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.s: SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.s
 
-.PHONY : main.s
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/main.cpp.s
-.PHONY : main.cpp.s
+SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.s
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.s
+
+SFML/templates/SFML/SFML_App.xctemplate/main.o: SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o
+
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/main.o
+
+# target to build an object file
+SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o
+
+SFML/templates/SFML/SFML_App.xctemplate/main.i: SFML/templates/SFML/SFML_App.xctemplate/main.cpp.i
+
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/main.i
+
+# target to preprocess a source file
+SFML/templates/SFML/SFML_App.xctemplate/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.i
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/main.cpp.i
+
+SFML/templates/SFML/SFML_App.xctemplate/main.s: SFML/templates/SFML/SFML_App.xctemplate/main.cpp.s
+
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/main.s
+
+# target to generate assembly for a file
+SFML/templates/SFML/SFML_App.xctemplate/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.s
+.PHONY : SFML/templates/SFML/SFML_App.xctemplate/main.cpp.s
+
+SFML/templates/SFML/SFML_CLT.xctemplate/main.o: SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o
+
+.PHONY : SFML/templates/SFML/SFML_CLT.xctemplate/main.o
+
+# target to build an object file
+SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o
+.PHONY : SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o
+
+SFML/templates/SFML/SFML_CLT.xctemplate/main.i: SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.i
+
+.PHONY : SFML/templates/SFML/SFML_CLT.xctemplate/main.i
+
+# target to preprocess a source file
+SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.i
+.PHONY : SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.i
+
+SFML/templates/SFML/SFML_CLT.xctemplate/main.s: SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s
+
+.PHONY : SFML/templates/SFML/SFML_CLT.xctemplate/main.s
+
+# target to generate assembly for a file
+SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s
+.PHONY : SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s
 
 src/Game.o: src/Game.cpp.o
 
@@ -156,7 +210,7 @@ src/Game.o: src/Game.cpp.o
 
 # target to build an object file
 src/Game.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Game.cpp.o
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Game.cpp.o
 .PHONY : src/Game.cpp.o
 
 src/Game.i: src/Game.cpp.i
@@ -165,7 +219,7 @@ src/Game.i: src/Game.cpp.i
 
 # target to preprocess a source file
 src/Game.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Game.cpp.i
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Game.cpp.i
 .PHONY : src/Game.cpp.i
 
 src/Game.s: src/Game.cpp.s
@@ -174,7 +228,7 @@ src/Game.s: src/Game.cpp.s
 
 # target to generate assembly for a file
 src/Game.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Game.cpp.s
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
 src/SFML.o: src/SFML.cpp.o
@@ -183,7 +237,7 @@ src/SFML.o: src/SFML.cpp.o
 
 # target to build an object file
 src/SFML.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/SFML.cpp.o
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SFML.cpp.o
 .PHONY : src/SFML.cpp.o
 
 src/SFML.i: src/SFML.cpp.i
@@ -192,7 +246,7 @@ src/SFML.i: src/SFML.cpp.i
 
 # target to preprocess a source file
 src/SFML.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/SFML.cpp.i
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SFML.cpp.i
 .PHONY : src/SFML.cpp.i
 
 src/SFML.s: src/SFML.cpp.s
@@ -201,7 +255,7 @@ src/SFML.s: src/SFML.cpp.s
 
 # target to generate assembly for a file
 src/SFML.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/SFML.cpp.s
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SFML.cpp.s
 .PHONY : src/SFML.cpp.s
 
 src/Snake.o: src/Snake.cpp.o
@@ -210,7 +264,7 @@ src/Snake.o: src/Snake.cpp.o
 
 # target to build an object file
 src/Snake.cpp.o:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Snake.cpp.o
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Snake.cpp.o
 .PHONY : src/Snake.cpp.o
 
 src/Snake.i: src/Snake.cpp.i
@@ -219,7 +273,7 @@ src/Snake.i: src/Snake.cpp.i
 
 # target to preprocess a source file
 src/Snake.cpp.i:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Snake.cpp.i
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Snake.cpp.i
 .PHONY : src/Snake.cpp.i
 
 src/Snake.s: src/Snake.cpp.s
@@ -228,8 +282,35 @@ src/Snake.s: src/Snake.cpp.s
 
 # target to generate assembly for a file
 src/Snake.cpp.s:
-	$(MAKE) -f CMakeFiles/nibbler_.dir/build.make CMakeFiles/nibbler_.dir/src/Snake.cpp.s
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Snake.cpp.s
 .PHONY : src/Snake.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -239,10 +320,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... nibbler_"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Nibbler"
+	@echo "... SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.o"
+	@echo "... SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.i"
+	@echo "... SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.s"
+	@echo "... SFML/templates/SFML/SFML_App.xctemplate/main.o"
+	@echo "... SFML/templates/SFML/SFML_App.xctemplate/main.i"
+	@echo "... SFML/templates/SFML/SFML_App.xctemplate/main.s"
+	@echo "... SFML/templates/SFML/SFML_CLT.xctemplate/main.o"
+	@echo "... SFML/templates/SFML/SFML_CLT.xctemplate/main.i"
+	@echo "... SFML/templates/SFML/SFML_CLT.xctemplate/main.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
@@ -252,6 +339,9 @@ help:
 	@echo "... src/Snake.o"
 	@echo "... src/Snake.i"
 	@echo "... src/Snake.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

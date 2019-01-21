@@ -97,7 +97,6 @@ Snake::headBodyCollision() {
 bool
 Snake::borderHeadCollision() {
     for(auto i = 0; i < getLength(); ++i) {
-        std::cout << i <<" " << body.at(i).first << " " << body.at(i).second << std::endl;
         if (body.at(i).first == screenLength || body.at(i).second == screenLength ||
             body.at(i).first < 0 || body.at(i).second < 0)
             return true;
