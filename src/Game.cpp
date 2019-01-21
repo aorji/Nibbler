@@ -5,11 +5,11 @@ Game::Game(long screenLength) {
     srand(unsigned(std::time(0)));
     this->screenLength = screenLength;
     score = 0;
-    level = 0;
+    level = 1;
     createMap();
     snake = Snake(screenLength);
     fillMap();
-    createBarriers(screenLength * screenLength / 30);
+    createBarriers(screenLength / 4);
     createFood();
 }
 
@@ -45,8 +45,9 @@ Game::printMap() {
 }
 
 bool
-Game::update(std::string c) {
+Game::update(char c) {
     std::cout << "Score = " << score << std::endl;
+
 //  extendTail
     static int flag = 0;
     if (flag) {
@@ -54,33 +55,39 @@ Game::update(std::string c) {
         flag = 0;
     }
 //  refill snake by '.'
+
     std::vector<std::pair<int, int>> snakeBody = snake.getBody();
     for (auto v : snakeBody)
         map[v.second][v.first] = '.';
 //  move snake
-    if (c == "w")
+
+    if (c == 'w' || c == 126)
         snake.moveSnake(UpArrow);
-    else if (c == "s")
+    else if (c == 's' || c == 125)
         snake.moveSnake(DownArrow);
-    else if (c == "a")
+    else if (c == 'a' || c == 123)
         snake.moveSnake(LeftArrow);
-    else if (c == "d")
+    else if (c == 'd' || c == 124)
         snake.moveSnake(RightArrow);
-    //else snake.moveHeadByDirection()
+
+//  checkCollisions
+    if (checkCollisions()) {
+        return false;
+    }
+
     snakeBody = snake.getBody();
     if (map[snakeBody.at(0).second][snakeBody.at(0).first] == 'f' && ++score){
         flag = 1;
-        if (!(score % 5))
+        if (!(score % 5)) {
             changeLevel();
-        for(auto v : snakeBody)
+        }
+        for(auto v : snakeBody) {
             map[v.second][v.first] = 's';
+        }
         createFood();
     }
-//  checkCollisions
-    if (checkCollisions())
-        return false;
 //  add snake to map
-    for(auto v : snakeBody)
+    for (auto v : snakeBody)
         map[v.second][v.first] = 's';
     return true;
 }
@@ -95,7 +102,7 @@ bool
 Game::checkCollisions(){
     std::vector<std::pair<int, int>> snakeBody = snake.getBody();
     for(auto v : snakeBody)
-        if (map[v.second][v.first] == 'b' || snake.borderHeadCollision() || snake.headBodyCollision())
+        if (snake.borderHeadCollision() || snake.headBodyCollision() || map[v.second][v.first] == 'b')
             return true;
     return false;
 }
@@ -142,10 +149,13 @@ Game::createFood()
         y = rand() % screenLength;
     }
     while (map[x][y] != '.');
+
+//    std::cout << "FOOD:" << x << " " << y << std::endl;
     map[x][y] = 'f';
 }
 
 char**
-Game::getMap() {
-    return map;
-}
+Game::getMap() { return map; }
+
+int
+Game::getLevel() { return level; }
