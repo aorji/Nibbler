@@ -9,13 +9,18 @@
 
 class Sfml {
 public:
-    Sfml();
+    Sfml(int windowSize, int pixelSize);
     ~Sfml();
     void init(char **map);
-    void destroy();
-    void draw(char **map);
+//    void destroy();
+//    void draw(char **map);
+
+    sf::RenderWindow & getWindow();
 private:
-    int screenSize;
+    int windowSize;
+    int pixelSize;
+    sf::RenderWindow window;
+    sf::RectangleShape rectangle;
 };
 
 #endif //NIBBLER_SFML_HPP

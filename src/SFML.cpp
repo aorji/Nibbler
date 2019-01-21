@@ -4,37 +4,30 @@
 
 #include <SFML.hpp>
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
-Sfml::Sfml() = default;
+Sfml::Sfml(int windowSize, int pixelSize): windowSize(windowSize),
+                                            pixelSize(pixelSize),
+                                            window(sf::VideoMode(windowSize, windowSize), "Nibbler"),
+                                            rectangle(sf::Vector2f(pixelSize, pixelSize)){}
 Sfml::~Sfml() = default;
 
 void
 Sfml::init(char **map){
-//
-//    sf::RenderWindow window(sf::VideoMode(200, 200), "Nibbler");
-////    sf::CircleShape shape(100.f);
-////    shape.setFillColor(sf::Color::Green);
-//
-//    while (window.isOpen())
-//    {
-//        sf::Event event;
-//        while (window.pollEvent(event))
-//        {
-//            if (event.type == sf::Event::Closed)
-//                window.close();
-//            if (sf::Event)
-//        }
-//
-//        window.clear();
-////        window.draw(shape);
-//        window.display();
-//    }
+////    sf::RenderWindow window(sf::VideoMode(windowSize, windowSize), "Nibbler");
+//    sf::RectangleShape rectangle(sf::Vector2f(pixelSize, pixelSize));
+std::cout << windowSize +pixelSize << map[0][0];
 }
 
-void
-Sfml::destroy(){}
+//void
+//Sfml::destroy(){}
+//
+//void
+//Sfml::draw(char **map){
+//
+//}
 
-void
-Sfml::draw(char **map){
 
-}
+sf::RenderWindow &
+Sfml::getWindow() { return window; }
+

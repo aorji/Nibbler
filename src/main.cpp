@@ -5,23 +5,25 @@
 #include "../inc/Game.hpp"
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include <SFML.hpp>
 
 int main() {
     int pixelSize = ((sf::VideoMode::getDesktopMode().height / 2) * 4) / 100;
     int windowSize = pixelSize * 25;
     int gameAreaSize = 25;
 
-    sf::RenderWindow window(sf::VideoMode(windowSize, windowSize), "Nibbler");
+    Sfml sfml(windowSize, pixelSize);
+//    sf::RenderWindow sfml.getWindow()(sf::VideoMode(sfml.getWindow()Size, sfml.getWindow()Size), "Nibbler");
     sf::RectangleShape rectangle(sf::Vector2f(pixelSize, pixelSize));
     Game game(gameAreaSize);
 
     char c = 123;
-    while (window.isOpen()) {
+    while (sfml.getWindow().isOpen()) {
         sf::Time delayTime = sf::microseconds(300000 / game.getLevel());
         sf::Event event;
-        while (window.pollEvent(event)) {
+        while (sfml.getWindow().pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
-                window.close();
+                sfml.getWindow().close();
             }
             if (event.key.code == sf::Keyboard::Up)
                 c = 126;
@@ -35,7 +37,7 @@ int main() {
         if (!game.update(c))
             break;
         char **map = game.getMap();
-        window.clear();
+        sfml.getWindow().clear();
         for (auto i = 0; i < gameAreaSize; ++i) {
             for (auto j = 0; j < gameAreaSize; ++j) {
                 rectangle.setPosition(j * pixelSize, i * pixelSize);
@@ -43,7 +45,7 @@ int main() {
                     rectangle.setFillColor(sf::Color(49, 149, 20));
                 else
                     rectangle.setFillColor(sf::Color(49, 145, 20));
-                window.draw(rectangle);
+                sfml.getWindow().draw(rectangle);
                 if (map[i][j] == 's') {
                     sf::Texture texture;
                     texture.loadFromFile("img/snake.png", sf::IntRect(0, 0, pixelSize, pixelSize));
@@ -51,10 +53,8 @@ int main() {
                     sf::Sprite sprite;
                     sprite.setTexture(texture);
                     sprite.setPosition(j * pixelSize, i * pixelSize);
-                    window.draw(sprite);
+                    sfml.getWindow().draw(sprite);
                 }
-//                if (map[i][j] == '.') {
-//                }
                 if (map[i][j] == 'f') {
                     float scale = pixelSize/772.0;
                     sf::Texture texture;
@@ -64,7 +64,7 @@ int main() {
                     sprite.setTexture(texture);
                     sprite.setScale(scale, scale);
                     sprite.setPosition(j * pixelSize, i * pixelSize);
-                    window.draw(sprite);
+                    sfml.getWindow().draw(sprite);
                 }
                 if (map[i][j] == 'b') {
                     sf::Texture texture;
@@ -73,11 +73,11 @@ int main() {
                     sprite.setTexture(texture);
                     sprite.scale(0.5f, 0.5f);
                     sprite.setPosition(j * pixelSize, i * pixelSize);
-                    window.draw(sprite);
+                    sfml.getWindow().draw(sprite);
                 }
             }
         }
-        window.display();
+        sfml.getWindow().display();
         sf::sleep(delayTime);
     }
 }
