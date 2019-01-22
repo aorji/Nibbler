@@ -88,6 +88,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/aorji/Desktop/Nibbler/SFML/templates/SFML/SFML App.xctemplate/ResourcePath.mm" "/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o"
   "/Users/aorji/Desktop/Nibbler/SFML/templates/SFML/SFML App.xctemplate/main.cpp" "/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o"
   "/Users/aorji/Desktop/Nibbler/SFML/templates/SFML/SFML CLT.xctemplate/main.cpp" "/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o"
+  "/Users/aorji/Desktop/Nibbler/src/Exception.cpp" "/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles/Nibbler.dir/src/Exception.cpp.o"
   "/Users/aorji/Desktop/Nibbler/src/Game.cpp" "/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles/Nibbler.dir/src/Game.cpp.o"
   "/Users/aorji/Desktop/Nibbler/src/GameOver.cpp" "/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles/Nibbler.dir/src/GameOver.cpp.o"
   "/Users/aorji/Desktop/Nibbler/src/Menu.cpp" "/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles/Nibbler.dir/src/Menu.cpp.o"

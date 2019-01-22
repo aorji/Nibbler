@@ -3,15 +3,15 @@
 //
 
 #include "GameOver.hpp"
+#include "../inc/Exception.hpp"
 
 GameOver::GameOver(int windowSize):windowSize(windowSize){}
 GameOver::~GameOver() = default;
 
 void
 GameOver::init(){
-    if (!font.loadFromFile("font/Spantaran (DEMO).otf")){
-        //EXEPTION
-    }
+    if (!font.loadFromFile("font/Spantaran.otf"))
+        throw FontIsNotFound();
     text.setFont(font);
     text.setFillColor(sf::Color(49, 149, 20));
     text.setString("Game is Over");

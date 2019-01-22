@@ -690,6 +690,33 @@ SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s:
 	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s
 .PHONY : SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s
 
+src/Exception.o: src/Exception.cpp.o
+
+.PHONY : src/Exception.o
+
+# target to build an object file
+src/Exception.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Exception.cpp.o
+.PHONY : src/Exception.cpp.o
+
+src/Exception.i: src/Exception.cpp.i
+
+.PHONY : src/Exception.i
+
+# target to preprocess a source file
+src/Exception.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Exception.cpp.i
+.PHONY : src/Exception.cpp.i
+
+src/Exception.s: src/Exception.cpp.s
+
+.PHONY : src/Exception.s
+
+# target to generate assembly for a file
+src/Exception.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Exception.cpp.s
+.PHONY : src/Exception.cpp.s
+
 src/Game.o: src/Game.cpp.o
 
 .PHONY : src/Game.o
@@ -951,6 +978,9 @@ help:
 	@echo "... SFML/templates/SFML/SFML_CLT.xctemplate/main.o"
 	@echo "... SFML/templates/SFML/SFML_CLT.xctemplate/main.i"
 	@echo "... SFML/templates/SFML/SFML_CLT.xctemplate/main.s"
+	@echo "... src/Exception.o"
+	@echo "... src/Exception.i"
+	@echo "... src/Exception.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"

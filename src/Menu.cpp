@@ -9,7 +9,7 @@ Menu::~Menu() = default;
 
 void
 Menu::init(){
-    if (!font.loadFromFile("font/Spantaran (DEMO).otf")){
+    if (!font.loadFromFile("font/Spantaran.otf")){
         //ERROR
     }
     menu[0].setFont(font);

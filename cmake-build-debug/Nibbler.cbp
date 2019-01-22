@@ -3408,6 +3408,9 @@
 		<Unit filename="/Users/aorji/Desktop/Nibbler/img/stone.jpg">
 			<Option target="Nibbler"/>
 		</Unit>
+		<Unit filename="/Users/aorji/Desktop/Nibbler/inc/Exception.hpp">
+			<Option target="Nibbler"/>
+		</Unit>
 		<Unit filename="/Users/aorji/Desktop/Nibbler/inc/Game.hpp">
 			<Option target="Nibbler"/>
 		</Unit>
@@ -3424,6 +3427,9 @@
 			<Option target="Nibbler"/>
 		</Unit>
 		<Unit filename="/Users/aorji/Desktop/Nibbler/inc/Snake.hpp">
+			<Option target="Nibbler"/>
+		</Unit>
+		<Unit filename="/Users/aorji/Desktop/Nibbler/src/Exception.cpp">
 			<Option target="Nibbler"/>
 		</Unit>
 		<Unit filename="/Users/aorji/Desktop/Nibbler/src/Game.cpp">
