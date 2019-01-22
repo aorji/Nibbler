@@ -57,9 +57,243 @@ include CMakeFiles/Nibbler.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Nibbler.dir/flags.make
 
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.o: ../SFML/examples/cocoa/CocoaAppDelegate.mm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/cocoa/CocoaAppDelegate.mm
+
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/cocoa/CocoaAppDelegate.mm > CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/cocoa/CocoaAppDelegate.mm -o CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.o: ../SFML/examples/cocoa/main.m
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.o   -c /Users/aorji/Desktop/Nibbler/SFML/examples/cocoa/main.m
+
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/cocoa/main.m > CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/cocoa/main.m -o CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.o: ../SFML/examples/cocoa/NSString+stdstring.mm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/cocoa/NSString+stdstring.mm
+
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/cocoa/NSString+stdstring.mm > CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/cocoa/NSString+stdstring.mm -o CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.o: ../SFML/examples/ftp/Ftp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/ftp/Ftp.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/ftp/Ftp.cpp > CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/ftp/Ftp.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.o: ../SFML/examples/island/Island.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/island/Island.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/island/Island.cpp > CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/island/Island.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.o: ../SFML/examples/joystick/Joystick.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/joystick/Joystick.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/joystick/Joystick.cpp > CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/joystick/Joystick.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.o: ../SFML/examples/opengl/OpenGL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/opengl/OpenGL.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/opengl/OpenGL.cpp > CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/opengl/OpenGL.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.o: ../SFML/examples/pong/Pong.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/pong/Pong.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/pong/Pong.cpp > CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/pong/Pong.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.o: ../SFML/examples/shader/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/shader/Shader.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/shader/Shader.cpp > CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/shader/Shader.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.o: ../SFML/examples/sockets/Sockets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/sockets/Sockets.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/sockets/Sockets.cpp > CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/sockets/Sockets.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.o: ../SFML/examples/sockets/TCP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/sockets/TCP.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/sockets/TCP.cpp > CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/sockets/TCP.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.o: ../SFML/examples/sockets/UDP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/sockets/UDP.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/sockets/UDP.cpp > CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/sockets/UDP.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.o: ../SFML/examples/sound/Sound.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/sound/Sound.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/sound/Sound.cpp > CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/sound/Sound.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.o: ../SFML/examples/sound-capture/SoundCapture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/sound-capture/SoundCapture.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/sound-capture/SoundCapture.cpp > CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/sound-capture/SoundCapture.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.o: ../SFML/examples/voip/Client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/voip/Client.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/voip/Client.cpp > CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/voip/Client.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.o: ../SFML/examples/voip/Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/voip/Server.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/voip/Server.cpp > CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/voip/Server.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.o: ../SFML/examples/voip/VoIP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/voip/VoIP.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/voip/VoIP.cpp > CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/voip/VoIP.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.s
+
+CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.o: ../SFML/examples/window/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.o -c /Users/aorji/Desktop/Nibbler/SFML/examples/window/Window.cpp
+
+CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/SFML/examples/window/Window.cpp > CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.i
+
+CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/SFML/examples/window/Window.cpp -o CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.s
+
 CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o: CMakeFiles/Nibbler.dir/flags.make
 CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o: ../SFML/templates/SFML/SFML\ App.xctemplate/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o -c "/Users/aorji/Desktop/Nibbler/SFML/templates/SFML/SFML App.xctemplate/main.cpp"
 
 CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.i: cmake_force
@@ -72,7 +306,7 @@ CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.s: cmake
 
 CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o: CMakeFiles/Nibbler.dir/flags.make
 CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o: ../SFML/templates/SFML/SFML\ App.xctemplate/ResourcePath.mm
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o -c "/Users/aorji/Desktop/Nibbler/SFML/templates/SFML/SFML App.xctemplate/ResourcePath.mm"
 
 CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.i: cmake_force
@@ -85,7 +319,7 @@ CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.s
 
 CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o: CMakeFiles/Nibbler.dir/flags.make
 CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o: ../SFML/templates/SFML/SFML\ CLT.xctemplate/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o -c "/Users/aorji/Desktop/Nibbler/SFML/templates/SFML/SFML CLT.xctemplate/main.cpp"
 
 CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.i: cmake_force
@@ -98,7 +332,7 @@ CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s: cmake
 
 CMakeFiles/Nibbler.dir/src/Game.cpp.o: CMakeFiles/Nibbler.dir/flags.make
 CMakeFiles/Nibbler.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Nibbler.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Nibbler.dir/src/Game.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/src/Game.cpp.o -c /Users/aorji/Desktop/Nibbler/src/Game.cpp
 
 CMakeFiles/Nibbler.dir/src/Game.cpp.i: cmake_force
@@ -111,7 +345,7 @@ CMakeFiles/Nibbler.dir/src/Game.cpp.s: cmake_force
 
 CMakeFiles/Nibbler.dir/src/main.cpp.o: CMakeFiles/Nibbler.dir/flags.make
 CMakeFiles/Nibbler.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Nibbler.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Nibbler.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/src/main.cpp.o -c /Users/aorji/Desktop/Nibbler/src/main.cpp
 
 CMakeFiles/Nibbler.dir/src/main.cpp.i: cmake_force
@@ -122,22 +356,9 @@ CMakeFiles/Nibbler.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/src/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/src/main.cpp -o CMakeFiles/Nibbler.dir/src/main.cpp.s
 
-CMakeFiles/Nibbler.dir/src/Snake.cpp.o: CMakeFiles/Nibbler.dir/flags.make
-CMakeFiles/Nibbler.dir/src/Snake.cpp.o: ../src/Snake.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Nibbler.dir/src/Snake.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/src/Snake.cpp.o -c /Users/aorji/Desktop/Nibbler/src/Snake.cpp
-
-CMakeFiles/Nibbler.dir/src/Snake.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/src/Snake.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/src/Snake.cpp > CMakeFiles/Nibbler.dir/src/Snake.cpp.i
-
-CMakeFiles/Nibbler.dir/src/Snake.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/src/Snake.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/src/Snake.cpp -o CMakeFiles/Nibbler.dir/src/Snake.cpp.s
-
 CMakeFiles/Nibbler.dir/src/SFML.cpp.o: CMakeFiles/Nibbler.dir/flags.make
 CMakeFiles/Nibbler.dir/src/SFML.cpp.o: ../src/SFML.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Nibbler.dir/src/SFML.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Nibbler.dir/src/SFML.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/src/SFML.cpp.o -c /Users/aorji/Desktop/Nibbler/src/SFML.cpp
 
 CMakeFiles/Nibbler.dir/src/SFML.cpp.i: cmake_force
@@ -148,29 +369,93 @@ CMakeFiles/Nibbler.dir/src/SFML.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/src/SFML.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/src/SFML.cpp -o CMakeFiles/Nibbler.dir/src/SFML.cpp.s
 
+CMakeFiles/Nibbler.dir/src/Snake.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/src/Snake.cpp.o: ../src/Snake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Nibbler.dir/src/Snake.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/src/Snake.cpp.o -c /Users/aorji/Desktop/Nibbler/src/Snake.cpp
+
+CMakeFiles/Nibbler.dir/src/Snake.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/src/Snake.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/src/Snake.cpp > CMakeFiles/Nibbler.dir/src/Snake.cpp.i
+
+CMakeFiles/Nibbler.dir/src/Snake.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/src/Snake.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/src/Snake.cpp -o CMakeFiles/Nibbler.dir/src/Snake.cpp.s
+
+CMakeFiles/Nibbler.dir/src/Menu.cpp.o: CMakeFiles/Nibbler.dir/flags.make
+CMakeFiles/Nibbler.dir/src/Menu.cpp.o: ../src/Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Nibbler.dir/src/Menu.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Nibbler.dir/src/Menu.cpp.o -c /Users/aorji/Desktop/Nibbler/src/Menu.cpp
+
+CMakeFiles/Nibbler.dir/src/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Nibbler.dir/src/Menu.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aorji/Desktop/Nibbler/src/Menu.cpp > CMakeFiles/Nibbler.dir/src/Menu.cpp.i
+
+CMakeFiles/Nibbler.dir/src/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Nibbler.dir/src/Menu.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aorji/Desktop/Nibbler/src/Menu.cpp -o CMakeFiles/Nibbler.dir/src/Menu.cpp.s
+
 # Object files for target Nibbler
 Nibbler_OBJECTS = \
+"CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.o" \
+"CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.o" \
 "CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o" \
 "CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o" \
 "CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o" \
 "CMakeFiles/Nibbler.dir/src/Game.cpp.o" \
 "CMakeFiles/Nibbler.dir/src/main.cpp.o" \
+"CMakeFiles/Nibbler.dir/src/SFML.cpp.o" \
 "CMakeFiles/Nibbler.dir/src/Snake.cpp.o" \
-"CMakeFiles/Nibbler.dir/src/SFML.cpp.o"
+"CMakeFiles/Nibbler.dir/src/Menu.cpp.o"
 
 # External object files for target Nibbler
 Nibbler_EXTERNAL_OBJECTS =
 
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.o
 Nibbler: CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o
 Nibbler: CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o
 Nibbler: CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o
 Nibbler: CMakeFiles/Nibbler.dir/src/Game.cpp.o
 Nibbler: CMakeFiles/Nibbler.dir/src/main.cpp.o
-Nibbler: CMakeFiles/Nibbler.dir/src/Snake.cpp.o
 Nibbler: CMakeFiles/Nibbler.dir/src/SFML.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/src/Snake.cpp.o
+Nibbler: CMakeFiles/Nibbler.dir/src/Menu.cpp.o
 Nibbler: CMakeFiles/Nibbler.dir/build.make
 Nibbler: CMakeFiles/Nibbler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Nibbler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable Nibbler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Nibbler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

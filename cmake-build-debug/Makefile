@@ -123,6 +123,492 @@ Nibbler/fast:
 	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/build
 .PHONY : Nibbler/fast
 
+SFML/examples/cocoa/CocoaAppDelegate.o: SFML/examples/cocoa/CocoaAppDelegate.mm.o
+
+.PHONY : SFML/examples/cocoa/CocoaAppDelegate.o
+
+# target to build an object file
+SFML/examples/cocoa/CocoaAppDelegate.mm.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.o
+.PHONY : SFML/examples/cocoa/CocoaAppDelegate.mm.o
+
+SFML/examples/cocoa/CocoaAppDelegate.i: SFML/examples/cocoa/CocoaAppDelegate.mm.i
+
+.PHONY : SFML/examples/cocoa/CocoaAppDelegate.i
+
+# target to preprocess a source file
+SFML/examples/cocoa/CocoaAppDelegate.mm.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.i
+.PHONY : SFML/examples/cocoa/CocoaAppDelegate.mm.i
+
+SFML/examples/cocoa/CocoaAppDelegate.s: SFML/examples/cocoa/CocoaAppDelegate.mm.s
+
+.PHONY : SFML/examples/cocoa/CocoaAppDelegate.s
+
+# target to generate assembly for a file
+SFML/examples/cocoa/CocoaAppDelegate.mm.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.s
+.PHONY : SFML/examples/cocoa/CocoaAppDelegate.mm.s
+
+SFML/examples/cocoa/NSString+stdstring.o: SFML/examples/cocoa/NSString+stdstring.mm.o
+
+.PHONY : SFML/examples/cocoa/NSString+stdstring.o
+
+# target to build an object file
+SFML/examples/cocoa/NSString+stdstring.mm.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.o
+.PHONY : SFML/examples/cocoa/NSString+stdstring.mm.o
+
+SFML/examples/cocoa/NSString+stdstring.i: SFML/examples/cocoa/NSString+stdstring.mm.i
+
+.PHONY : SFML/examples/cocoa/NSString+stdstring.i
+
+# target to preprocess a source file
+SFML/examples/cocoa/NSString+stdstring.mm.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.i
+.PHONY : SFML/examples/cocoa/NSString+stdstring.mm.i
+
+SFML/examples/cocoa/NSString+stdstring.s: SFML/examples/cocoa/NSString+stdstring.mm.s
+
+.PHONY : SFML/examples/cocoa/NSString+stdstring.s
+
+# target to generate assembly for a file
+SFML/examples/cocoa/NSString+stdstring.mm.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.s
+.PHONY : SFML/examples/cocoa/NSString+stdstring.mm.s
+
+SFML/examples/cocoa/main.o: SFML/examples/cocoa/main.m.o
+
+.PHONY : SFML/examples/cocoa/main.o
+
+# target to build an object file
+SFML/examples/cocoa/main.m.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.o
+.PHONY : SFML/examples/cocoa/main.m.o
+
+SFML/examples/cocoa/main.i: SFML/examples/cocoa/main.m.i
+
+.PHONY : SFML/examples/cocoa/main.i
+
+# target to preprocess a source file
+SFML/examples/cocoa/main.m.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.i
+.PHONY : SFML/examples/cocoa/main.m.i
+
+SFML/examples/cocoa/main.s: SFML/examples/cocoa/main.m.s
+
+.PHONY : SFML/examples/cocoa/main.s
+
+# target to generate assembly for a file
+SFML/examples/cocoa/main.m.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.s
+.PHONY : SFML/examples/cocoa/main.m.s
+
+SFML/examples/ftp/Ftp.o: SFML/examples/ftp/Ftp.cpp.o
+
+.PHONY : SFML/examples/ftp/Ftp.o
+
+# target to build an object file
+SFML/examples/ftp/Ftp.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.o
+.PHONY : SFML/examples/ftp/Ftp.cpp.o
+
+SFML/examples/ftp/Ftp.i: SFML/examples/ftp/Ftp.cpp.i
+
+.PHONY : SFML/examples/ftp/Ftp.i
+
+# target to preprocess a source file
+SFML/examples/ftp/Ftp.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.i
+.PHONY : SFML/examples/ftp/Ftp.cpp.i
+
+SFML/examples/ftp/Ftp.s: SFML/examples/ftp/Ftp.cpp.s
+
+.PHONY : SFML/examples/ftp/Ftp.s
+
+# target to generate assembly for a file
+SFML/examples/ftp/Ftp.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.s
+.PHONY : SFML/examples/ftp/Ftp.cpp.s
+
+SFML/examples/island/Island.o: SFML/examples/island/Island.cpp.o
+
+.PHONY : SFML/examples/island/Island.o
+
+# target to build an object file
+SFML/examples/island/Island.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.o
+.PHONY : SFML/examples/island/Island.cpp.o
+
+SFML/examples/island/Island.i: SFML/examples/island/Island.cpp.i
+
+.PHONY : SFML/examples/island/Island.i
+
+# target to preprocess a source file
+SFML/examples/island/Island.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.i
+.PHONY : SFML/examples/island/Island.cpp.i
+
+SFML/examples/island/Island.s: SFML/examples/island/Island.cpp.s
+
+.PHONY : SFML/examples/island/Island.s
+
+# target to generate assembly for a file
+SFML/examples/island/Island.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.s
+.PHONY : SFML/examples/island/Island.cpp.s
+
+SFML/examples/joystick/Joystick.o: SFML/examples/joystick/Joystick.cpp.o
+
+.PHONY : SFML/examples/joystick/Joystick.o
+
+# target to build an object file
+SFML/examples/joystick/Joystick.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.o
+.PHONY : SFML/examples/joystick/Joystick.cpp.o
+
+SFML/examples/joystick/Joystick.i: SFML/examples/joystick/Joystick.cpp.i
+
+.PHONY : SFML/examples/joystick/Joystick.i
+
+# target to preprocess a source file
+SFML/examples/joystick/Joystick.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.i
+.PHONY : SFML/examples/joystick/Joystick.cpp.i
+
+SFML/examples/joystick/Joystick.s: SFML/examples/joystick/Joystick.cpp.s
+
+.PHONY : SFML/examples/joystick/Joystick.s
+
+# target to generate assembly for a file
+SFML/examples/joystick/Joystick.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.s
+.PHONY : SFML/examples/joystick/Joystick.cpp.s
+
+SFML/examples/opengl/OpenGL.o: SFML/examples/opengl/OpenGL.cpp.o
+
+.PHONY : SFML/examples/opengl/OpenGL.o
+
+# target to build an object file
+SFML/examples/opengl/OpenGL.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.o
+.PHONY : SFML/examples/opengl/OpenGL.cpp.o
+
+SFML/examples/opengl/OpenGL.i: SFML/examples/opengl/OpenGL.cpp.i
+
+.PHONY : SFML/examples/opengl/OpenGL.i
+
+# target to preprocess a source file
+SFML/examples/opengl/OpenGL.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.i
+.PHONY : SFML/examples/opengl/OpenGL.cpp.i
+
+SFML/examples/opengl/OpenGL.s: SFML/examples/opengl/OpenGL.cpp.s
+
+.PHONY : SFML/examples/opengl/OpenGL.s
+
+# target to generate assembly for a file
+SFML/examples/opengl/OpenGL.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.s
+.PHONY : SFML/examples/opengl/OpenGL.cpp.s
+
+SFML/examples/pong/Pong.o: SFML/examples/pong/Pong.cpp.o
+
+.PHONY : SFML/examples/pong/Pong.o
+
+# target to build an object file
+SFML/examples/pong/Pong.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.o
+.PHONY : SFML/examples/pong/Pong.cpp.o
+
+SFML/examples/pong/Pong.i: SFML/examples/pong/Pong.cpp.i
+
+.PHONY : SFML/examples/pong/Pong.i
+
+# target to preprocess a source file
+SFML/examples/pong/Pong.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.i
+.PHONY : SFML/examples/pong/Pong.cpp.i
+
+SFML/examples/pong/Pong.s: SFML/examples/pong/Pong.cpp.s
+
+.PHONY : SFML/examples/pong/Pong.s
+
+# target to generate assembly for a file
+SFML/examples/pong/Pong.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.s
+.PHONY : SFML/examples/pong/Pong.cpp.s
+
+SFML/examples/shader/Shader.o: SFML/examples/shader/Shader.cpp.o
+
+.PHONY : SFML/examples/shader/Shader.o
+
+# target to build an object file
+SFML/examples/shader/Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.o
+.PHONY : SFML/examples/shader/Shader.cpp.o
+
+SFML/examples/shader/Shader.i: SFML/examples/shader/Shader.cpp.i
+
+.PHONY : SFML/examples/shader/Shader.i
+
+# target to preprocess a source file
+SFML/examples/shader/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.i
+.PHONY : SFML/examples/shader/Shader.cpp.i
+
+SFML/examples/shader/Shader.s: SFML/examples/shader/Shader.cpp.s
+
+.PHONY : SFML/examples/shader/Shader.s
+
+# target to generate assembly for a file
+SFML/examples/shader/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.s
+.PHONY : SFML/examples/shader/Shader.cpp.s
+
+SFML/examples/sockets/Sockets.o: SFML/examples/sockets/Sockets.cpp.o
+
+.PHONY : SFML/examples/sockets/Sockets.o
+
+# target to build an object file
+SFML/examples/sockets/Sockets.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.o
+.PHONY : SFML/examples/sockets/Sockets.cpp.o
+
+SFML/examples/sockets/Sockets.i: SFML/examples/sockets/Sockets.cpp.i
+
+.PHONY : SFML/examples/sockets/Sockets.i
+
+# target to preprocess a source file
+SFML/examples/sockets/Sockets.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.i
+.PHONY : SFML/examples/sockets/Sockets.cpp.i
+
+SFML/examples/sockets/Sockets.s: SFML/examples/sockets/Sockets.cpp.s
+
+.PHONY : SFML/examples/sockets/Sockets.s
+
+# target to generate assembly for a file
+SFML/examples/sockets/Sockets.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.s
+.PHONY : SFML/examples/sockets/Sockets.cpp.s
+
+SFML/examples/sockets/TCP.o: SFML/examples/sockets/TCP.cpp.o
+
+.PHONY : SFML/examples/sockets/TCP.o
+
+# target to build an object file
+SFML/examples/sockets/TCP.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.o
+.PHONY : SFML/examples/sockets/TCP.cpp.o
+
+SFML/examples/sockets/TCP.i: SFML/examples/sockets/TCP.cpp.i
+
+.PHONY : SFML/examples/sockets/TCP.i
+
+# target to preprocess a source file
+SFML/examples/sockets/TCP.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.i
+.PHONY : SFML/examples/sockets/TCP.cpp.i
+
+SFML/examples/sockets/TCP.s: SFML/examples/sockets/TCP.cpp.s
+
+.PHONY : SFML/examples/sockets/TCP.s
+
+# target to generate assembly for a file
+SFML/examples/sockets/TCP.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.s
+.PHONY : SFML/examples/sockets/TCP.cpp.s
+
+SFML/examples/sockets/UDP.o: SFML/examples/sockets/UDP.cpp.o
+
+.PHONY : SFML/examples/sockets/UDP.o
+
+# target to build an object file
+SFML/examples/sockets/UDP.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.o
+.PHONY : SFML/examples/sockets/UDP.cpp.o
+
+SFML/examples/sockets/UDP.i: SFML/examples/sockets/UDP.cpp.i
+
+.PHONY : SFML/examples/sockets/UDP.i
+
+# target to preprocess a source file
+SFML/examples/sockets/UDP.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.i
+.PHONY : SFML/examples/sockets/UDP.cpp.i
+
+SFML/examples/sockets/UDP.s: SFML/examples/sockets/UDP.cpp.s
+
+.PHONY : SFML/examples/sockets/UDP.s
+
+# target to generate assembly for a file
+SFML/examples/sockets/UDP.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.s
+.PHONY : SFML/examples/sockets/UDP.cpp.s
+
+SFML/examples/sound-capture/SoundCapture.o: SFML/examples/sound-capture/SoundCapture.cpp.o
+
+.PHONY : SFML/examples/sound-capture/SoundCapture.o
+
+# target to build an object file
+SFML/examples/sound-capture/SoundCapture.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.o
+.PHONY : SFML/examples/sound-capture/SoundCapture.cpp.o
+
+SFML/examples/sound-capture/SoundCapture.i: SFML/examples/sound-capture/SoundCapture.cpp.i
+
+.PHONY : SFML/examples/sound-capture/SoundCapture.i
+
+# target to preprocess a source file
+SFML/examples/sound-capture/SoundCapture.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.i
+.PHONY : SFML/examples/sound-capture/SoundCapture.cpp.i
+
+SFML/examples/sound-capture/SoundCapture.s: SFML/examples/sound-capture/SoundCapture.cpp.s
+
+.PHONY : SFML/examples/sound-capture/SoundCapture.s
+
+# target to generate assembly for a file
+SFML/examples/sound-capture/SoundCapture.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.s
+.PHONY : SFML/examples/sound-capture/SoundCapture.cpp.s
+
+SFML/examples/sound/Sound.o: SFML/examples/sound/Sound.cpp.o
+
+.PHONY : SFML/examples/sound/Sound.o
+
+# target to build an object file
+SFML/examples/sound/Sound.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.o
+.PHONY : SFML/examples/sound/Sound.cpp.o
+
+SFML/examples/sound/Sound.i: SFML/examples/sound/Sound.cpp.i
+
+.PHONY : SFML/examples/sound/Sound.i
+
+# target to preprocess a source file
+SFML/examples/sound/Sound.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.i
+.PHONY : SFML/examples/sound/Sound.cpp.i
+
+SFML/examples/sound/Sound.s: SFML/examples/sound/Sound.cpp.s
+
+.PHONY : SFML/examples/sound/Sound.s
+
+# target to generate assembly for a file
+SFML/examples/sound/Sound.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.s
+.PHONY : SFML/examples/sound/Sound.cpp.s
+
+SFML/examples/voip/Client.o: SFML/examples/voip/Client.cpp.o
+
+.PHONY : SFML/examples/voip/Client.o
+
+# target to build an object file
+SFML/examples/voip/Client.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.o
+.PHONY : SFML/examples/voip/Client.cpp.o
+
+SFML/examples/voip/Client.i: SFML/examples/voip/Client.cpp.i
+
+.PHONY : SFML/examples/voip/Client.i
+
+# target to preprocess a source file
+SFML/examples/voip/Client.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.i
+.PHONY : SFML/examples/voip/Client.cpp.i
+
+SFML/examples/voip/Client.s: SFML/examples/voip/Client.cpp.s
+
+.PHONY : SFML/examples/voip/Client.s
+
+# target to generate assembly for a file
+SFML/examples/voip/Client.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.s
+.PHONY : SFML/examples/voip/Client.cpp.s
+
+SFML/examples/voip/Server.o: SFML/examples/voip/Server.cpp.o
+
+.PHONY : SFML/examples/voip/Server.o
+
+# target to build an object file
+SFML/examples/voip/Server.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.o
+.PHONY : SFML/examples/voip/Server.cpp.o
+
+SFML/examples/voip/Server.i: SFML/examples/voip/Server.cpp.i
+
+.PHONY : SFML/examples/voip/Server.i
+
+# target to preprocess a source file
+SFML/examples/voip/Server.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.i
+.PHONY : SFML/examples/voip/Server.cpp.i
+
+SFML/examples/voip/Server.s: SFML/examples/voip/Server.cpp.s
+
+.PHONY : SFML/examples/voip/Server.s
+
+# target to generate assembly for a file
+SFML/examples/voip/Server.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.s
+.PHONY : SFML/examples/voip/Server.cpp.s
+
+SFML/examples/voip/VoIP.o: SFML/examples/voip/VoIP.cpp.o
+
+.PHONY : SFML/examples/voip/VoIP.o
+
+# target to build an object file
+SFML/examples/voip/VoIP.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.o
+.PHONY : SFML/examples/voip/VoIP.cpp.o
+
+SFML/examples/voip/VoIP.i: SFML/examples/voip/VoIP.cpp.i
+
+.PHONY : SFML/examples/voip/VoIP.i
+
+# target to preprocess a source file
+SFML/examples/voip/VoIP.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.i
+.PHONY : SFML/examples/voip/VoIP.cpp.i
+
+SFML/examples/voip/VoIP.s: SFML/examples/voip/VoIP.cpp.s
+
+.PHONY : SFML/examples/voip/VoIP.s
+
+# target to generate assembly for a file
+SFML/examples/voip/VoIP.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.s
+.PHONY : SFML/examples/voip/VoIP.cpp.s
+
+SFML/examples/window/Window.o: SFML/examples/window/Window.cpp.o
+
+.PHONY : SFML/examples/window/Window.o
+
+# target to build an object file
+SFML/examples/window/Window.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.o
+.PHONY : SFML/examples/window/Window.cpp.o
+
+SFML/examples/window/Window.i: SFML/examples/window/Window.cpp.i
+
+.PHONY : SFML/examples/window/Window.i
+
+# target to preprocess a source file
+SFML/examples/window/Window.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.i
+.PHONY : SFML/examples/window/Window.cpp.i
+
+SFML/examples/window/Window.s: SFML/examples/window/Window.cpp.s
+
+.PHONY : SFML/examples/window/Window.s
+
+# target to generate assembly for a file
+SFML/examples/window/Window.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.s
+.PHONY : SFML/examples/window/Window.cpp.s
+
 SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.o: SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o
 
 .PHONY : SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.o
@@ -231,6 +717,33 @@ src/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/Menu.o: src/Menu.cpp.o
+
+.PHONY : src/Menu.o
+
+# target to build an object file
+src/Menu.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Menu.cpp.o
+.PHONY : src/Menu.cpp.o
+
+src/Menu.i: src/Menu.cpp.i
+
+.PHONY : src/Menu.i
+
+# target to preprocess a source file
+src/Menu.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Menu.cpp.i
+.PHONY : src/Menu.cpp.i
+
+src/Menu.s: src/Menu.cpp.s
+
+.PHONY : src/Menu.s
+
+# target to generate assembly for a file
+src/Menu.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Menu.cpp.s
+.PHONY : src/Menu.cpp.s
+
 src/SFML.o: src/SFML.cpp.o
 
 .PHONY : src/SFML.o
@@ -321,6 +834,60 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Nibbler"
+	@echo "... SFML/examples/cocoa/CocoaAppDelegate.o"
+	@echo "... SFML/examples/cocoa/CocoaAppDelegate.i"
+	@echo "... SFML/examples/cocoa/CocoaAppDelegate.s"
+	@echo "... SFML/examples/cocoa/NSString+stdstring.o"
+	@echo "... SFML/examples/cocoa/NSString+stdstring.i"
+	@echo "... SFML/examples/cocoa/NSString+stdstring.s"
+	@echo "... SFML/examples/cocoa/main.o"
+	@echo "... SFML/examples/cocoa/main.i"
+	@echo "... SFML/examples/cocoa/main.s"
+	@echo "... SFML/examples/ftp/Ftp.o"
+	@echo "... SFML/examples/ftp/Ftp.i"
+	@echo "... SFML/examples/ftp/Ftp.s"
+	@echo "... SFML/examples/island/Island.o"
+	@echo "... SFML/examples/island/Island.i"
+	@echo "... SFML/examples/island/Island.s"
+	@echo "... SFML/examples/joystick/Joystick.o"
+	@echo "... SFML/examples/joystick/Joystick.i"
+	@echo "... SFML/examples/joystick/Joystick.s"
+	@echo "... SFML/examples/opengl/OpenGL.o"
+	@echo "... SFML/examples/opengl/OpenGL.i"
+	@echo "... SFML/examples/opengl/OpenGL.s"
+	@echo "... SFML/examples/pong/Pong.o"
+	@echo "... SFML/examples/pong/Pong.i"
+	@echo "... SFML/examples/pong/Pong.s"
+	@echo "... SFML/examples/shader/Shader.o"
+	@echo "... SFML/examples/shader/Shader.i"
+	@echo "... SFML/examples/shader/Shader.s"
+	@echo "... SFML/examples/sockets/Sockets.o"
+	@echo "... SFML/examples/sockets/Sockets.i"
+	@echo "... SFML/examples/sockets/Sockets.s"
+	@echo "... SFML/examples/sockets/TCP.o"
+	@echo "... SFML/examples/sockets/TCP.i"
+	@echo "... SFML/examples/sockets/TCP.s"
+	@echo "... SFML/examples/sockets/UDP.o"
+	@echo "... SFML/examples/sockets/UDP.i"
+	@echo "... SFML/examples/sockets/UDP.s"
+	@echo "... SFML/examples/sound-capture/SoundCapture.o"
+	@echo "... SFML/examples/sound-capture/SoundCapture.i"
+	@echo "... SFML/examples/sound-capture/SoundCapture.s"
+	@echo "... SFML/examples/sound/Sound.o"
+	@echo "... SFML/examples/sound/Sound.i"
+	@echo "... SFML/examples/sound/Sound.s"
+	@echo "... SFML/examples/voip/Client.o"
+	@echo "... SFML/examples/voip/Client.i"
+	@echo "... SFML/examples/voip/Client.s"
+	@echo "... SFML/examples/voip/Server.o"
+	@echo "... SFML/examples/voip/Server.i"
+	@echo "... SFML/examples/voip/Server.s"
+	@echo "... SFML/examples/voip/VoIP.o"
+	@echo "... SFML/examples/voip/VoIP.i"
+	@echo "... SFML/examples/voip/VoIP.s"
+	@echo "... SFML/examples/window/Window.o"
+	@echo "... SFML/examples/window/Window.i"
+	@echo "... SFML/examples/window/Window.s"
 	@echo "... SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.o"
 	@echo "... SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.i"
 	@echo "... SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.s"
@@ -333,6 +900,9 @@ help:
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
+	@echo "... src/Menu.o"
+	@echo "... src/Menu.i"
+	@echo "... src/Menu.s"
 	@echo "... src/SFML.o"
 	@echo "... src/SFML.i"
 	@echo "... src/SFML.s"

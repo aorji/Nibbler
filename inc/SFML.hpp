@@ -6,19 +6,26 @@
 #define NIBBLER_SFML_HPP
 
 #include <SFML/Graphics.hpp>
+#include "Menu.hpp"
+#include "Game.hpp"
 
 class Sfml {
 public:
-    Sfml(int windowSize, int pixelSize);
+    Sfml(int windowSize, int squareSize);
     ~Sfml();
-    void init(char **map);
-//    void destroy();
-//    void draw(char **map);
+    // void init(char **map);
+    // void destroy();
+    void draw(char **map);
+    void execute(Game &game);
 
-    sf::RenderWindow & getWindow();
+    void drawSnake(int i, int j);
+    void drawBarriers(int i, int j);
+    void drawFood(int i, int j);
+    void drawBg(int i, int j);
 private:
     int windowSize;
-    int pixelSize;
+    int squareSize;
+    int gameAreaSize = 20;
     sf::RenderWindow window;
     sf::RectangleShape rectangle;
 };

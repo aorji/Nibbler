@@ -3,8 +3,25 @@ project(Nibbler)
 
 set(CMAKE_CXX_STANDARD 14)
 
+include_directories(.)
+include_directories(cmake-build-debug)
+include_directories(font)
+include_directories(img)
 include_directories(inc)
+include_directories(SFML)
+include_directories(SFML/examples/cocoa)
+include_directories(SFML/examples/shader)
 include_directories(SFML/Frameworks)
+include_directories(SFML/Frameworks/freetype.framework)
+include_directories(SFML/Frameworks/freetype.framework/Resources)
+include_directories(SFML/Frameworks/freetype.framework/Versions)
+include_directories(SFML/Frameworks/freetype.framework/Versions/A)
+include_directories(SFML/Frameworks/freetype.framework/Versions/Current)
+include_directories(SFML/Frameworks/sfml-audio.framework)
+include_directories(SFML/Frameworks/sfml-graphics.framework)
+include_directories(SFML/Frameworks/sfml-network.framework)
+include_directories(SFML/Frameworks/sfml-system.framework)
+include_directories(SFML/Frameworks/sfml-window.framework)
 include_directories(SFML/Frameworks/SFML.framework)
 include_directories(SFML/Frameworks/SFML.framework/Headers)
 include_directories(SFML/Frameworks/SFML.framework/Headers/Audio)
@@ -12,6 +29,7 @@ include_directories(SFML/Frameworks/SFML.framework/Headers/Graphics)
 include_directories(SFML/Frameworks/SFML.framework/Headers/Network)
 include_directories(SFML/Frameworks/SFML.framework/Headers/System)
 include_directories(SFML/Frameworks/SFML.framework/Headers/Window)
+include_directories(SFML/Frameworks/SFML.framework/Resources)
 include_directories(SFML/Frameworks/SFML.framework/Versions)
 include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0)
 include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers)
@@ -20,6 +38,7 @@ include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphi
 include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network)
 include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/System)
 include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window)
+include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources)
 include_directories(SFML/Frameworks/SFML.framework/Versions/Current)
 include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers)
 include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio)
@@ -27,6 +46,7 @@ include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers/Grap
 include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network)
 include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers/System)
 include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window)
+include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Resources)
 include_directories(SFML/include)
 include_directories(SFML/include/SFML)
 include_directories(SFML/include/SFML/Audio)
@@ -34,11 +54,622 @@ include_directories(SFML/include/SFML/Graphics)
 include_directories(SFML/include/SFML/Network)
 include_directories(SFML/include/SFML/System)
 include_directories(SFML/include/SFML/Window)
+include_directories(SFML/lib)
+include_directories(SFML/templates)
 include_directories("SFML/templates/SFML/SFML App.xctemplate")
+include_directories(src)
 
 add_executable(Nibbler
+        cmake-build-debug/cmake_install.cmake
+        cmake-build-debug/CMakeCache.txt
+        cmake-build-debug/Makefile
+        cmake-build-debug/Nibbler.cbp
+        "font/Spantaran (DEMO).otf"
+        img/apple.png
+        img/background.jpg
+        img/bar.jpg
+        img/cartoon-stone.png
+        img/donut.png
+        img/grave.png
+        img/pon2.png
+        img/ponchick.png
+        img/snake.png
+        img/snakeskin.png
+        img/stone-cartoon-png-2.png
+        img/stone.jpg
         inc/Game.hpp
+        inc/SFML.hpp
         inc/Snake.hpp
+        SFML/doc/html/AlResource_8hpp_source.html
+        SFML/doc/html/annotated.html
+        SFML/doc/html/Audio_2Export_8hpp_source.html
+        SFML/doc/html/Audio_8hpp_source.html
+        SFML/doc/html/bc_s.png
+        SFML/doc/html/bdwn.png
+        SFML/doc/html/BlendMode_8hpp_source.html
+        SFML/doc/html/CircleShape_8hpp_source.html
+        SFML/doc/html/classes.html
+        SFML/doc/html/classsf_1_1AlResource-members.html
+        SFML/doc/html/classsf_1_1AlResource.html
+        SFML/doc/html/classsf_1_1AlResource.png
+        SFML/doc/html/classsf_1_1CircleShape-members.html
+        SFML/doc/html/classsf_1_1CircleShape.html
+        SFML/doc/html/classsf_1_1CircleShape.png
+        SFML/doc/html/classsf_1_1Clipboard-members.html
+        SFML/doc/html/classsf_1_1Clipboard.html
+        SFML/doc/html/classsf_1_1Clock-members.html
+        SFML/doc/html/classsf_1_1Clock.html
+        SFML/doc/html/classsf_1_1Color-members.html
+        SFML/doc/html/classsf_1_1Color.html
+        SFML/doc/html/classsf_1_1Context-members.html
+        SFML/doc/html/classsf_1_1Context.html
+        SFML/doc/html/classsf_1_1Context.png
+        SFML/doc/html/classsf_1_1ConvexShape-members.html
+        SFML/doc/html/classsf_1_1ConvexShape.html
+        SFML/doc/html/classsf_1_1ConvexShape.png
+        SFML/doc/html/classsf_1_1Cursor-members.html
+        SFML/doc/html/classsf_1_1Cursor.html
+        SFML/doc/html/classsf_1_1Cursor.png
+        SFML/doc/html/classsf_1_1Drawable-members.html
+        SFML/doc/html/classsf_1_1Drawable.html
+        SFML/doc/html/classsf_1_1Drawable.png
+        SFML/doc/html/classsf_1_1Event-members.html
+        SFML/doc/html/classsf_1_1Event.html
+        SFML/doc/html/classsf_1_1FileInputStream-members.html
+        SFML/doc/html/classsf_1_1FileInputStream.html
+        SFML/doc/html/classsf_1_1FileInputStream.png
+        SFML/doc/html/classsf_1_1Font-members.html
+        SFML/doc/html/classsf_1_1Font.html
+        SFML/doc/html/classsf_1_1Ftp-members.html
+        SFML/doc/html/classsf_1_1Ftp.html
+        SFML/doc/html/classsf_1_1Ftp.png
+        SFML/doc/html/classsf_1_1Ftp_1_1DirectoryResponse-members.html
+        SFML/doc/html/classsf_1_1Ftp_1_1DirectoryResponse.html
+        SFML/doc/html/classsf_1_1Ftp_1_1DirectoryResponse.png
+        SFML/doc/html/classsf_1_1Ftp_1_1ListingResponse-members.html
+        SFML/doc/html/classsf_1_1Ftp_1_1ListingResponse.html
+        SFML/doc/html/classsf_1_1Ftp_1_1ListingResponse.png
+        SFML/doc/html/classsf_1_1Ftp_1_1Response-members.html
+        SFML/doc/html/classsf_1_1Ftp_1_1Response.html
+        SFML/doc/html/classsf_1_1Ftp_1_1Response.png
+        SFML/doc/html/classsf_1_1GlResource-members.html
+        SFML/doc/html/classsf_1_1GlResource.html
+        SFML/doc/html/classsf_1_1GlResource.png
+        SFML/doc/html/classsf_1_1GlResource_1_1TransientContextLock-members.html
+        SFML/doc/html/classsf_1_1GlResource_1_1TransientContextLock.html
+        SFML/doc/html/classsf_1_1GlResource_1_1TransientContextLock.png
+        SFML/doc/html/classsf_1_1Glyph-members.html
+        SFML/doc/html/classsf_1_1Glyph.html
+        SFML/doc/html/classsf_1_1Http-members.html
+        SFML/doc/html/classsf_1_1Http.html
+        SFML/doc/html/classsf_1_1Http.png
+        SFML/doc/html/classsf_1_1Http_1_1Request-members.html
+        SFML/doc/html/classsf_1_1Http_1_1Request.html
+        SFML/doc/html/classsf_1_1Http_1_1Response-members.html
+        SFML/doc/html/classsf_1_1Http_1_1Response.html
+        SFML/doc/html/classsf_1_1Image-members.html
+        SFML/doc/html/classsf_1_1Image.html
+        SFML/doc/html/classsf_1_1InputSoundFile-members.html
+        SFML/doc/html/classsf_1_1InputSoundFile.html
+        SFML/doc/html/classsf_1_1InputSoundFile.png
+        SFML/doc/html/classsf_1_1InputStream-members.html
+        SFML/doc/html/classsf_1_1InputStream.html
+        SFML/doc/html/classsf_1_1InputStream.png
+        SFML/doc/html/classsf_1_1IpAddress-members.html
+        SFML/doc/html/classsf_1_1IpAddress.html
+        SFML/doc/html/classsf_1_1Joystick-members.html
+        SFML/doc/html/classsf_1_1Joystick.html
+        SFML/doc/html/classsf_1_1Keyboard-members.html
+        SFML/doc/html/classsf_1_1Keyboard.html
+        SFML/doc/html/classsf_1_1Listener-members.html
+        SFML/doc/html/classsf_1_1Listener.html
+        SFML/doc/html/classsf_1_1Lock-members.html
+        SFML/doc/html/classsf_1_1Lock.html
+        SFML/doc/html/classsf_1_1Lock.png
+        SFML/doc/html/classsf_1_1MemoryInputStream-members.html
+        SFML/doc/html/classsf_1_1MemoryInputStream.html
+        SFML/doc/html/classsf_1_1MemoryInputStream.png
+        SFML/doc/html/classsf_1_1Mouse-members.html
+        SFML/doc/html/classsf_1_1Mouse.html
+        SFML/doc/html/classsf_1_1Music-members.html
+        SFML/doc/html/classsf_1_1Music.html
+        SFML/doc/html/classsf_1_1Music.png
+        SFML/doc/html/classsf_1_1Mutex-members.html
+        SFML/doc/html/classsf_1_1Mutex.html
+        SFML/doc/html/classsf_1_1Mutex.png
+        SFML/doc/html/classsf_1_1NonCopyable-members.html
+        SFML/doc/html/classsf_1_1NonCopyable.html
+        SFML/doc/html/classsf_1_1NonCopyable.png
+        SFML/doc/html/classsf_1_1OutputSoundFile-members.html
+        SFML/doc/html/classsf_1_1OutputSoundFile.html
+        SFML/doc/html/classsf_1_1OutputSoundFile.png
+        SFML/doc/html/classsf_1_1Packet-members.html
+        SFML/doc/html/classsf_1_1Packet.html
+        SFML/doc/html/classsf_1_1Rect-members.html
+        SFML/doc/html/classsf_1_1Rect.html
+        SFML/doc/html/classsf_1_1RectangleShape-members.html
+        SFML/doc/html/classsf_1_1RectangleShape.html
+        SFML/doc/html/classsf_1_1RectangleShape.png
+        SFML/doc/html/classsf_1_1RenderStates-members.html
+        SFML/doc/html/classsf_1_1RenderStates.html
+        SFML/doc/html/classsf_1_1RenderTarget-members.html
+        SFML/doc/html/classsf_1_1RenderTarget.html
+        SFML/doc/html/classsf_1_1RenderTarget.png
+        SFML/doc/html/classsf_1_1RenderTexture-members.html
+        SFML/doc/html/classsf_1_1RenderTexture.html
+        SFML/doc/html/classsf_1_1RenderTexture.png
+        SFML/doc/html/classsf_1_1RenderWindow-members.html
+        SFML/doc/html/classsf_1_1RenderWindow.html
+        SFML/doc/html/classsf_1_1RenderWindow.png
+        SFML/doc/html/classsf_1_1Sensor-members.html
+        SFML/doc/html/classsf_1_1Sensor.html
+        SFML/doc/html/classsf_1_1Shader-members.html
+        SFML/doc/html/classsf_1_1Shader.html
+        SFML/doc/html/classsf_1_1Shader.png
+        SFML/doc/html/classsf_1_1Shape-members.html
+        SFML/doc/html/classsf_1_1Shape.html
+        SFML/doc/html/classsf_1_1Shape.png
+        SFML/doc/html/classsf_1_1Socket-members.html
+        SFML/doc/html/classsf_1_1Socket.html
+        SFML/doc/html/classsf_1_1Socket.png
+        SFML/doc/html/classsf_1_1SocketSelector-members.html
+        SFML/doc/html/classsf_1_1SocketSelector.html
+        SFML/doc/html/classsf_1_1Sound-members.html
+        SFML/doc/html/classsf_1_1Sound.html
+        SFML/doc/html/classsf_1_1Sound.png
+        SFML/doc/html/classsf_1_1SoundBuffer-members.html
+        SFML/doc/html/classsf_1_1SoundBuffer.html
+        SFML/doc/html/classsf_1_1SoundBuffer.png
+        SFML/doc/html/classsf_1_1SoundBufferRecorder-members.html
+        SFML/doc/html/classsf_1_1SoundBufferRecorder.html
+        SFML/doc/html/classsf_1_1SoundBufferRecorder.png
+        SFML/doc/html/classsf_1_1SoundFileFactory-members.html
+        SFML/doc/html/classsf_1_1SoundFileFactory.html
+        SFML/doc/html/classsf_1_1SoundFileReader-members.html
+        SFML/doc/html/classsf_1_1SoundFileReader.html
+        SFML/doc/html/classsf_1_1SoundFileWriter-members.html
+        SFML/doc/html/classsf_1_1SoundFileWriter.html
+        SFML/doc/html/classsf_1_1SoundRecorder-members.html
+        SFML/doc/html/classsf_1_1SoundRecorder.html
+        SFML/doc/html/classsf_1_1SoundRecorder.png
+        SFML/doc/html/classsf_1_1SoundSource-members.html
+        SFML/doc/html/classsf_1_1SoundSource.html
+        SFML/doc/html/classsf_1_1SoundSource.png
+        SFML/doc/html/classsf_1_1SoundStream-members.html
+        SFML/doc/html/classsf_1_1SoundStream.html
+        SFML/doc/html/classsf_1_1SoundStream.png
+        SFML/doc/html/classsf_1_1Sprite-members.html
+        SFML/doc/html/classsf_1_1Sprite.html
+        SFML/doc/html/classsf_1_1Sprite.png
+        SFML/doc/html/classsf_1_1String-members.html
+        SFML/doc/html/classsf_1_1String.html
+        SFML/doc/html/classsf_1_1TcpListener-members.html
+        SFML/doc/html/classsf_1_1TcpListener.html
+        SFML/doc/html/classsf_1_1TcpListener.png
+        SFML/doc/html/classsf_1_1TcpSocket-members.html
+        SFML/doc/html/classsf_1_1TcpSocket.html
+        SFML/doc/html/classsf_1_1TcpSocket.png
+        SFML/doc/html/classsf_1_1Text-members.html
+        SFML/doc/html/classsf_1_1Text.html
+        SFML/doc/html/classsf_1_1Text.png
+        SFML/doc/html/classsf_1_1Texture-members.html
+        SFML/doc/html/classsf_1_1Texture.html
+        SFML/doc/html/classsf_1_1Texture.png
+        SFML/doc/html/classsf_1_1Thread-members.html
+        SFML/doc/html/classsf_1_1Thread.html
+        SFML/doc/html/classsf_1_1Thread.png
+        SFML/doc/html/classsf_1_1ThreadLocal-members.html
+        SFML/doc/html/classsf_1_1ThreadLocal.html
+        SFML/doc/html/classsf_1_1ThreadLocal.png
+        SFML/doc/html/classsf_1_1ThreadLocalPtr-members.html
+        SFML/doc/html/classsf_1_1ThreadLocalPtr.html
+        SFML/doc/html/classsf_1_1ThreadLocalPtr.png
+        SFML/doc/html/classsf_1_1Time-members.html
+        SFML/doc/html/classsf_1_1Time.html
+        SFML/doc/html/classsf_1_1Touch-members.html
+        SFML/doc/html/classsf_1_1Touch.html
+        SFML/doc/html/classsf_1_1Transform-members.html
+        SFML/doc/html/classsf_1_1Transform.html
+        SFML/doc/html/classsf_1_1Transformable-members.html
+        SFML/doc/html/classsf_1_1Transformable.html
+        SFML/doc/html/classsf_1_1Transformable.png
+        SFML/doc/html/classsf_1_1UdpSocket-members.html
+        SFML/doc/html/classsf_1_1UdpSocket.html
+        SFML/doc/html/classsf_1_1UdpSocket.png
+        SFML/doc/html/classsf_1_1Utf.html
+        SFML/doc/html/classsf_1_1Utf_3_0116_01_4-members.html
+        SFML/doc/html/classsf_1_1Utf_3_0116_01_4.html
+        SFML/doc/html/classsf_1_1Utf_3_0132_01_4-members.html
+        SFML/doc/html/classsf_1_1Utf_3_0132_01_4.html
+        SFML/doc/html/classsf_1_1Utf_3_018_01_4-members.html
+        SFML/doc/html/classsf_1_1Utf_3_018_01_4.html
+        SFML/doc/html/classsf_1_1Vector2-members.html
+        SFML/doc/html/classsf_1_1Vector2.html
+        SFML/doc/html/classsf_1_1Vector3-members.html
+        SFML/doc/html/classsf_1_1Vector3.html
+        SFML/doc/html/classsf_1_1Vertex-members.html
+        SFML/doc/html/classsf_1_1Vertex.html
+        SFML/doc/html/classsf_1_1VertexArray-members.html
+        SFML/doc/html/classsf_1_1VertexArray.html
+        SFML/doc/html/classsf_1_1VertexArray.png
+        SFML/doc/html/classsf_1_1VertexBuffer-members.html
+        SFML/doc/html/classsf_1_1VertexBuffer.html
+        SFML/doc/html/classsf_1_1VertexBuffer.png
+        SFML/doc/html/classsf_1_1VideoMode-members.html
+        SFML/doc/html/classsf_1_1VideoMode.html
+        SFML/doc/html/classsf_1_1View-members.html
+        SFML/doc/html/classsf_1_1View.html
+        SFML/doc/html/classsf_1_1Window-members.html
+        SFML/doc/html/classsf_1_1Window.html
+        SFML/doc/html/classsf_1_1Window.png
+        SFML/doc/html/Clipboard_8hpp_source.html
+        SFML/doc/html/Clock_8hpp_source.html
+        SFML/doc/html/closed.png
+        SFML/doc/html/Color_8hpp_source.html
+        SFML/doc/html/Config_8hpp_source.html
+        SFML/doc/html/Context_8hpp_source.html
+        SFML/doc/html/ContextSettings_8hpp_source.html
+        SFML/doc/html/ConvexShape_8hpp_source.html
+        SFML/doc/html/Cursor_8hpp_source.html
+        SFML/doc/html/deprecated.html
+        SFML/doc/html/dir_5cf786e58cbf7297a26339ae6e44357c.html
+        SFML/doc/html/dir_83d50c0b1f1eceb6f182949162e90861.html
+        SFML/doc/html/dir_89e9fb32471ae291b179a889144513db.html
+        SFML/doc/html/dir_c0a853e81d6f1c1f0a3eb7a27dc24256.html
+        SFML/doc/html/dir_d44c64559bbebec7f509842c48db8b23.html
+        SFML/doc/html/dir_dd49ddb3ba8035e4a328f8c5f31cda7e.html
+        SFML/doc/html/dir_e68e8157741866f444e17edd764ebbae.html
+        SFML/doc/html/dir_e71ec51a9abd604c65f6abb639f6ea75.html
+        SFML/doc/html/doc.png
+        SFML/doc/html/doxygen.css
+        SFML/doc/html/doxygen.png
+        SFML/doc/html/Drawable_8hpp_source.html
+        SFML/doc/html/dynsections.js
+        SFML/doc/html/Err_8hpp_source.html
+        SFML/doc/html/Event_8hpp_source.html
+        SFML/doc/html/FileInputStream_8hpp_source.html
+        SFML/doc/html/files.html
+        SFML/doc/html/folderclosed.png
+        SFML/doc/html/folderopen.png
+        SFML/doc/html/Font_8hpp_source.html
+        SFML/doc/html/Ftp_8hpp_source.html
+        SFML/doc/html/functions.html
+        SFML/doc/html/functions_0x7e.html
+        SFML/doc/html/functions_b.html
+        SFML/doc/html/functions_c.html
+        SFML/doc/html/functions_d.html
+        SFML/doc/html/functions_e.html
+        SFML/doc/html/functions_enum.html
+        SFML/doc/html/functions_eval.html
+        SFML/doc/html/functions_eval_b.html
+        SFML/doc/html/functions_eval_c.html
+        SFML/doc/html/functions_eval_d.html
+        SFML/doc/html/functions_eval_e.html
+        SFML/doc/html/functions_eval_f.html
+        SFML/doc/html/functions_eval_g.html
+        SFML/doc/html/functions_eval_h.html
+        SFML/doc/html/functions_eval_i.html
+        SFML/doc/html/functions_eval_j.html
+        SFML/doc/html/functions_eval_k.html
+        SFML/doc/html/functions_eval_l.html
+        SFML/doc/html/functions_eval_m.html
+        SFML/doc/html/functions_eval_n.html
+        SFML/doc/html/functions_eval_o.html
+        SFML/doc/html/functions_eval_p.html
+        SFML/doc/html/functions_eval_q.html
+        SFML/doc/html/functions_eval_r.html
+        SFML/doc/html/functions_eval_s.html
+        SFML/doc/html/functions_eval_t.html
+        SFML/doc/html/functions_eval_u.html
+        SFML/doc/html/functions_eval_v.html
+        SFML/doc/html/functions_eval_w.html
+        SFML/doc/html/functions_eval_x.html
+        SFML/doc/html/functions_eval_y.html
+        SFML/doc/html/functions_eval_z.html
+        SFML/doc/html/functions_f.html
+        SFML/doc/html/functions_func.html
+        SFML/doc/html/functions_func_0x7e.html
+        SFML/doc/html/functions_func_b.html
+        SFML/doc/html/functions_func_c.html
+        SFML/doc/html/functions_func_d.html
+        SFML/doc/html/functions_func_e.html
+        SFML/doc/html/functions_func_f.html
+        SFML/doc/html/functions_func_g.html
+        SFML/doc/html/functions_func_h.html
+        SFML/doc/html/functions_func_i.html
+        SFML/doc/html/functions_func_k.html
+        SFML/doc/html/functions_func_l.html
+        SFML/doc/html/functions_func_m.html
+        SFML/doc/html/functions_func_n.html
+        SFML/doc/html/functions_func_o.html
+        SFML/doc/html/functions_func_p.html
+        SFML/doc/html/functions_func_r.html
+        SFML/doc/html/functions_func_s.html
+        SFML/doc/html/functions_func_t.html
+        SFML/doc/html/functions_func_u.html
+        SFML/doc/html/functions_func_v.html
+        SFML/doc/html/functions_func_w.html
+        SFML/doc/html/functions_func_z.html
+        SFML/doc/html/functions_g.html
+        SFML/doc/html/functions_h.html
+        SFML/doc/html/functions_i.html
+        SFML/doc/html/functions_j.html
+        SFML/doc/html/functions_k.html
+        SFML/doc/html/functions_l.html
+        SFML/doc/html/functions_m.html
+        SFML/doc/html/functions_n.html
+        SFML/doc/html/functions_o.html
+        SFML/doc/html/functions_p.html
+        SFML/doc/html/functions_q.html
+        SFML/doc/html/functions_r.html
+        SFML/doc/html/functions_rela.html
+        SFML/doc/html/functions_s.html
+        SFML/doc/html/functions_t.html
+        SFML/doc/html/functions_type.html
+        SFML/doc/html/functions_u.html
+        SFML/doc/html/functions_v.html
+        SFML/doc/html/functions_vars.html
+        SFML/doc/html/functions_w.html
+        SFML/doc/html/functions_x.html
+        SFML/doc/html/functions_y.html
+        SFML/doc/html/functions_z.html
+        SFML/doc/html/globals.html
+        SFML/doc/html/globals_defs.html
+        SFML/doc/html/GlResource_8hpp_source.html
+        SFML/doc/html/Glsl_8hpp_source.html
+        SFML/doc/html/Glyph_8hpp_source.html
+        SFML/doc/html/GpuPreference_8hpp.html
+        SFML/doc/html/GpuPreference_8hpp_source.html
+        SFML/doc/html/Graphics_2Export_8hpp_source.html
+        SFML/doc/html/Graphics_8hpp_source.html
+        SFML/doc/html/group__audio.html
+        SFML/doc/html/group__graphics.html
+        SFML/doc/html/group__network.html
+        SFML/doc/html/group__system.html
+        SFML/doc/html/group__window.html
+        SFML/doc/html/hierarchy.html
+        SFML/doc/html/Http_8hpp_source.html
+        SFML/doc/html/Image_8hpp_source.html
+        SFML/doc/html/index.html
+        SFML/doc/html/InputSoundFile_8hpp_source.html
+        SFML/doc/html/InputStream_8hpp_source.html
+        SFML/doc/html/IpAddress_8hpp_source.html
+        SFML/doc/html/Joystick_8hpp_source.html
+        SFML/doc/html/jquery.js
+        SFML/doc/html/Keyboard_8hpp_source.html
+        SFML/doc/html/Listener_8hpp_source.html
+        SFML/doc/html/Lock_8hpp_source.html
+        SFML/doc/html/Main_8hpp_source.html
+        SFML/doc/html/mainpage_8hpp_source.html
+        SFML/doc/html/MemoryInputStream_8hpp_source.html
+        SFML/doc/html/menudata.js
+        SFML/doc/html/modules.html
+        SFML/doc/html/Mouse_8hpp_source.html
+        SFML/doc/html/Music_8hpp_source.html
+        SFML/doc/html/Mutex_8hpp_source.html
+        SFML/doc/html/namespacemembers.html
+        SFML/doc/html/namespacemembers_type.html
+        SFML/doc/html/namespaces.html
+        SFML/doc/html/namespacesf_1_1Glsl.html
+        SFML/doc/html/NativeActivity_8hpp_source.html
+        SFML/doc/html/nav_f.png
+        SFML/doc/html/nav_g.png
+        SFML/doc/html/nav_h.png
+        SFML/doc/html/Network_2Export_8hpp_source.html
+        SFML/doc/html/Network_8hpp_source.html
+        SFML/doc/html/NonCopyable_8hpp_source.html
+        SFML/doc/html/open.png
+        SFML/doc/html/OpenGL_8hpp_source.html
+        SFML/doc/html/OutputSoundFile_8hpp_source.html
+        SFML/doc/html/Packet_8hpp_source.html
+        SFML/doc/html/pages.html
+        SFML/doc/html/PrimitiveType_8hpp_source.html
+        SFML/doc/html/Rect_8hpp_source.html
+        SFML/doc/html/RectangleShape_8hpp_source.html
+        SFML/doc/html/RenderStates_8hpp_source.html
+        SFML/doc/html/RenderTarget_8hpp_source.html
+        SFML/doc/html/RenderTexture_8hpp_source.html
+        SFML/doc/html/RenderWindow_8hpp_source.html
+        SFML/doc/html/Sensor_8hpp_source.html
+        SFML/doc/html/Shader_8hpp_source.html
+        SFML/doc/html/Shape_8hpp_source.html
+        SFML/doc/html/Sleep_8hpp_source.html
+        SFML/doc/html/Socket_8hpp_source.html
+        SFML/doc/html/SocketHandle_8hpp_source.html
+        SFML/doc/html/SocketSelector_8hpp_source.html
+        SFML/doc/html/Sound_8hpp_source.html
+        SFML/doc/html/SoundBuffer_8hpp_source.html
+        SFML/doc/html/SoundBufferRecorder_8hpp_source.html
+        SFML/doc/html/SoundFileFactory_8hpp_source.html
+        SFML/doc/html/SoundFileReader_8hpp_source.html
+        SFML/doc/html/SoundFileWriter_8hpp_source.html
+        SFML/doc/html/SoundRecorder_8hpp_source.html
+        SFML/doc/html/SoundSource_8hpp_source.html
+        SFML/doc/html/SoundStream_8hpp_source.html
+        SFML/doc/html/splitbar.png
+        SFML/doc/html/Sprite_8hpp_source.html
+        SFML/doc/html/String_8hpp_source.html
+        SFML/doc/html/structsf_1_1BlendMode-members.html
+        SFML/doc/html/structsf_1_1BlendMode.html
+        SFML/doc/html/structsf_1_1ContextSettings-members.html
+        SFML/doc/html/structsf_1_1ContextSettings.html
+        SFML/doc/html/structsf_1_1Event_1_1JoystickButtonEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1JoystickButtonEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1JoystickConnectEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1JoystickConnectEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1JoystickMoveEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1JoystickMoveEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1KeyEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1KeyEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1MouseButtonEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1MouseButtonEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1MouseMoveEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1MouseMoveEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1MouseWheelEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1MouseWheelEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1MouseWheelScrollEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1MouseWheelScrollEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1SensorEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1SensorEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1SizeEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1SizeEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1TextEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1TextEvent.html
+        SFML/doc/html/structsf_1_1Event_1_1TouchEvent-members.html
+        SFML/doc/html/structsf_1_1Event_1_1TouchEvent.html
+        SFML/doc/html/structsf_1_1Font_1_1Info-members.html
+        SFML/doc/html/structsf_1_1Font_1_1Info.html
+        SFML/doc/html/structsf_1_1Joystick_1_1Identification-members.html
+        SFML/doc/html/structsf_1_1Joystick_1_1Identification.html
+        SFML/doc/html/structsf_1_1Music_1_1Span-members.html
+        SFML/doc/html/structsf_1_1Music_1_1Span.html
+        SFML/doc/html/structsf_1_1Shader_1_1CurrentTextureType.html
+        SFML/doc/html/structsf_1_1SoundFileReader_1_1Info-members.html
+        SFML/doc/html/structsf_1_1SoundFileReader_1_1Info.html
+        SFML/doc/html/structsf_1_1SoundStream_1_1Chunk-members.html
+        SFML/doc/html/structsf_1_1SoundStream_1_1Chunk.html
+        SFML/doc/html/sync_off.png
+        SFML/doc/html/sync_on.png
+        SFML/doc/html/System_2Export_8hpp_source.html
+        SFML/doc/html/System_8hpp_source.html
+        SFML/doc/html/tab_a.png
+        SFML/doc/html/tab_b.png
+        SFML/doc/html/tab_h.png
+        SFML/doc/html/tab_s.png
+        SFML/doc/html/tabs.css
+        SFML/doc/html/TcpListener_8hpp_source.html
+        SFML/doc/html/TcpSocket_8hpp_source.html
+        SFML/doc/html/Text_8hpp_source.html
+        SFML/doc/html/Texture_8hpp_source.html
+        SFML/doc/html/Thread_8hpp_source.html
+        SFML/doc/html/ThreadLocal_8hpp_source.html
+        SFML/doc/html/ThreadLocalPtr_8hpp_source.html
+        SFML/doc/html/Time_8hpp_source.html
+        SFML/doc/html/Touch_8hpp_source.html
+        SFML/doc/html/Transform_8hpp_source.html
+        SFML/doc/html/Transformable_8hpp_source.html
+        SFML/doc/html/UdpSocket_8hpp_source.html
+        SFML/doc/html/Utf_8hpp_source.html
+        SFML/doc/html/Vector2_8hpp_source.html
+        SFML/doc/html/Vector3_8hpp_source.html
+        SFML/doc/html/Vertex_8hpp_source.html
+        SFML/doc/html/VertexArray_8hpp_source.html
+        SFML/doc/html/VertexBuffer_8hpp_source.html
+        SFML/doc/html/VideoMode_8hpp_source.html
+        SFML/doc/html/View_8hpp_source.html
+        SFML/doc/html/Window_2Export_8hpp_source.html
+        SFML/doc/html/Window_2Window_8hpp_source.html
+        SFML/doc/html/Window_8hpp_source.html
+        SFML/doc/html/WindowHandle_8hpp_source.html
+        SFML/doc/html/WindowStyle_8hpp_source.html
+        SFML/examples/cocoa/cocoa.app/Contents/MacOS/cocoa
+        SFML/examples/cocoa/cocoa.app/Contents/Resources/blue.png
+        SFML/examples/cocoa/cocoa.app/Contents/Resources/Credits.rtf
+        SFML/examples/cocoa/cocoa.app/Contents/Resources/green.png
+        SFML/examples/cocoa/cocoa.app/Contents/Resources/icon.icns
+        SFML/examples/cocoa/cocoa.app/Contents/Resources/logo.png
+        SFML/examples/cocoa/cocoa.app/Contents/Resources/MainMenu.nib
+        SFML/examples/cocoa/cocoa.app/Contents/Resources/red.png
+        SFML/examples/cocoa/cocoa.app/Contents/Resources/sansation.ttf
+        SFML/examples/cocoa/cocoa.app/Contents/Info.plist
+        SFML/examples/cocoa/CocoaAppDelegate.h
+        SFML/examples/cocoa/CocoaAppDelegate.mm
+        SFML/examples/cocoa/main.m
+        SFML/examples/cocoa/NSString+stdstring.h
+        SFML/examples/cocoa/NSString+stdstring.mm
+        SFML/examples/ftp/ftp
+        SFML/examples/ftp/Ftp.cpp
+        SFML/examples/island/resources/sansation.ttf
+        SFML/examples/island/resources/terrain.frag
+        SFML/examples/island/resources/terrain.vert
+        SFML/examples/island/island
+        SFML/examples/island/Island.cpp
+        SFML/examples/joystick/resources/sansation.ttf
+        SFML/examples/joystick/joystick
+        SFML/examples/joystick/Joystick.cpp
+        SFML/examples/opengl/resources/background.jpg
+        SFML/examples/opengl/resources/sansation.ttf
+        SFML/examples/opengl/resources/texture.jpg
+        SFML/examples/opengl/opengl
+        SFML/examples/opengl/OpenGL.cpp
+        SFML/examples/pong/resources/ball.wav
+        SFML/examples/pong/resources/sansation.ttf
+        SFML/examples/pong/pong
+        SFML/examples/pong/Pong.cpp
+        SFML/examples/shader/resources/background.jpg
+        SFML/examples/shader/resources/billboard.frag
+        SFML/examples/shader/resources/billboard.geom
+        SFML/examples/shader/resources/billboard.vert
+        SFML/examples/shader/resources/blink.frag
+        SFML/examples/shader/resources/blur.frag
+        SFML/examples/shader/resources/devices.png
+        SFML/examples/shader/resources/edge.frag
+        SFML/examples/shader/resources/logo.png
+        SFML/examples/shader/resources/pixelate.frag
+        SFML/examples/shader/resources/sansation.ttf
+        SFML/examples/shader/resources/sfml.png
+        SFML/examples/shader/resources/storm.vert
+        SFML/examples/shader/resources/text-background.png
+        SFML/examples/shader/resources/wave.vert
+        SFML/examples/shader/Effect.hpp
+        SFML/examples/shader/shader
+        SFML/examples/shader/Shader.cpp
+        SFML/examples/sockets/sockets
+        SFML/examples/sockets/Sockets.cpp
+        SFML/examples/sockets/TCP.cpp
+        SFML/examples/sockets/UDP.cpp
+        SFML/examples/sound/resources/canary.wav
+        SFML/examples/sound/resources/ding.flac
+        SFML/examples/sound/resources/orchestral.ogg
+        SFML/examples/sound/sound
+        SFML/examples/sound/Sound.cpp
+        SFML/examples/sound-capture/sound-capture
+        SFML/examples/sound-capture/SoundCapture.cpp
+        SFML/examples/voip/Client.cpp
+        SFML/examples/voip/Server.cpp
+        SFML/examples/voip/voip
+        SFML/examples/voip/VoIP.cpp
+        SFML/examples/window/window
+        SFML/examples/window/Window.cpp
+        SFML/extlibs/FLAC.framework/Versions/A/Resources/Info.plist
+        SFML/extlibs/FLAC.framework/Versions/A/FLAC
+        SFML/extlibs/FLAC.framework/Versions/Current/Resources/Info.plist
+        SFML/extlibs/freetype.framework/Versions/A/Resources/Info.plist
+        SFML/extlibs/freetype.framework/Versions/A/freetype
+        SFML/extlibs/freetype.framework/Versions/Current/Resources/Info.plist
+        SFML/extlibs/ogg.framework/Versions/A/Resources/Info.plist
+        SFML/extlibs/ogg.framework/Versions/A/ogg
+        SFML/extlibs/ogg.framework/Versions/Current/Resources/Info.plist
+        SFML/extlibs/OpenAL.framework/Versions/A/Resources/Info.plist
+        SFML/extlibs/OpenAL.framework/Versions/A/OpenAL
+        SFML/extlibs/OpenAL.framework/Versions/Current/Resources/Info.plist
+        SFML/extlibs/vorbis.framework/Versions/A/Resources/Info.plist
+        SFML/extlibs/vorbis.framework/Versions/A/vorbis
+        SFML/extlibs/vorbis.framework/Versions/Current/Resources/Info.plist
+        SFML/extlibs/vorbisenc.framework/Versions/A/Resources/Info.plist
+        SFML/extlibs/vorbisenc.framework/Versions/A/vorbisenc
+        SFML/extlibs/vorbisenc.framework/Versions/Current/Resources/Info.plist
+        SFML/extlibs/vorbisfile.framework/Versions/A/Resources/Info.plist
+        SFML/extlibs/vorbisfile.framework/Versions/A/vorbisfile
+        SFML/extlibs/vorbisfile.framework/Versions/Current/Resources/Info.plist
+        SFML/Frameworks/freetype.framework/Versions/A/Resources/Info.plist
+        SFML/Frameworks/freetype.framework/Versions/A/freetype
+        SFML/Frameworks/freetype.framework/Versions/Current/Resources/Info.plist
+        SFML/Frameworks/sfml-audio.framework/Versions/2.5.0/Resources/Info.plist
+        SFML/Frameworks/sfml-audio.framework/Versions/2.5.0/sfml-audio
+        SFML/Frameworks/sfml-audio.framework/Versions/Current/Resources/Info.plist
+        SFML/Frameworks/sfml-graphics.framework/Versions/2.5.0/Resources/Info.plist
+        SFML/Frameworks/sfml-graphics.framework/Versions/2.5.0/sfml-graphics
+        SFML/Frameworks/sfml-graphics.framework/Versions/Current/Resources/Info.plist
+        SFML/Frameworks/sfml-network.framework/Versions/2.5.0/Resources/Info.plist
+        SFML/Frameworks/sfml-network.framework/Versions/2.5.0/sfml-network
+        SFML/Frameworks/sfml-network.framework/Versions/Current/Resources/Info.plist
+        SFML/Frameworks/sfml-system.framework/Versions/2.5.0/Resources/Info.plist
+        SFML/Frameworks/sfml-system.framework/Versions/2.5.0/sfml-system
+        SFML/Frameworks/sfml-system.framework/Versions/Current/Resources/Info.plist
+        SFML/Frameworks/sfml-window.framework/Versions/2.5.0/Resources/Info.plist
+        SFML/Frameworks/sfml-window.framework/Versions/2.5.0/sfml-window
+        SFML/Frameworks/sfml-window.framework/Versions/Current/Resources/Info.plist
         SFML/Frameworks/SFML.framework/Headers/Audio/AlResource.hpp
         SFML/Frameworks/SFML.framework/Headers/Audio/Export.hpp
         SFML/Frameworks/SFML.framework/Headers/Audio/InputSoundFile.hpp
@@ -137,6 +768,11 @@ add_executable(Nibbler
         SFML/Frameworks/SFML.framework/Headers/Window/Window.hpp
         SFML/Frameworks/SFML.framework/Headers/Window/WindowHandle.hpp
         SFML/Frameworks/SFML.framework/Headers/Window/WindowStyle.hpp
+        SFML/Frameworks/SFML.framework/Resources/CMake/SFMLConfig.cmake
+        SFML/Frameworks/SFML.framework/Resources/CMake/SFMLConfigDependencies.cmake
+        SFML/Frameworks/SFML.framework/Resources/CMake/SFMLConfigVersion.cmake
+        SFML/Frameworks/SFML.framework/Resources/CMake/SFMLSharedTargets-release.cmake
+        SFML/Frameworks/SFML.framework/Resources/CMake/SFMLSharedTargets.cmake
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/AlResource.hpp
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/Export.hpp
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/InputSoundFile.hpp
@@ -244,6 +880,13 @@ add_executable(Nibbler
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/OpenGL.hpp
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/System.hpp
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window.hpp
+        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/CMake/SFMLConfig.cmake
+        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/CMake/SFMLConfigDependencies.cmake
+        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/CMake/SFMLConfigVersion.cmake
+        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/CMake/SFMLSharedTargets-release.cmake
+        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/CMake/SFMLSharedTargets.cmake
+        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/Info.plist
+        SFML/Frameworks/SFML.framework/Versions/2.5.0/SFML
         SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/AlResource.hpp
         SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/Export.hpp
         SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/InputSoundFile.hpp
@@ -351,6 +994,12 @@ add_executable(Nibbler
         SFML/Frameworks/SFML.framework/Versions/Current/Headers/OpenGL.hpp
         SFML/Frameworks/SFML.framework/Versions/Current/Headers/System.hpp
         SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window.hpp
+        SFML/Frameworks/SFML.framework/Versions/Current/Resources/CMake/SFMLConfig.cmake
+        SFML/Frameworks/SFML.framework/Versions/Current/Resources/CMake/SFMLConfigDependencies.cmake
+        SFML/Frameworks/SFML.framework/Versions/Current/Resources/CMake/SFMLConfigVersion.cmake
+        SFML/Frameworks/SFML.framework/Versions/Current/Resources/CMake/SFMLSharedTargets-release.cmake
+        SFML/Frameworks/SFML.framework/Versions/Current/Resources/CMake/SFMLSharedTargets.cmake
+        SFML/Frameworks/SFML.framework/Versions/Current/Resources/Info.plist
         SFML/include/SFML/Audio/AlResource.hpp
         SFML/include/SFML/Audio/Export.hpp
         SFML/include/SFML/Audio/InputSoundFile.hpp
@@ -458,10 +1107,35 @@ add_executable(Nibbler
         SFML/include/SFML/OpenGL.hpp
         SFML/include/SFML/System.hpp
         SFML/include/SFML/Window.hpp
+        SFML/lib/libsfml-audio.2.5.0.dylib
+        SFML/lib/libsfml-graphics.2.5.0.dylib
+        SFML/lib/libsfml-network.2.5.0.dylib
+        SFML/lib/libsfml-system.2.5.0.dylib
+        SFML/lib/libsfml-window.2.5.0.dylib
+        "SFML/templates/SFML/SFML App.xctemplate/cute_image.jpg"
+        "SFML/templates/SFML/SFML App.xctemplate/icon.png"
         "SFML/templates/SFML/SFML App.xctemplate/main.cpp"
+        "SFML/templates/SFML/SFML App.xctemplate/nice_music.ogg"
         "SFML/templates/SFML/SFML App.xctemplate/ResourcePath.hpp"
         "SFML/templates/SFML/SFML App.xctemplate/ResourcePath.mm"
+        "SFML/templates/SFML/SFML App.xctemplate/sansation.ttf"
+        "SFML/templates/SFML/SFML App.xctemplate/TemplateIcon.icns"
+        "SFML/templates/SFML/SFML App.xctemplate/TemplateInfo.plist"
+        "SFML/templates/SFML/SFML Base.xctemplate/TemplateInfo.plist"
+        "SFML/templates/SFML/SFML Bundle.xctemplate/TemplateInfo.plist"
+        "SFML/templates/SFML/SFML CLT.xctemplate/cute_image.jpg"
+        "SFML/templates/SFML/SFML CLT.xctemplate/icon.png"
         "SFML/templates/SFML/SFML CLT.xctemplate/main.cpp"
+        "SFML/templates/SFML/SFML CLT.xctemplate/nice_music.ogg"
+        "SFML/templates/SFML/SFML CLT.xctemplate/sansation.ttf"
+        "SFML/templates/SFML/SFML CLT.xctemplate/TemplateIcon.icns"
+        "SFML/templates/SFML/SFML CLT.xctemplate/TemplateInfo.plist"
+        "SFML/templates/SFML/SFML Compiler.xctemplate/TemplateInfo.plist"
+        "SFML/templates/SFML/SFML Linker.xctemplate/TemplateInfo.plist"
+        SFML/changelog.md
+        SFML/license.md
+        SFML/readme.md
         src/Game.cpp
         src/main.cpp
-        src/Snake.cpp src/SFML.cpp inc/SFML.hpp)
+        src/SFML.cpp
+        src/Snake.cpp src/Menu.cpp inc/Menu.hpp)
