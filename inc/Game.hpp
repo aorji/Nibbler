@@ -15,7 +15,8 @@ public:
     void destroyMap();
     void fillMap();
     void printMap();
-    void pushSnake(char c);
+    void fillSnakeWith(char c);
+    void moveSnake(char c);
 
     void createFood();
     void createBarriers(long size);
