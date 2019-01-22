@@ -10,7 +10,7 @@ Menu::~Menu() = default;
 void
 Menu::init(){
     if (!font.loadFromFile("font/Spantaran (DEMO).otf")){
-        //EXEPTION
+        //ERROR
     }
     menu[0].setFont(font);
     menu[0].setFillColor(sf::Color(49, 149, 20));
@@ -21,7 +21,7 @@ Menu::init(){
     menu[0].setOrigin(textRect.left + textRect.width/2.0f,
                    textRect.top);
     menu[0].setPosition(windowSize/2.0f,
-                        (windowSize/NUMBER_OF_MENU_FIELD)/2);
+                        windowSize/(NUMBER_OF_MENU_FIELD * 2));
 
     menu[1].setFont(font);
     menu[1].setFillColor(sf::Color(49, 145, 20));
@@ -32,7 +32,7 @@ Menu::init(){
     menu[1].setOrigin(textRect.left + textRect.width/2.0f,
                       textRect.top);
     menu[1].setPosition(windowSize/2.0f,
-                        (windowSize/NUMBER_OF_MENU_FIELD)/2 + windowSize/NUMBER_OF_MENU_FIELD);
+                        windowSize/(NUMBER_OF_MENU_FIELD * 2) + windowSize/NUMBER_OF_MENU_FIELD);
 
     menu[2].setFont(font);
     menu[2].setFillColor(sf::Color::White);
@@ -43,7 +43,7 @@ Menu::init(){
     menu[2].setOrigin(textRect.left + textRect.width/2.0f,
                       textRect.top);
     menu[2].setPosition(windowSize/2.0f,
-                        (windowSize/NUMBER_OF_MENU_FIELD)/2 + windowSize/NUMBER_OF_MENU_FIELD * 2);
+                        windowSize/(NUMBER_OF_MENU_FIELD * 2) + windowSize/NUMBER_OF_MENU_FIELD * 2 - 1);
     selectedField = 1;
     open = true;
 }
