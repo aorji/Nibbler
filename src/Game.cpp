@@ -9,6 +9,7 @@ Game::Game(long screenLength) {
     createMap();
     snake = Snake(screenLength);
     fillMap();
+    pushSnake('s');
     createBarriers(screenLength / 4);
     createFood();
 }
@@ -36,6 +37,13 @@ Game::fillMap() {
 }
 
 void
+Game::pushSnake(char c) {
+    std::vector<std::pair<int, int>> snakeBody = snake.getBody();
+    for(auto v : snakeBody)
+        map[v.second][v.first] = c;
+}
+
+void
 Game::printMap() {
     for (auto i = 0; i < screenLength; ++i) {
         for (auto j = 0; j < screenLength; ++j)
@@ -46,21 +54,15 @@ Game::printMap() {
 
 bool
 Game::update(char c) {
-    std::cout << "Score = " << score << std::endl;
-
 //  extendTail
     static int flag = 0;
     if (flag) {
         snake.extendTail();
         flag = 0;
     }
-//  refill snake by '.'
-
-    std::vector<std::pair<int, int>> snakeBody = snake.getBody();
-    for (auto v : snakeBody)
-        map[v.second][v.first] = '.';
+//  clear snake
+    pushSnake('.');
 //  move snake
-
     if (c == 'w' || c == 126)
         snake.moveSnake(UpArrow);
     else if (c == 's' || c == 125)
@@ -71,24 +73,18 @@ Game::update(char c) {
         snake.moveSnake(RightArrow);
 
 //  checkCollisions
-    if (checkCollisions()) {
+    if (checkCollisions())
         return false;
-    }
-
-    snakeBody = snake.getBody();
-    if (map[snakeBody.at(0).second][snakeBody.at(0).first] == 'f' && ++score){
+//  food
+    if (map[snake.getBody().at(0).second][snake.getBody().at(0).first] == 'f' && ++score){
         flag = 1;
-        if (!(score % 5)) {
+        if (!(score % 5))
             changeLevel();
-        }
-        for(auto v : snakeBody) {
-            map[v.second][v.first] = 's';
-        }
+        pushSnake('s');
         createFood();
     }
 //  add snake to map
-    for (auto v : snakeBody)
-        map[v.second][v.first] = 's';
+    pushSnake('s');
     return true;
 }
 
