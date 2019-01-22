@@ -3411,6 +3411,9 @@
 		<Unit filename="/Users/aorji/Desktop/Nibbler/inc/Game.hpp">
 			<Option target="Nibbler"/>
 		</Unit>
+		<Unit filename="/Users/aorji/Desktop/Nibbler/inc/GameOver.hpp">
+			<Option target="Nibbler"/>
+		</Unit>
 		<Unit filename="/Users/aorji/Desktop/Nibbler/inc/Menu.hpp">
 			<Option target="Nibbler"/>
 		</Unit>
@@ -3424,6 +3427,9 @@
 			<Option target="Nibbler"/>
 		</Unit>
 		<Unit filename="/Users/aorji/Desktop/Nibbler/src/Game.cpp">
+			<Option target="Nibbler"/>
+		</Unit>
+		<Unit filename="/Users/aorji/Desktop/Nibbler/src/GameOver.cpp">
 			<Option target="Nibbler"/>
 		</Unit>
 		<Unit filename="/Users/aorji/Desktop/Nibbler/src/Menu.cpp">

@@ -26,6 +26,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Nibbler.dir/src/Snake.cpp.o"
   "CMakeFiles/Nibbler.dir/src/Menu.cpp.o"
   "CMakeFiles/Nibbler.dir/src/SideBar.cpp.o"
+  "CMakeFiles/Nibbler.dir/src/GameOver.cpp.o"
   "Nibbler.pdb"
   "Nibbler"
 )

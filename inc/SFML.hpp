@@ -8,6 +8,7 @@
 #include <SFML/Graphics.hpp>
 #include "Menu.hpp"
 #include "Game.hpp"
+#include "GameOver.hpp"
 
 class Sfml {
 public:

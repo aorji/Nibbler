@@ -3,7 +3,6 @@
 //
 
 #include <SFML.hpp>
-#include <SFML/Graphics.hpp>
 #include <iostream>
 
 Sfml::Sfml(int windowSize, int squareSize): windowSize(windowSize),
@@ -85,8 +84,10 @@ void Sfml::draw(char **map){
 void Sfml::execute(Game &game){
 	char c = 123;
     Menu menu(windowSize);
+    GameOver gameOver(windowSize);
     menu.init();
 
+    sf::Time gameOverTime = sf::seconds(1);
     while (window.isOpen()) {
         sf::Time delayTime = sf::microseconds(300000 / game.getLevel());
         sf::Event event;
@@ -96,8 +97,12 @@ void Sfml::execute(Game &game){
             if (event.key.code == sf::Keyboard::Enter){
                 if (menu.isOpen() || menu.getSelectedField() == 1)
                     menu.close();
-                if (menu.isOpen() || menu.getSelectedField() == 2)
+                if (menu.isOpen() || menu.getSelectedField() == 2) {
+                    gameOver.init();
+                    gameOver.draw(window);
+                    sf::sleep(gameOverTime);
                     window.close();
+                }
             }
             if (event.key.code == sf::Keyboard::Up){
                 if (menu.isOpen()){
@@ -122,12 +127,14 @@ void Sfml::execute(Game &game){
             menu.draw(window);
         else {
             if (!game.update(c)){
-            	window.close();
-                break;
+                gameOver.init();
+                gameOver.draw(window);
+                sf::sleep(gameOverTime);
+                window.close();
             }
             draw(game.getMap());
         }
         sf::sleep(delayTime);
-    }	
+    }
 }
 

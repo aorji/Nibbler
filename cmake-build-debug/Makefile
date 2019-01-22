@@ -717,6 +717,33 @@ src/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/GameOver.o: src/GameOver.cpp.o
+
+.PHONY : src/GameOver.o
+
+# target to build an object file
+src/GameOver.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/GameOver.cpp.o
+.PHONY : src/GameOver.cpp.o
+
+src/GameOver.i: src/GameOver.cpp.i
+
+.PHONY : src/GameOver.i
+
+# target to preprocess a source file
+src/GameOver.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/GameOver.cpp.i
+.PHONY : src/GameOver.cpp.i
+
+src/GameOver.s: src/GameOver.cpp.s
+
+.PHONY : src/GameOver.s
+
+# target to generate assembly for a file
+src/GameOver.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/GameOver.cpp.s
+.PHONY : src/GameOver.cpp.s
+
 src/Menu.o: src/Menu.cpp.o
 
 .PHONY : src/Menu.o
@@ -927,6 +954,9 @@ help:
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
+	@echo "... src/GameOver.o"
+	@echo "... src/GameOver.i"
+	@echo "... src/GameOver.s"
 	@echo "... src/Menu.o"
 	@echo "... src/Menu.i"
 	@echo "... src/Menu.s"
