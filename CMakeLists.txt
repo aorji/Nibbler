@@ -1138,4 +1138,4 @@ add_executable(Nibbler
         src/Game.cpp
         src/main.cpp
         src/SFML.cpp
-        src/Snake.cpp src/Menu.cpp inc/Menu.hpp)
+        src/Snake.cpp src/Menu.cpp inc/Menu.hpp src/SideBar.cpp inc/SideBar.hpp)

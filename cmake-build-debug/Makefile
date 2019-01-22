@@ -771,6 +771,33 @@ src/SFML.cpp.s:
 	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SFML.cpp.s
 .PHONY : src/SFML.cpp.s
 
+src/SideBar.o: src/SideBar.cpp.o
+
+.PHONY : src/SideBar.o
+
+# target to build an object file
+src/SideBar.cpp.o:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SideBar.cpp.o
+.PHONY : src/SideBar.cpp.o
+
+src/SideBar.i: src/SideBar.cpp.i
+
+.PHONY : src/SideBar.i
+
+# target to preprocess a source file
+src/SideBar.cpp.i:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SideBar.cpp.i
+.PHONY : src/SideBar.cpp.i
+
+src/SideBar.s: src/SideBar.cpp.s
+
+.PHONY : src/SideBar.s
+
+# target to generate assembly for a file
+src/SideBar.cpp.s:
+	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SideBar.cpp.s
+.PHONY : src/SideBar.cpp.s
+
 src/Snake.o: src/Snake.cpp.o
 
 .PHONY : src/Snake.o
@@ -906,6 +933,9 @@ help:
 	@echo "... src/SFML.o"
 	@echo "... src/SFML.i"
 	@echo "... src/SFML.s"
+	@echo "... src/SideBar.o"
+	@echo "... src/SideBar.i"
+	@echo "... src/SideBar.s"
 	@echo "... src/Snake.o"
 	@echo "... src/Snake.i"
 	@echo "... src/Snake.s"
