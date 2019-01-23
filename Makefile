@@ -4,9 +4,10 @@ SRC_DIR =   ./src/
 INC_DIR =   ./inc/
 
 CC      =   clang++
-FLAGS   =   -Wall -Wextra -Werror
+FLAGS   =
 SRC     =   main.cpp Snake.cpp Game.cpp SFML.cpp \
-			Menu.cpp GameOver.cpp Exception.cpp
+			Menu.cpp GameOver.cpp Exception.cpp \
+			SideBar.cpp
 OBJ     =   $(addprefix $(OBJ_DIR), $(SRC:.cpp=.o))
 HDRS    =   -I $(INC_DIR)
 

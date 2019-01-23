@@ -20,7 +20,7 @@ GameOver::init(){
     sf::FloatRect textRect = text.getLocalBounds();
     text.setOrigin(textRect.left + textRect.width/2.0f,
                       textRect.top + textRect.height/2.0f);
-    text.setPosition(windowSize/2.0f, windowSize/2);
+    text.setPosition((windowSize + windowSize/3)/2.0f, windowSize/2);
 
 }
 //

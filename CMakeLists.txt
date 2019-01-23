@@ -1,35 +1,30 @@
 cmake_minimum_required(VERSION 3.13)
-project(Nibbler)
+project(test)
 
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 include_directories(cmake-build-debug)
+include_directories(data)
 include_directories(font)
 include_directories(img)
 include_directories(inc)
 include_directories(SFML)
+include_directories(SFML/examples)
 include_directories(SFML/examples/cocoa)
+include_directories(SFML/examples/ftp)
+include_directories(SFML/examples/island)
+include_directories(SFML/examples/joystick)
+include_directories(SFML/examples/opengl)
+include_directories(SFML/examples/pong)
 include_directories(SFML/examples/shader)
+include_directories(SFML/examples/sockets)
+include_directories(SFML/examples/sound)
+include_directories(SFML/examples/sound-capture)
+include_directories(SFML/examples/voip)
+include_directories(SFML/examples/window)
 include_directories(SFML/Frameworks)
-include_directories(SFML/Frameworks/freetype.framework)
-include_directories(SFML/Frameworks/freetype.framework/Resources)
-include_directories(SFML/Frameworks/freetype.framework/Versions)
-include_directories(SFML/Frameworks/freetype.framework/Versions/A)
-include_directories(SFML/Frameworks/freetype.framework/Versions/Current)
-include_directories(SFML/Frameworks/sfml-audio.framework)
-include_directories(SFML/Frameworks/sfml-graphics.framework)
-include_directories(SFML/Frameworks/sfml-network.framework)
-include_directories(SFML/Frameworks/sfml-system.framework)
-include_directories(SFML/Frameworks/sfml-window.framework)
 include_directories(SFML/Frameworks/SFML.framework)
-include_directories(SFML/Frameworks/SFML.framework/Headers)
-include_directories(SFML/Frameworks/SFML.framework/Headers/Audio)
-include_directories(SFML/Frameworks/SFML.framework/Headers/Graphics)
-include_directories(SFML/Frameworks/SFML.framework/Headers/Network)
-include_directories(SFML/Frameworks/SFML.framework/Headers/System)
-include_directories(SFML/Frameworks/SFML.framework/Headers/Window)
-include_directories(SFML/Frameworks/SFML.framework/Resources)
 include_directories(SFML/Frameworks/SFML.framework/Versions)
 include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0)
 include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers)
@@ -38,15 +33,6 @@ include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Graphi
 include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Network)
 include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/System)
 include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window)
-include_directories(SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources)
-include_directories(SFML/Frameworks/SFML.framework/Versions/Current)
-include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers)
-include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio)
-include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics)
-include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network)
-include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers/System)
-include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window)
-include_directories(SFML/Frameworks/SFML.framework/Versions/Current/Resources)
 include_directories(SFML/include)
 include_directories(SFML/include/SFML)
 include_directories(SFML/include/SFML/Audio)
@@ -54,17 +40,18 @@ include_directories(SFML/include/SFML/Graphics)
 include_directories(SFML/include/SFML/Network)
 include_directories(SFML/include/SFML/System)
 include_directories(SFML/include/SFML/Window)
-include_directories(SFML/lib)
 include_directories(SFML/templates)
+include_directories(SFML/templates/SFML)
 include_directories("SFML/templates/SFML/SFML App.xctemplate")
+include_directories("SFML/templates/SFML/SFML CLT.xctemplate")
 include_directories(src)
 
-add_executable(Nibbler
+add_executable(test
         cmake-build-debug/cmake_install.cmake
         cmake-build-debug/CMakeCache.txt
         cmake-build-debug/Makefile
         cmake-build-debug/Nibbler.cbp
-        "font/Spantaran (DEMO).otf"
+        font/Spantaran.otf
         img/apple.png
         img/background.jpg
         img/bar.jpg
@@ -77,8 +64,12 @@ add_executable(Nibbler
         img/snakeskin.png
         img/stone-cartoon-png-2.png
         img/stone.jpg
+        inc/Exception.hpp
         inc/Game.hpp
+        inc/GameOver.hpp
+        inc/Menu.hpp
         inc/SFML.hpp
+        inc/SideBar.hpp
         inc/Snake.hpp
         SFML/doc/html/AlResource_8hpp_source.html
         SFML/doc/html/annotated.html
@@ -562,217 +553,41 @@ add_executable(Nibbler
         SFML/doc/html/Window_8hpp_source.html
         SFML/doc/html/WindowHandle_8hpp_source.html
         SFML/doc/html/WindowStyle_8hpp_source.html
-        SFML/examples/cocoa/cocoa.app/Contents/MacOS/cocoa
-        SFML/examples/cocoa/cocoa.app/Contents/Resources/blue.png
-        SFML/examples/cocoa/cocoa.app/Contents/Resources/Credits.rtf
-        SFML/examples/cocoa/cocoa.app/Contents/Resources/green.png
-        SFML/examples/cocoa/cocoa.app/Contents/Resources/icon.icns
-        SFML/examples/cocoa/cocoa.app/Contents/Resources/logo.png
-        SFML/examples/cocoa/cocoa.app/Contents/Resources/MainMenu.nib
-        SFML/examples/cocoa/cocoa.app/Contents/Resources/red.png
-        SFML/examples/cocoa/cocoa.app/Contents/Resources/sansation.ttf
-        SFML/examples/cocoa/cocoa.app/Contents/Info.plist
         SFML/examples/cocoa/CocoaAppDelegate.h
         SFML/examples/cocoa/CocoaAppDelegate.mm
         SFML/examples/cocoa/main.m
         SFML/examples/cocoa/NSString+stdstring.h
         SFML/examples/cocoa/NSString+stdstring.mm
-        SFML/examples/ftp/ftp
         SFML/examples/ftp/Ftp.cpp
-        SFML/examples/island/resources/sansation.ttf
-        SFML/examples/island/resources/terrain.frag
-        SFML/examples/island/resources/terrain.vert
-        SFML/examples/island/island
         SFML/examples/island/Island.cpp
-        SFML/examples/joystick/resources/sansation.ttf
-        SFML/examples/joystick/joystick
         SFML/examples/joystick/Joystick.cpp
-        SFML/examples/opengl/resources/background.jpg
-        SFML/examples/opengl/resources/sansation.ttf
-        SFML/examples/opengl/resources/texture.jpg
-        SFML/examples/opengl/opengl
         SFML/examples/opengl/OpenGL.cpp
-        SFML/examples/pong/resources/ball.wav
-        SFML/examples/pong/resources/sansation.ttf
-        SFML/examples/pong/pong
         SFML/examples/pong/Pong.cpp
-        SFML/examples/shader/resources/background.jpg
-        SFML/examples/shader/resources/billboard.frag
-        SFML/examples/shader/resources/billboard.geom
-        SFML/examples/shader/resources/billboard.vert
-        SFML/examples/shader/resources/blink.frag
-        SFML/examples/shader/resources/blur.frag
-        SFML/examples/shader/resources/devices.png
-        SFML/examples/shader/resources/edge.frag
-        SFML/examples/shader/resources/logo.png
-        SFML/examples/shader/resources/pixelate.frag
-        SFML/examples/shader/resources/sansation.ttf
-        SFML/examples/shader/resources/sfml.png
-        SFML/examples/shader/resources/storm.vert
-        SFML/examples/shader/resources/text-background.png
-        SFML/examples/shader/resources/wave.vert
         SFML/examples/shader/Effect.hpp
-        SFML/examples/shader/shader
         SFML/examples/shader/Shader.cpp
-        SFML/examples/sockets/sockets
         SFML/examples/sockets/Sockets.cpp
         SFML/examples/sockets/TCP.cpp
         SFML/examples/sockets/UDP.cpp
-        SFML/examples/sound/resources/canary.wav
-        SFML/examples/sound/resources/ding.flac
-        SFML/examples/sound/resources/orchestral.ogg
-        SFML/examples/sound/sound
         SFML/examples/sound/Sound.cpp
-        SFML/examples/sound-capture/sound-capture
         SFML/examples/sound-capture/SoundCapture.cpp
         SFML/examples/voip/Client.cpp
         SFML/examples/voip/Server.cpp
-        SFML/examples/voip/voip
         SFML/examples/voip/VoIP.cpp
-        SFML/examples/window/window
         SFML/examples/window/Window.cpp
         SFML/extlibs/FLAC.framework/Versions/A/Resources/Info.plist
         SFML/extlibs/FLAC.framework/Versions/A/FLAC
-        SFML/extlibs/FLAC.framework/Versions/Current/Resources/Info.plist
         SFML/extlibs/freetype.framework/Versions/A/Resources/Info.plist
         SFML/extlibs/freetype.framework/Versions/A/freetype
-        SFML/extlibs/freetype.framework/Versions/Current/Resources/Info.plist
         SFML/extlibs/ogg.framework/Versions/A/Resources/Info.plist
         SFML/extlibs/ogg.framework/Versions/A/ogg
-        SFML/extlibs/ogg.framework/Versions/Current/Resources/Info.plist
         SFML/extlibs/OpenAL.framework/Versions/A/Resources/Info.plist
         SFML/extlibs/OpenAL.framework/Versions/A/OpenAL
-        SFML/extlibs/OpenAL.framework/Versions/Current/Resources/Info.plist
         SFML/extlibs/vorbis.framework/Versions/A/Resources/Info.plist
         SFML/extlibs/vorbis.framework/Versions/A/vorbis
-        SFML/extlibs/vorbis.framework/Versions/Current/Resources/Info.plist
         SFML/extlibs/vorbisenc.framework/Versions/A/Resources/Info.plist
         SFML/extlibs/vorbisenc.framework/Versions/A/vorbisenc
-        SFML/extlibs/vorbisenc.framework/Versions/Current/Resources/Info.plist
         SFML/extlibs/vorbisfile.framework/Versions/A/Resources/Info.plist
         SFML/extlibs/vorbisfile.framework/Versions/A/vorbisfile
-        SFML/extlibs/vorbisfile.framework/Versions/Current/Resources/Info.plist
-        SFML/Frameworks/freetype.framework/Versions/A/Resources/Info.plist
-        SFML/Frameworks/freetype.framework/Versions/A/freetype
-        SFML/Frameworks/freetype.framework/Versions/Current/Resources/Info.plist
-        SFML/Frameworks/sfml-audio.framework/Versions/2.5.0/Resources/Info.plist
-        SFML/Frameworks/sfml-audio.framework/Versions/2.5.0/sfml-audio
-        SFML/Frameworks/sfml-audio.framework/Versions/Current/Resources/Info.plist
-        SFML/Frameworks/sfml-graphics.framework/Versions/2.5.0/Resources/Info.plist
-        SFML/Frameworks/sfml-graphics.framework/Versions/2.5.0/sfml-graphics
-        SFML/Frameworks/sfml-graphics.framework/Versions/Current/Resources/Info.plist
-        SFML/Frameworks/sfml-network.framework/Versions/2.5.0/Resources/Info.plist
-        SFML/Frameworks/sfml-network.framework/Versions/2.5.0/sfml-network
-        SFML/Frameworks/sfml-network.framework/Versions/Current/Resources/Info.plist
-        SFML/Frameworks/sfml-system.framework/Versions/2.5.0/Resources/Info.plist
-        SFML/Frameworks/sfml-system.framework/Versions/2.5.0/sfml-system
-        SFML/Frameworks/sfml-system.framework/Versions/Current/Resources/Info.plist
-        SFML/Frameworks/sfml-window.framework/Versions/2.5.0/Resources/Info.plist
-        SFML/Frameworks/sfml-window.framework/Versions/2.5.0/sfml-window
-        SFML/Frameworks/sfml-window.framework/Versions/Current/Resources/Info.plist
-        SFML/Frameworks/SFML.framework/Headers/Audio/AlResource.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/Export.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/InputSoundFile.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/Listener.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/Music.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/OutputSoundFile.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/Sound.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/SoundBuffer.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/SoundBufferRecorder.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/SoundFileFactory.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/SoundFileFactory.inl
-        SFML/Frameworks/SFML.framework/Headers/Audio/SoundFileReader.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/SoundFileWriter.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/SoundRecorder.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/SoundSource.hpp
-        SFML/Frameworks/SFML.framework/Headers/Audio/SoundStream.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/BlendMode.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/CircleShape.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Color.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/ConvexShape.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Drawable.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Export.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Font.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Glsl.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Glsl.inl
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Glyph.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Image.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/PrimitiveType.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Rect.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Rect.inl
-        SFML/Frameworks/SFML.framework/Headers/Graphics/RectangleShape.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/RenderStates.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/RenderTarget.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/RenderTexture.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/RenderWindow.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Shader.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Shape.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Sprite.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Text.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Texture.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Transform.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Transformable.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/Vertex.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/VertexArray.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/VertexBuffer.hpp
-        SFML/Frameworks/SFML.framework/Headers/Graphics/View.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/Export.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/Ftp.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/Http.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/IpAddress.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/Packet.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/Socket.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/SocketHandle.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/SocketSelector.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/TcpListener.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/TcpSocket.hpp
-        SFML/Frameworks/SFML.framework/Headers/Network/UdpSocket.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Clock.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Err.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Export.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/FileInputStream.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/InputStream.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Lock.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/MemoryInputStream.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Mutex.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/NativeActivity.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/NonCopyable.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Sleep.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/String.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/String.inl
-        SFML/Frameworks/SFML.framework/Headers/System/Thread.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Thread.inl
-        SFML/Frameworks/SFML.framework/Headers/System/ThreadLocal.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/ThreadLocalPtr.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/ThreadLocalPtr.inl
-        SFML/Frameworks/SFML.framework/Headers/System/Time.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Utf.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Utf.inl
-        SFML/Frameworks/SFML.framework/Headers/System/Vector2.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Vector2.inl
-        SFML/Frameworks/SFML.framework/Headers/System/Vector3.hpp
-        SFML/Frameworks/SFML.framework/Headers/System/Vector3.inl
-        SFML/Frameworks/SFML.framework/Headers/Window/Clipboard.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/Context.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/ContextSettings.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/Cursor.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/Event.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/Export.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/GlResource.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/Joystick.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/Keyboard.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/Mouse.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/Sensor.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/Touch.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/VideoMode.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/Window.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/WindowHandle.hpp
-        SFML/Frameworks/SFML.framework/Headers/Window/WindowStyle.hpp
-        SFML/Frameworks/SFML.framework/Resources/CMake/SFMLConfig.cmake
-        SFML/Frameworks/SFML.framework/Resources/CMake/SFMLConfigDependencies.cmake
-        SFML/Frameworks/SFML.framework/Resources/CMake/SFMLConfigVersion.cmake
-        SFML/Frameworks/SFML.framework/Resources/CMake/SFMLSharedTargets-release.cmake
-        SFML/Frameworks/SFML.framework/Resources/CMake/SFMLSharedTargets.cmake
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/AlResource.hpp
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/Export.hpp
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Audio/InputSoundFile.hpp
@@ -880,126 +695,6 @@ add_executable(Nibbler
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/OpenGL.hpp
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/System.hpp
         SFML/Frameworks/SFML.framework/Versions/2.5.0/Headers/Window.hpp
-        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/CMake/SFMLConfig.cmake
-        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/CMake/SFMLConfigDependencies.cmake
-        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/CMake/SFMLConfigVersion.cmake
-        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/CMake/SFMLSharedTargets-release.cmake
-        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/CMake/SFMLSharedTargets.cmake
-        SFML/Frameworks/SFML.framework/Versions/2.5.0/Resources/Info.plist
-        SFML/Frameworks/SFML.framework/Versions/2.5.0/SFML
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/AlResource.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/Export.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/InputSoundFile.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/Listener.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/Music.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/OutputSoundFile.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/Sound.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/SoundBuffer.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/SoundBufferRecorder.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/SoundFileFactory.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/SoundFileFactory.inl
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/SoundFileReader.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/SoundFileWriter.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/SoundRecorder.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/SoundSource.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio/SoundStream.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/BlendMode.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/CircleShape.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Color.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/ConvexShape.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Drawable.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Export.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Font.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Glsl.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Glsl.inl
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Glyph.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Image.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/PrimitiveType.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Rect.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Rect.inl
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/RectangleShape.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/RenderStates.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/RenderTarget.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/RenderTexture.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/RenderWindow.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Shader.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Shape.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Sprite.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Text.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Texture.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Transform.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Transformable.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/Vertex.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/VertexArray.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/VertexBuffer.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics/View.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/Export.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/Ftp.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/Http.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/IpAddress.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/Packet.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/Socket.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/SocketHandle.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/SocketSelector.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/TcpListener.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/TcpSocket.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network/UdpSocket.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Clock.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Err.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Export.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/FileInputStream.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/InputStream.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Lock.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/MemoryInputStream.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Mutex.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/NativeActivity.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/NonCopyable.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Sleep.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/String.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/String.inl
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Thread.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Thread.inl
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/ThreadLocal.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/ThreadLocalPtr.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/ThreadLocalPtr.inl
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Time.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Utf.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Utf.inl
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Vector2.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Vector2.inl
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Vector3.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System/Vector3.inl
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Clipboard.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Context.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/ContextSettings.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Cursor.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Event.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Export.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/GlResource.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Joystick.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Keyboard.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Mouse.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Sensor.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Touch.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/VideoMode.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/Window.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/WindowHandle.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window/WindowStyle.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Audio.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Config.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/GpuPreference.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Graphics.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Main.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Network.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/OpenGL.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/System.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Headers/Window.hpp
-        SFML/Frameworks/SFML.framework/Versions/Current/Resources/CMake/SFMLConfig.cmake
-        SFML/Frameworks/SFML.framework/Versions/Current/Resources/CMake/SFMLConfigDependencies.cmake
-        SFML/Frameworks/SFML.framework/Versions/Current/Resources/CMake/SFMLConfigVersion.cmake
-        SFML/Frameworks/SFML.framework/Versions/Current/Resources/CMake/SFMLSharedTargets-release.cmake
-        SFML/Frameworks/SFML.framework/Versions/Current/Resources/CMake/SFMLSharedTargets.cmake
-        SFML/Frameworks/SFML.framework/Versions/Current/Resources/Info.plist
         SFML/include/SFML/Audio/AlResource.hpp
         SFML/include/SFML/Audio/Export.hpp
         SFML/include/SFML/Audio/InputSoundFile.hpp
@@ -1107,35 +802,15 @@ add_executable(Nibbler
         SFML/include/SFML/OpenGL.hpp
         SFML/include/SFML/System.hpp
         SFML/include/SFML/Window.hpp
-        SFML/lib/libsfml-audio.2.5.0.dylib
-        SFML/lib/libsfml-graphics.2.5.0.dylib
-        SFML/lib/libsfml-network.2.5.0.dylib
-        SFML/lib/libsfml-system.2.5.0.dylib
-        SFML/lib/libsfml-window.2.5.0.dylib
-        "SFML/templates/SFML/SFML App.xctemplate/cute_image.jpg"
-        "SFML/templates/SFML/SFML App.xctemplate/icon.png"
         "SFML/templates/SFML/SFML App.xctemplate/main.cpp"
-        "SFML/templates/SFML/SFML App.xctemplate/nice_music.ogg"
         "SFML/templates/SFML/SFML App.xctemplate/ResourcePath.hpp"
         "SFML/templates/SFML/SFML App.xctemplate/ResourcePath.mm"
-        "SFML/templates/SFML/SFML App.xctemplate/sansation.ttf"
-        "SFML/templates/SFML/SFML App.xctemplate/TemplateIcon.icns"
-        "SFML/templates/SFML/SFML App.xctemplate/TemplateInfo.plist"
-        "SFML/templates/SFML/SFML Base.xctemplate/TemplateInfo.plist"
-        "SFML/templates/SFML/SFML Bundle.xctemplate/TemplateInfo.plist"
-        "SFML/templates/SFML/SFML CLT.xctemplate/cute_image.jpg"
-        "SFML/templates/SFML/SFML CLT.xctemplate/icon.png"
         "SFML/templates/SFML/SFML CLT.xctemplate/main.cpp"
-        "SFML/templates/SFML/SFML CLT.xctemplate/nice_music.ogg"
-        "SFML/templates/SFML/SFML CLT.xctemplate/sansation.ttf"
-        "SFML/templates/SFML/SFML CLT.xctemplate/TemplateIcon.icns"
-        "SFML/templates/SFML/SFML CLT.xctemplate/TemplateInfo.plist"
-        "SFML/templates/SFML/SFML Compiler.xctemplate/TemplateInfo.plist"
-        "SFML/templates/SFML/SFML Linker.xctemplate/TemplateInfo.plist"
-        SFML/changelog.md
-        SFML/license.md
-        SFML/readme.md
+        src/Exception.cpp
         src/Game.cpp
+        src/GameOver.cpp
         src/main.cpp
+        src/Menu.cpp
         src/SFML.cpp
-        src/Snake.cpp src/Menu.cpp inc/Menu.hpp src/SideBar.cpp inc/SideBar.hpp src/GameOver.cpp inc/GameOver.hpp src/Exception.cpp inc/Exception.hpp)
+        src/SideBar.cpp
+        src/Snake.cpp)

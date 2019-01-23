@@ -12,10 +12,15 @@ Game::Game(long screenLength) {
     fillSnakeWith('s');
     createBarriers(screenLength / 4);
     createFood();
+//    updateMaxScore();
+maxScore = "0";
 }
 
 Game::Game() = default;
-Game::~Game() { destroyMap(); }
+Game::~Game() {
+    destroyMap();
+//    saveMaxScore();
+}
 
 void
 Game::createMap() {
@@ -152,3 +157,33 @@ Game::getMap() { return map; }
 
 int
 Game::getLevel() { return level; }
+
+int
+Game::getScore() { return score; }
+
+std::string
+Game::getMaxScore() { return maxScore; }
+
+void 
+Game::updateMaxScore() {
+////    if (!access("maxScore", 0) && !access("maxScore", 04)){
+//        std::ifstream ifs("maxScore");
+//        std::stringstream buffer;
+//        buffer << ifs.rdbuf();
+//        maxScore = buffer.str();
+//        std::cout << maxScore << std::endl;
+//        ifs.close();
+////    }
+////    else
+        maxScore = "0";
+}
+
+void 
+Game::saveMaxScore(){
+    if (stoi(maxScore) < score)
+        maxScore = std::to_string(score);
+    std::ofstream outfile;
+    outfile.open("maxScore.txt", std::ofstream::out | std::ofstream::trunc);
+    outfile << maxScore << std::endl;
+    outfile.close();
+}

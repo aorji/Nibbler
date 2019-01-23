@@ -20,7 +20,7 @@ Menu::init(){
     sf::FloatRect textRect = menu[0].getLocalBounds();
     menu[0].setOrigin(textRect.left + textRect.width/2.0f,
                    textRect.top);
-    menu[0].setPosition(windowSize/2.0f,
+    menu[0].setPosition((windowSize + windowSize/3)/2.0f,
                         windowSize/(NUMBER_OF_MENU_FIELD * 2));
 
     menu[1].setFont(font);
@@ -31,7 +31,7 @@ Menu::init(){
     textRect = menu[1].getLocalBounds();
     menu[1].setOrigin(textRect.left + textRect.width/2.0f,
                       textRect.top);
-    menu[1].setPosition(windowSize/2.0f,
+    menu[1].setPosition((windowSize + windowSize/3)/2.0f,
                         windowSize/(NUMBER_OF_MENU_FIELD * 2) + windowSize/NUMBER_OF_MENU_FIELD);
 
     menu[2].setFont(font);
@@ -42,8 +42,8 @@ Menu::init(){
     textRect = menu[2].getLocalBounds();
     menu[2].setOrigin(textRect.left + textRect.width/2.0f,
                       textRect.top);
-    menu[2].setPosition(windowSize/2.0f,
-                        windowSize/(NUMBER_OF_MENU_FIELD * 2) + windowSize/NUMBER_OF_MENU_FIELD * 2 - 1);
+    menu[2].setPosition((windowSize + windowSize/3)/2.0f,
+                        windowSize/(NUMBER_OF_MENU_FIELD * 2) + windowSize/NUMBER_OF_MENU_FIELD * 1.5);
     selectedField = 1;
     open = true;
 }

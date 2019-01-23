@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/aorji/Desktop/Nibbler
+CMAKE_SOURCE_DIR = /Users/aorji/Desktop/test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/aorji/Desktop/Nibbler/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/aorji/Desktop/test/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles /Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/test/cmake-build-debug/CMakeFiles /Users/aorji/Desktop/test/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/Nibbler/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aorji/Desktop/test/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Nibbler
+# Target rules for targets named test
 
 # Build rule for target.
-Nibbler: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Nibbler
-.PHONY : Nibbler
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-Nibbler/fast:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/build
-.PHONY : Nibbler/fast
+test/fast:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 SFML/examples/cocoa/CocoaAppDelegate.o: SFML/examples/cocoa/CocoaAppDelegate.mm.o
 
@@ -129,7 +129,7 @@ SFML/examples/cocoa/CocoaAppDelegate.o: SFML/examples/cocoa/CocoaAppDelegate.mm.
 
 # target to build an object file
 SFML/examples/cocoa/CocoaAppDelegate.mm.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.o
 .PHONY : SFML/examples/cocoa/CocoaAppDelegate.mm.o
 
 SFML/examples/cocoa/CocoaAppDelegate.i: SFML/examples/cocoa/CocoaAppDelegate.mm.i
@@ -138,7 +138,7 @@ SFML/examples/cocoa/CocoaAppDelegate.i: SFML/examples/cocoa/CocoaAppDelegate.mm.
 
 # target to preprocess a source file
 SFML/examples/cocoa/CocoaAppDelegate.mm.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.i
 .PHONY : SFML/examples/cocoa/CocoaAppDelegate.mm.i
 
 SFML/examples/cocoa/CocoaAppDelegate.s: SFML/examples/cocoa/CocoaAppDelegate.mm.s
@@ -147,7 +147,7 @@ SFML/examples/cocoa/CocoaAppDelegate.s: SFML/examples/cocoa/CocoaAppDelegate.mm.
 
 # target to generate assembly for a file
 SFML/examples/cocoa/CocoaAppDelegate.mm.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/cocoa/CocoaAppDelegate.mm.s
 .PHONY : SFML/examples/cocoa/CocoaAppDelegate.mm.s
 
 SFML/examples/cocoa/NSString+stdstring.o: SFML/examples/cocoa/NSString+stdstring.mm.o
@@ -156,7 +156,7 @@ SFML/examples/cocoa/NSString+stdstring.o: SFML/examples/cocoa/NSString+stdstring
 
 # target to build an object file
 SFML/examples/cocoa/NSString+stdstring.mm.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/cocoa/NSString+stdstring.mm.o
 .PHONY : SFML/examples/cocoa/NSString+stdstring.mm.o
 
 SFML/examples/cocoa/NSString+stdstring.i: SFML/examples/cocoa/NSString+stdstring.mm.i
@@ -165,7 +165,7 @@ SFML/examples/cocoa/NSString+stdstring.i: SFML/examples/cocoa/NSString+stdstring
 
 # target to preprocess a source file
 SFML/examples/cocoa/NSString+stdstring.mm.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/cocoa/NSString+stdstring.mm.i
 .PHONY : SFML/examples/cocoa/NSString+stdstring.mm.i
 
 SFML/examples/cocoa/NSString+stdstring.s: SFML/examples/cocoa/NSString+stdstring.mm.s
@@ -174,7 +174,7 @@ SFML/examples/cocoa/NSString+stdstring.s: SFML/examples/cocoa/NSString+stdstring
 
 # target to generate assembly for a file
 SFML/examples/cocoa/NSString+stdstring.mm.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/NSString+stdstring.mm.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/cocoa/NSString+stdstring.mm.s
 .PHONY : SFML/examples/cocoa/NSString+stdstring.mm.s
 
 SFML/examples/cocoa/main.o: SFML/examples/cocoa/main.m.o
@@ -183,7 +183,7 @@ SFML/examples/cocoa/main.o: SFML/examples/cocoa/main.m.o
 
 # target to build an object file
 SFML/examples/cocoa/main.m.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/cocoa/main.m.o
 .PHONY : SFML/examples/cocoa/main.m.o
 
 SFML/examples/cocoa/main.i: SFML/examples/cocoa/main.m.i
@@ -192,7 +192,7 @@ SFML/examples/cocoa/main.i: SFML/examples/cocoa/main.m.i
 
 # target to preprocess a source file
 SFML/examples/cocoa/main.m.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/cocoa/main.m.i
 .PHONY : SFML/examples/cocoa/main.m.i
 
 SFML/examples/cocoa/main.s: SFML/examples/cocoa/main.m.s
@@ -201,7 +201,7 @@ SFML/examples/cocoa/main.s: SFML/examples/cocoa/main.m.s
 
 # target to generate assembly for a file
 SFML/examples/cocoa/main.m.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/cocoa/main.m.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/cocoa/main.m.s
 .PHONY : SFML/examples/cocoa/main.m.s
 
 SFML/examples/ftp/Ftp.o: SFML/examples/ftp/Ftp.cpp.o
@@ -210,7 +210,7 @@ SFML/examples/ftp/Ftp.o: SFML/examples/ftp/Ftp.cpp.o
 
 # target to build an object file
 SFML/examples/ftp/Ftp.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/ftp/Ftp.cpp.o
 .PHONY : SFML/examples/ftp/Ftp.cpp.o
 
 SFML/examples/ftp/Ftp.i: SFML/examples/ftp/Ftp.cpp.i
@@ -219,7 +219,7 @@ SFML/examples/ftp/Ftp.i: SFML/examples/ftp/Ftp.cpp.i
 
 # target to preprocess a source file
 SFML/examples/ftp/Ftp.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/ftp/Ftp.cpp.i
 .PHONY : SFML/examples/ftp/Ftp.cpp.i
 
 SFML/examples/ftp/Ftp.s: SFML/examples/ftp/Ftp.cpp.s
@@ -228,7 +228,7 @@ SFML/examples/ftp/Ftp.s: SFML/examples/ftp/Ftp.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/ftp/Ftp.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/ftp/Ftp.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/ftp/Ftp.cpp.s
 .PHONY : SFML/examples/ftp/Ftp.cpp.s
 
 SFML/examples/island/Island.o: SFML/examples/island/Island.cpp.o
@@ -237,7 +237,7 @@ SFML/examples/island/Island.o: SFML/examples/island/Island.cpp.o
 
 # target to build an object file
 SFML/examples/island/Island.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/island/Island.cpp.o
 .PHONY : SFML/examples/island/Island.cpp.o
 
 SFML/examples/island/Island.i: SFML/examples/island/Island.cpp.i
@@ -246,7 +246,7 @@ SFML/examples/island/Island.i: SFML/examples/island/Island.cpp.i
 
 # target to preprocess a source file
 SFML/examples/island/Island.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/island/Island.cpp.i
 .PHONY : SFML/examples/island/Island.cpp.i
 
 SFML/examples/island/Island.s: SFML/examples/island/Island.cpp.s
@@ -255,7 +255,7 @@ SFML/examples/island/Island.s: SFML/examples/island/Island.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/island/Island.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/island/Island.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/island/Island.cpp.s
 .PHONY : SFML/examples/island/Island.cpp.s
 
 SFML/examples/joystick/Joystick.o: SFML/examples/joystick/Joystick.cpp.o
@@ -264,7 +264,7 @@ SFML/examples/joystick/Joystick.o: SFML/examples/joystick/Joystick.cpp.o
 
 # target to build an object file
 SFML/examples/joystick/Joystick.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/joystick/Joystick.cpp.o
 .PHONY : SFML/examples/joystick/Joystick.cpp.o
 
 SFML/examples/joystick/Joystick.i: SFML/examples/joystick/Joystick.cpp.i
@@ -273,7 +273,7 @@ SFML/examples/joystick/Joystick.i: SFML/examples/joystick/Joystick.cpp.i
 
 # target to preprocess a source file
 SFML/examples/joystick/Joystick.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/joystick/Joystick.cpp.i
 .PHONY : SFML/examples/joystick/Joystick.cpp.i
 
 SFML/examples/joystick/Joystick.s: SFML/examples/joystick/Joystick.cpp.s
@@ -282,7 +282,7 @@ SFML/examples/joystick/Joystick.s: SFML/examples/joystick/Joystick.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/joystick/Joystick.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/joystick/Joystick.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/joystick/Joystick.cpp.s
 .PHONY : SFML/examples/joystick/Joystick.cpp.s
 
 SFML/examples/opengl/OpenGL.o: SFML/examples/opengl/OpenGL.cpp.o
@@ -291,7 +291,7 @@ SFML/examples/opengl/OpenGL.o: SFML/examples/opengl/OpenGL.cpp.o
 
 # target to build an object file
 SFML/examples/opengl/OpenGL.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/opengl/OpenGL.cpp.o
 .PHONY : SFML/examples/opengl/OpenGL.cpp.o
 
 SFML/examples/opengl/OpenGL.i: SFML/examples/opengl/OpenGL.cpp.i
@@ -300,7 +300,7 @@ SFML/examples/opengl/OpenGL.i: SFML/examples/opengl/OpenGL.cpp.i
 
 # target to preprocess a source file
 SFML/examples/opengl/OpenGL.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/opengl/OpenGL.cpp.i
 .PHONY : SFML/examples/opengl/OpenGL.cpp.i
 
 SFML/examples/opengl/OpenGL.s: SFML/examples/opengl/OpenGL.cpp.s
@@ -309,7 +309,7 @@ SFML/examples/opengl/OpenGL.s: SFML/examples/opengl/OpenGL.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/opengl/OpenGL.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/opengl/OpenGL.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/opengl/OpenGL.cpp.s
 .PHONY : SFML/examples/opengl/OpenGL.cpp.s
 
 SFML/examples/pong/Pong.o: SFML/examples/pong/Pong.cpp.o
@@ -318,7 +318,7 @@ SFML/examples/pong/Pong.o: SFML/examples/pong/Pong.cpp.o
 
 # target to build an object file
 SFML/examples/pong/Pong.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/pong/Pong.cpp.o
 .PHONY : SFML/examples/pong/Pong.cpp.o
 
 SFML/examples/pong/Pong.i: SFML/examples/pong/Pong.cpp.i
@@ -327,7 +327,7 @@ SFML/examples/pong/Pong.i: SFML/examples/pong/Pong.cpp.i
 
 # target to preprocess a source file
 SFML/examples/pong/Pong.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/pong/Pong.cpp.i
 .PHONY : SFML/examples/pong/Pong.cpp.i
 
 SFML/examples/pong/Pong.s: SFML/examples/pong/Pong.cpp.s
@@ -336,7 +336,7 @@ SFML/examples/pong/Pong.s: SFML/examples/pong/Pong.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/pong/Pong.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/pong/Pong.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/pong/Pong.cpp.s
 .PHONY : SFML/examples/pong/Pong.cpp.s
 
 SFML/examples/shader/Shader.o: SFML/examples/shader/Shader.cpp.o
@@ -345,7 +345,7 @@ SFML/examples/shader/Shader.o: SFML/examples/shader/Shader.cpp.o
 
 # target to build an object file
 SFML/examples/shader/Shader.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/shader/Shader.cpp.o
 .PHONY : SFML/examples/shader/Shader.cpp.o
 
 SFML/examples/shader/Shader.i: SFML/examples/shader/Shader.cpp.i
@@ -354,7 +354,7 @@ SFML/examples/shader/Shader.i: SFML/examples/shader/Shader.cpp.i
 
 # target to preprocess a source file
 SFML/examples/shader/Shader.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/shader/Shader.cpp.i
 .PHONY : SFML/examples/shader/Shader.cpp.i
 
 SFML/examples/shader/Shader.s: SFML/examples/shader/Shader.cpp.s
@@ -363,7 +363,7 @@ SFML/examples/shader/Shader.s: SFML/examples/shader/Shader.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/shader/Shader.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/shader/Shader.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/shader/Shader.cpp.s
 .PHONY : SFML/examples/shader/Shader.cpp.s
 
 SFML/examples/sockets/Sockets.o: SFML/examples/sockets/Sockets.cpp.o
@@ -372,7 +372,7 @@ SFML/examples/sockets/Sockets.o: SFML/examples/sockets/Sockets.cpp.o
 
 # target to build an object file
 SFML/examples/sockets/Sockets.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sockets/Sockets.cpp.o
 .PHONY : SFML/examples/sockets/Sockets.cpp.o
 
 SFML/examples/sockets/Sockets.i: SFML/examples/sockets/Sockets.cpp.i
@@ -381,7 +381,7 @@ SFML/examples/sockets/Sockets.i: SFML/examples/sockets/Sockets.cpp.i
 
 # target to preprocess a source file
 SFML/examples/sockets/Sockets.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sockets/Sockets.cpp.i
 .PHONY : SFML/examples/sockets/Sockets.cpp.i
 
 SFML/examples/sockets/Sockets.s: SFML/examples/sockets/Sockets.cpp.s
@@ -390,7 +390,7 @@ SFML/examples/sockets/Sockets.s: SFML/examples/sockets/Sockets.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/sockets/Sockets.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/Sockets.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sockets/Sockets.cpp.s
 .PHONY : SFML/examples/sockets/Sockets.cpp.s
 
 SFML/examples/sockets/TCP.o: SFML/examples/sockets/TCP.cpp.o
@@ -399,7 +399,7 @@ SFML/examples/sockets/TCP.o: SFML/examples/sockets/TCP.cpp.o
 
 # target to build an object file
 SFML/examples/sockets/TCP.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sockets/TCP.cpp.o
 .PHONY : SFML/examples/sockets/TCP.cpp.o
 
 SFML/examples/sockets/TCP.i: SFML/examples/sockets/TCP.cpp.i
@@ -408,7 +408,7 @@ SFML/examples/sockets/TCP.i: SFML/examples/sockets/TCP.cpp.i
 
 # target to preprocess a source file
 SFML/examples/sockets/TCP.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sockets/TCP.cpp.i
 .PHONY : SFML/examples/sockets/TCP.cpp.i
 
 SFML/examples/sockets/TCP.s: SFML/examples/sockets/TCP.cpp.s
@@ -417,7 +417,7 @@ SFML/examples/sockets/TCP.s: SFML/examples/sockets/TCP.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/sockets/TCP.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/TCP.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sockets/TCP.cpp.s
 .PHONY : SFML/examples/sockets/TCP.cpp.s
 
 SFML/examples/sockets/UDP.o: SFML/examples/sockets/UDP.cpp.o
@@ -426,7 +426,7 @@ SFML/examples/sockets/UDP.o: SFML/examples/sockets/UDP.cpp.o
 
 # target to build an object file
 SFML/examples/sockets/UDP.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sockets/UDP.cpp.o
 .PHONY : SFML/examples/sockets/UDP.cpp.o
 
 SFML/examples/sockets/UDP.i: SFML/examples/sockets/UDP.cpp.i
@@ -435,7 +435,7 @@ SFML/examples/sockets/UDP.i: SFML/examples/sockets/UDP.cpp.i
 
 # target to preprocess a source file
 SFML/examples/sockets/UDP.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sockets/UDP.cpp.i
 .PHONY : SFML/examples/sockets/UDP.cpp.i
 
 SFML/examples/sockets/UDP.s: SFML/examples/sockets/UDP.cpp.s
@@ -444,7 +444,7 @@ SFML/examples/sockets/UDP.s: SFML/examples/sockets/UDP.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/sockets/UDP.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sockets/UDP.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sockets/UDP.cpp.s
 .PHONY : SFML/examples/sockets/UDP.cpp.s
 
 SFML/examples/sound-capture/SoundCapture.o: SFML/examples/sound-capture/SoundCapture.cpp.o
@@ -453,7 +453,7 @@ SFML/examples/sound-capture/SoundCapture.o: SFML/examples/sound-capture/SoundCap
 
 # target to build an object file
 SFML/examples/sound-capture/SoundCapture.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sound-capture/SoundCapture.cpp.o
 .PHONY : SFML/examples/sound-capture/SoundCapture.cpp.o
 
 SFML/examples/sound-capture/SoundCapture.i: SFML/examples/sound-capture/SoundCapture.cpp.i
@@ -462,7 +462,7 @@ SFML/examples/sound-capture/SoundCapture.i: SFML/examples/sound-capture/SoundCap
 
 # target to preprocess a source file
 SFML/examples/sound-capture/SoundCapture.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sound-capture/SoundCapture.cpp.i
 .PHONY : SFML/examples/sound-capture/SoundCapture.cpp.i
 
 SFML/examples/sound-capture/SoundCapture.s: SFML/examples/sound-capture/SoundCapture.cpp.s
@@ -471,7 +471,7 @@ SFML/examples/sound-capture/SoundCapture.s: SFML/examples/sound-capture/SoundCap
 
 # target to generate assembly for a file
 SFML/examples/sound-capture/SoundCapture.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound-capture/SoundCapture.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sound-capture/SoundCapture.cpp.s
 .PHONY : SFML/examples/sound-capture/SoundCapture.cpp.s
 
 SFML/examples/sound/Sound.o: SFML/examples/sound/Sound.cpp.o
@@ -480,7 +480,7 @@ SFML/examples/sound/Sound.o: SFML/examples/sound/Sound.cpp.o
 
 # target to build an object file
 SFML/examples/sound/Sound.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sound/Sound.cpp.o
 .PHONY : SFML/examples/sound/Sound.cpp.o
 
 SFML/examples/sound/Sound.i: SFML/examples/sound/Sound.cpp.i
@@ -489,7 +489,7 @@ SFML/examples/sound/Sound.i: SFML/examples/sound/Sound.cpp.i
 
 # target to preprocess a source file
 SFML/examples/sound/Sound.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sound/Sound.cpp.i
 .PHONY : SFML/examples/sound/Sound.cpp.i
 
 SFML/examples/sound/Sound.s: SFML/examples/sound/Sound.cpp.s
@@ -498,7 +498,7 @@ SFML/examples/sound/Sound.s: SFML/examples/sound/Sound.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/sound/Sound.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/sound/Sound.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/sound/Sound.cpp.s
 .PHONY : SFML/examples/sound/Sound.cpp.s
 
 SFML/examples/voip/Client.o: SFML/examples/voip/Client.cpp.o
@@ -507,7 +507,7 @@ SFML/examples/voip/Client.o: SFML/examples/voip/Client.cpp.o
 
 # target to build an object file
 SFML/examples/voip/Client.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/voip/Client.cpp.o
 .PHONY : SFML/examples/voip/Client.cpp.o
 
 SFML/examples/voip/Client.i: SFML/examples/voip/Client.cpp.i
@@ -516,7 +516,7 @@ SFML/examples/voip/Client.i: SFML/examples/voip/Client.cpp.i
 
 # target to preprocess a source file
 SFML/examples/voip/Client.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/voip/Client.cpp.i
 .PHONY : SFML/examples/voip/Client.cpp.i
 
 SFML/examples/voip/Client.s: SFML/examples/voip/Client.cpp.s
@@ -525,7 +525,7 @@ SFML/examples/voip/Client.s: SFML/examples/voip/Client.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/voip/Client.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Client.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/voip/Client.cpp.s
 .PHONY : SFML/examples/voip/Client.cpp.s
 
 SFML/examples/voip/Server.o: SFML/examples/voip/Server.cpp.o
@@ -534,7 +534,7 @@ SFML/examples/voip/Server.o: SFML/examples/voip/Server.cpp.o
 
 # target to build an object file
 SFML/examples/voip/Server.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/voip/Server.cpp.o
 .PHONY : SFML/examples/voip/Server.cpp.o
 
 SFML/examples/voip/Server.i: SFML/examples/voip/Server.cpp.i
@@ -543,7 +543,7 @@ SFML/examples/voip/Server.i: SFML/examples/voip/Server.cpp.i
 
 # target to preprocess a source file
 SFML/examples/voip/Server.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/voip/Server.cpp.i
 .PHONY : SFML/examples/voip/Server.cpp.i
 
 SFML/examples/voip/Server.s: SFML/examples/voip/Server.cpp.s
@@ -552,7 +552,7 @@ SFML/examples/voip/Server.s: SFML/examples/voip/Server.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/voip/Server.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/Server.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/voip/Server.cpp.s
 .PHONY : SFML/examples/voip/Server.cpp.s
 
 SFML/examples/voip/VoIP.o: SFML/examples/voip/VoIP.cpp.o
@@ -561,7 +561,7 @@ SFML/examples/voip/VoIP.o: SFML/examples/voip/VoIP.cpp.o
 
 # target to build an object file
 SFML/examples/voip/VoIP.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/voip/VoIP.cpp.o
 .PHONY : SFML/examples/voip/VoIP.cpp.o
 
 SFML/examples/voip/VoIP.i: SFML/examples/voip/VoIP.cpp.i
@@ -570,7 +570,7 @@ SFML/examples/voip/VoIP.i: SFML/examples/voip/VoIP.cpp.i
 
 # target to preprocess a source file
 SFML/examples/voip/VoIP.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/voip/VoIP.cpp.i
 .PHONY : SFML/examples/voip/VoIP.cpp.i
 
 SFML/examples/voip/VoIP.s: SFML/examples/voip/VoIP.cpp.s
@@ -579,7 +579,7 @@ SFML/examples/voip/VoIP.s: SFML/examples/voip/VoIP.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/voip/VoIP.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/voip/VoIP.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/voip/VoIP.cpp.s
 .PHONY : SFML/examples/voip/VoIP.cpp.s
 
 SFML/examples/window/Window.o: SFML/examples/window/Window.cpp.o
@@ -588,7 +588,7 @@ SFML/examples/window/Window.o: SFML/examples/window/Window.cpp.o
 
 # target to build an object file
 SFML/examples/window/Window.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/window/Window.cpp.o
 .PHONY : SFML/examples/window/Window.cpp.o
 
 SFML/examples/window/Window.i: SFML/examples/window/Window.cpp.i
@@ -597,7 +597,7 @@ SFML/examples/window/Window.i: SFML/examples/window/Window.cpp.i
 
 # target to preprocess a source file
 SFML/examples/window/Window.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/window/Window.cpp.i
 .PHONY : SFML/examples/window/Window.cpp.i
 
 SFML/examples/window/Window.s: SFML/examples/window/Window.cpp.s
@@ -606,7 +606,7 @@ SFML/examples/window/Window.s: SFML/examples/window/Window.cpp.s
 
 # target to generate assembly for a file
 SFML/examples/window/Window.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/examples/window/Window.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/examples/window/Window.cpp.s
 .PHONY : SFML/examples/window/Window.cpp.s
 
 SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.o: SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o
@@ -615,7 +615,7 @@ SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.o: SFML/templates/SFML/SFML
 
 # target to build an object file
 SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o
 .PHONY : SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.o
 
 SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.i: SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.i
@@ -624,7 +624,7 @@ SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.i: SFML/templates/SFML/SFML
 
 # target to preprocess a source file
 SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.i
 .PHONY : SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.i
 
 SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.s: SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.s
@@ -633,7 +633,7 @@ SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.s: SFML/templates/SFML/SFML
 
 # target to generate assembly for a file
 SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.s
 .PHONY : SFML/templates/SFML/SFML_App.xctemplate/ResourcePath.mm.s
 
 SFML/templates/SFML/SFML_App.xctemplate/main.o: SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o
@@ -642,7 +642,7 @@ SFML/templates/SFML/SFML_App.xctemplate/main.o: SFML/templates/SFML/SFML_App.xct
 
 # target to build an object file
 SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o
 .PHONY : SFML/templates/SFML/SFML_App.xctemplate/main.cpp.o
 
 SFML/templates/SFML/SFML_App.xctemplate/main.i: SFML/templates/SFML/SFML_App.xctemplate/main.cpp.i
@@ -651,7 +651,7 @@ SFML/templates/SFML/SFML_App.xctemplate/main.i: SFML/templates/SFML/SFML_App.xct
 
 # target to preprocess a source file
 SFML/templates/SFML/SFML_App.xctemplate/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.i
 .PHONY : SFML/templates/SFML/SFML_App.xctemplate/main.cpp.i
 
 SFML/templates/SFML/SFML_App.xctemplate/main.s: SFML/templates/SFML/SFML_App.xctemplate/main.cpp.s
@@ -660,7 +660,7 @@ SFML/templates/SFML/SFML_App.xctemplate/main.s: SFML/templates/SFML/SFML_App.xct
 
 # target to generate assembly for a file
 SFML/templates/SFML/SFML_App.xctemplate/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/templates/SFML/SFML_App.xctemplate/main.cpp.s
 .PHONY : SFML/templates/SFML/SFML_App.xctemplate/main.cpp.s
 
 SFML/templates/SFML/SFML_CLT.xctemplate/main.o: SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o
@@ -669,7 +669,7 @@ SFML/templates/SFML/SFML_CLT.xctemplate/main.o: SFML/templates/SFML/SFML_CLT.xct
 
 # target to build an object file
 SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o
 .PHONY : SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.o
 
 SFML/templates/SFML/SFML_CLT.xctemplate/main.i: SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.i
@@ -678,7 +678,7 @@ SFML/templates/SFML/SFML_CLT.xctemplate/main.i: SFML/templates/SFML/SFML_CLT.xct
 
 # target to preprocess a source file
 SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.i
 .PHONY : SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.i
 
 SFML/templates/SFML/SFML_CLT.xctemplate/main.s: SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s
@@ -687,7 +687,7 @@ SFML/templates/SFML/SFML_CLT.xctemplate/main.s: SFML/templates/SFML/SFML_CLT.xct
 
 # target to generate assembly for a file
 SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s
 .PHONY : SFML/templates/SFML/SFML_CLT.xctemplate/main.cpp.s
 
 src/Exception.o: src/Exception.cpp.o
@@ -696,7 +696,7 @@ src/Exception.o: src/Exception.cpp.o
 
 # target to build an object file
 src/Exception.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Exception.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Exception.cpp.o
 .PHONY : src/Exception.cpp.o
 
 src/Exception.i: src/Exception.cpp.i
@@ -705,7 +705,7 @@ src/Exception.i: src/Exception.cpp.i
 
 # target to preprocess a source file
 src/Exception.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Exception.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Exception.cpp.i
 .PHONY : src/Exception.cpp.i
 
 src/Exception.s: src/Exception.cpp.s
@@ -714,7 +714,7 @@ src/Exception.s: src/Exception.cpp.s
 
 # target to generate assembly for a file
 src/Exception.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Exception.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Exception.cpp.s
 .PHONY : src/Exception.cpp.s
 
 src/Game.o: src/Game.cpp.o
@@ -723,7 +723,7 @@ src/Game.o: src/Game.cpp.o
 
 # target to build an object file
 src/Game.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Game.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Game.cpp.o
 .PHONY : src/Game.cpp.o
 
 src/Game.i: src/Game.cpp.i
@@ -732,7 +732,7 @@ src/Game.i: src/Game.cpp.i
 
 # target to preprocess a source file
 src/Game.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Game.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Game.cpp.i
 .PHONY : src/Game.cpp.i
 
 src/Game.s: src/Game.cpp.s
@@ -741,7 +741,7 @@ src/Game.s: src/Game.cpp.s
 
 # target to generate assembly for a file
 src/Game.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Game.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
 src/GameOver.o: src/GameOver.cpp.o
@@ -750,7 +750,7 @@ src/GameOver.o: src/GameOver.cpp.o
 
 # target to build an object file
 src/GameOver.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/GameOver.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/GameOver.cpp.o
 .PHONY : src/GameOver.cpp.o
 
 src/GameOver.i: src/GameOver.cpp.i
@@ -759,7 +759,7 @@ src/GameOver.i: src/GameOver.cpp.i
 
 # target to preprocess a source file
 src/GameOver.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/GameOver.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/GameOver.cpp.i
 .PHONY : src/GameOver.cpp.i
 
 src/GameOver.s: src/GameOver.cpp.s
@@ -768,7 +768,7 @@ src/GameOver.s: src/GameOver.cpp.s
 
 # target to generate assembly for a file
 src/GameOver.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/GameOver.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/GameOver.cpp.s
 .PHONY : src/GameOver.cpp.s
 
 src/Menu.o: src/Menu.cpp.o
@@ -777,7 +777,7 @@ src/Menu.o: src/Menu.cpp.o
 
 # target to build an object file
 src/Menu.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Menu.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Menu.cpp.o
 .PHONY : src/Menu.cpp.o
 
 src/Menu.i: src/Menu.cpp.i
@@ -786,7 +786,7 @@ src/Menu.i: src/Menu.cpp.i
 
 # target to preprocess a source file
 src/Menu.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Menu.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Menu.cpp.i
 .PHONY : src/Menu.cpp.i
 
 src/Menu.s: src/Menu.cpp.s
@@ -795,7 +795,7 @@ src/Menu.s: src/Menu.cpp.s
 
 # target to generate assembly for a file
 src/Menu.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Menu.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Menu.cpp.s
 .PHONY : src/Menu.cpp.s
 
 src/SFML.o: src/SFML.cpp.o
@@ -804,7 +804,7 @@ src/SFML.o: src/SFML.cpp.o
 
 # target to build an object file
 src/SFML.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SFML.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SFML.cpp.o
 .PHONY : src/SFML.cpp.o
 
 src/SFML.i: src/SFML.cpp.i
@@ -813,7 +813,7 @@ src/SFML.i: src/SFML.cpp.i
 
 # target to preprocess a source file
 src/SFML.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SFML.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SFML.cpp.i
 .PHONY : src/SFML.cpp.i
 
 src/SFML.s: src/SFML.cpp.s
@@ -822,7 +822,7 @@ src/SFML.s: src/SFML.cpp.s
 
 # target to generate assembly for a file
 src/SFML.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SFML.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SFML.cpp.s
 .PHONY : src/SFML.cpp.s
 
 src/SideBar.o: src/SideBar.cpp.o
@@ -831,7 +831,7 @@ src/SideBar.o: src/SideBar.cpp.o
 
 # target to build an object file
 src/SideBar.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SideBar.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SideBar.cpp.o
 .PHONY : src/SideBar.cpp.o
 
 src/SideBar.i: src/SideBar.cpp.i
@@ -840,7 +840,7 @@ src/SideBar.i: src/SideBar.cpp.i
 
 # target to preprocess a source file
 src/SideBar.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SideBar.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SideBar.cpp.i
 .PHONY : src/SideBar.cpp.i
 
 src/SideBar.s: src/SideBar.cpp.s
@@ -849,7 +849,7 @@ src/SideBar.s: src/SideBar.cpp.s
 
 # target to generate assembly for a file
 src/SideBar.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/SideBar.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/SideBar.cpp.s
 .PHONY : src/SideBar.cpp.s
 
 src/Snake.o: src/Snake.cpp.o
@@ -858,7 +858,7 @@ src/Snake.o: src/Snake.cpp.o
 
 # target to build an object file
 src/Snake.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Snake.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Snake.cpp.o
 .PHONY : src/Snake.cpp.o
 
 src/Snake.i: src/Snake.cpp.i
@@ -867,7 +867,7 @@ src/Snake.i: src/Snake.cpp.i
 
 # target to preprocess a source file
 src/Snake.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Snake.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Snake.cpp.i
 .PHONY : src/Snake.cpp.i
 
 src/Snake.s: src/Snake.cpp.s
@@ -876,7 +876,7 @@ src/Snake.s: src/Snake.cpp.s
 
 # target to generate assembly for a file
 src/Snake.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/Snake.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Snake.cpp.s
 .PHONY : src/Snake.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -885,7 +885,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -894,7 +894,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -903,7 +903,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Nibbler.dir/build.make CMakeFiles/Nibbler.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -914,7 +914,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Nibbler"
+	@echo "... test"
 	@echo "... SFML/examples/cocoa/CocoaAppDelegate.o"
 	@echo "... SFML/examples/cocoa/CocoaAppDelegate.i"
 	@echo "... SFML/examples/cocoa/CocoaAppDelegate.s"

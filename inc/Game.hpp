@@ -4,6 +4,10 @@
 
 #include "Snake.hpp"
 #include <string>
+#include <unistd.h>
+#include <iostream>
+#include <fstream>
+#include <sstream>
 
 class Game{
 public:
@@ -27,6 +31,11 @@ public:
 
     char **getMap();
     int getLevel();
+    int getScore();
+    std::string getMaxScore();
+
+    void updateMaxScore();
+    void saveMaxScore();
 
 private:
     Game();
@@ -35,6 +44,7 @@ private:
     int level;
     char **map;
     Snake snake;
+    std::string maxScore;
 
 };
 

@@ -9,6 +9,7 @@
 #include "Menu.hpp"
 #include "Game.hpp"
 #include "GameOver.hpp"
+#include "SideBar.hpp"
 
 class Sfml {
 public:
@@ -23,6 +24,7 @@ public:
     void drawBarriers(int i, int j);
     void drawFood(int i, int j);
     void drawBg(int i, int j);
+
 private:
     int windowSize;
     int squareSize;

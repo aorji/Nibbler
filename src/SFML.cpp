@@ -3,11 +3,10 @@
 //
 
 #include <SFML.hpp>
-#include <iostream>
 
 Sfml::Sfml(int windowSize, int squareSize): windowSize(windowSize),
                                             squareSize(squareSize),
-                                            window(sf::VideoMode(windowSize, windowSize), "Nibbler"),
+                                            window(sf::VideoMode(windowSize + windowSize/3, windowSize), "Nibbler"),
                                             rectangle(sf::Vector2f(squareSize, squareSize)){}
 Sfml::~Sfml() = default;
 
@@ -66,7 +65,7 @@ void Sfml::drawBg(int i, int j){
 }
 
 void Sfml::draw(char **map){
-    window.clear();
+//    window.clear();
 	for (auto i = 0; i < gameAreaSize; ++i) {
         for (auto j = 0; j < gameAreaSize; ++j) {
             drawBg(i, j);
@@ -78,27 +77,38 @@ void Sfml::draw(char **map){
             	drawBarriers(i, j);
         }
     }
-    window.display();
+//    sideBar.update();
+//    sideBar.draw(window);
+//    window.display();
 }
 
 void Sfml::execute(Game &game){
 	char c = 123;
     Menu menu(windowSize);
-    GameOver gameOver(windowSize);
     menu.init();
+    GameOver gameOver(windowSize);
+    gameOver.init();
+    SideBar sideBar(windowSize, game);
+    sideBar.init();
 
-    sf::Time gameOverTime = sf::seconds(1);
+    sf::Time gameOverTime = sf::seconds(1.1f);
+//    int fps = 60;
+//    clock_t next = clock() + 1000 / fps;
     while (window.isOpen()) {
         sf::Time delayTime = sf::microseconds(300000 / game.getLevel());
         sf::Event event;
+//        if (clock() >= next)
+//        {
+//            next = clock() + 1000 / fps;
+//        }
         while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed)
+            if (event.type == sf::Event::Closed) {
                 window.close();
+            }
             if (event.key.code == sf::Keyboard::Enter){
                 if (menu.isOpen() || menu.getSelectedField() == 1)
                     menu.close();
                 if (menu.isOpen() || menu.getSelectedField() == 2) {
-                    gameOver.init();
                     gameOver.draw(window);
                     sf::sleep(gameOverTime);
                     window.close();
@@ -118,21 +128,27 @@ void Sfml::execute(Game &game){
                 }
                 c = 125;
             }
-            if (event.key.code == sf::Keyboard::Left)
+            if (event.key.code == sf::Keyboard::Left) {
                 c = 123;
-            if (event.key.code == sf::Keyboard::Right)
+            }
+            if (event.key.code == sf::Keyboard::Right) {
                 c = 124;
+            }
         }
-        if (menu.isOpen())
+        if (menu.isOpen()) {
             menu.draw(window);
+        }
         else {
             if (!game.update(c)){
-                gameOver.init();
-                gameOver.draw(window);
-                sf::sleep(gameOverTime);
+//                gameOver.draw(window);
+//                sf::sleep(gameOverTime);
                 window.close();
             }
+            window.clear();
             draw(game.getMap());
+            sideBar.update();
+            sideBar.draw(window);
+            window.display();
         }
         sf::sleep(delayTime);
     }

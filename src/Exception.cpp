@@ -17,3 +17,6 @@ const char *
 FontIsNotFound::what() const throw() {
     return "No \"Spantaran.otf\" font in \"font\" folder";
 }
+
+//small window
+//no img
