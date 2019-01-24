@@ -65,21 +65,25 @@ void Sfml::drawBg(int i, int j){
 }
 
 void Sfml::draw(char **map){
-//    window.clear();
-	for (auto i = 0; i < gameAreaSize; ++i) {
+    for (auto i = 0; i < gameAreaSize; ++i) {
         for (auto j = 0; j < gameAreaSize; ++j) {
             drawBg(i, j);
-            if (map[i][j] == 's')
-            	drawSnake(i, j);
-            if (map[i][j] == 'f')
+            if (map[i][j] == 's') {
+                drawSnake(i, j);
+            }
+            if (map[i][j] == 'f') {
                 drawFood(i, j);
-            if (map[i][j] == 'b')
-            	drawBarriers(i, j);
+            }
+            if (map[i][j] == 'b') {
+                drawBarriers(i, j);
+            }
+        }
+        for (auto j = gameAreaSize; j < gameAreaSize*2; ++j) {
+            rectangle.setPosition(j * squareSize, i * squareSize);
+            rectangle.setFillColor(sf::Color::Black);
+            window.draw(rectangle);
         }
     }
-//    sideBar.update();
-//    sideBar.draw(window);
-//    window.display();
 }
 
 void Sfml::execute(Game &game){
@@ -88,23 +92,22 @@ void Sfml::execute(Game &game){
     menu.init();
     GameOver gameOver(windowSize);
     gameOver.init();
-    SideBar sideBar(windowSize, game);
+    SideBar sideBar(game);
     sideBar.init();
 
     sf::Time gameOverTime = sf::seconds(1.1f);
 //    int fps = 60;
 //    clock_t next = clock() + 1000 / fps;
     while (window.isOpen()) {
-        sf::Time delayTime = sf::microseconds(300000 / game.getLevel());
+        sf::Time delayTime = sf::microseconds(300000 / game.getLevel()); //WHAT!!
         sf::Event event;
 //        if (clock() >= next)
 //        {
 //            next = clock() + 1000 / fps;
 //        }
         while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed) {
+            if (event.type == sf::Event::Closed)
                 window.close();
-            }
             if (event.key.code == sf::Keyboard::Enter){
                 if (menu.isOpen() || menu.getSelectedField() == 1)
                     menu.close();
@@ -128,20 +131,18 @@ void Sfml::execute(Game &game){
                 }
                 c = 125;
             }
-            if (event.key.code == sf::Keyboard::Left) {
+            if (event.key.code == sf::Keyboard::Left)
                 c = 123;
-            }
-            if (event.key.code == sf::Keyboard::Right) {
+            if (event.key.code == sf::Keyboard::Right)
                 c = 124;
-            }
         }
         if (menu.isOpen()) {
             menu.draw(window);
         }
         else {
             if (!game.update(c)){
-//                gameOver.draw(window);
-//                sf::sleep(gameOverTime);
+                gameOver.draw(window);
+                sf::sleep(gameOverTime);
                 window.close();
             }
             window.clear();

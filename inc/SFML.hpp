@@ -15,8 +15,6 @@ class Sfml {
 public:
     Sfml(int windowSize, int squareSize);
     ~Sfml();
-    // void init(char **map);
-    // void destroy();
     void draw(char **map);
     void execute(Game &game);
 

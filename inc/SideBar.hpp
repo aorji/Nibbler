@@ -10,12 +10,12 @@
 #include <string>
 #include <fstream>
 
-#define NUMBER_OF_SIDEBAR_FIELD 3
+#define NUMBER_OF_SIDEBAR_FIELD 4
 
 class SideBar {
 
 public:
-    SideBar(int windowSize, Game & game);
+    SideBar(Game & game);
     ~SideBar();
 
     void init();
