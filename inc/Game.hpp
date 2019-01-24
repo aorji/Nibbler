@@ -24,26 +24,28 @@ public:
 
     void createFood();
     void createBarriers(long size);
-
+    bool checkCoordsForBarriers(int x, int y);
     bool checkCollisions();
 
     void changeLevel();
 
-    char **getMap();
-    int getLevel();
-    int getScore();
-    std::string getMaxScore();
+    char **getMap() const;
+    int getLevel() const;
+    int getScore() const;
+    int getScreenLength() const;
+    std::string getMaxScore() const;
+    Snake const & getSnake() const;
 
     void updateMaxScore();
     void saveMaxScore();
 
 private:
     Game();
+    Snake snake;
     long screenLength;
     int score;
     int level;
     char **map;
-    Snake snake;
     std::string maxScore;
 
 };

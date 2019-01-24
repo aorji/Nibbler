@@ -112,16 +112,16 @@ Snake::showBodyCoordinates() {
 
 //get
 long
-Snake::getLength() {
+Snake::getLength() const {
     return body.size();
 }
 
 snakeDirection
-Snake::getHeadDirection() {
+Snake::getHeadDirection() const {
     return headDirection;
 }
 
 std::vector<std::pair<int, int>>
-Snake::getBody() {
+Snake::getBody() const {
     return body;
 }

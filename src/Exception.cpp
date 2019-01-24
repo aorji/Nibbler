@@ -1,22 +1,13 @@
-//
-// Created by Anastasiia ORJI on 2019-01-22.
-//
-
 #include "../inc/Exception.hpp"
-#include <iostream>
 
-FontIsNotFound::FontIsNotFound () {}
-FontIsNotFound::FontIsNotFound ( FontIsNotFound const & src ) { *this = src; }
-FontIsNotFound::~FontIsNotFound ( ) throw() {}
-FontIsNotFound &
-FontIsNotFound::operator=( FontIsNotFound const & rhs) {
-    (void)rhs;
-    return *this;
-}
-const char *
-FontIsNotFound::what() const throw() {
-    return "No \"Spantaran.otf\" font in \"font\" folder";
+const char*    InvalidSize::what() const throw() {
+	return ("Size of map should be in range [20;50].");
 }
 
-//small window
-//no img
+const char*    InvalidLibrary::what() const throw() {
+	return ("Invalid library name.");
+}
+
+const char*    InvalidLibraryFunction::what() const throw() {
+	return ("Invalid library function.");
+}

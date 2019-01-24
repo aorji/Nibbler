@@ -4,7 +4,7 @@ SRC_DIR =   ./src/
 INC_DIR =   ./inc/
 
 CC      =   clang++
-FLAGS   =
+FLAGS   =	-Wall -Wextra -Werror
 SRC     =   main.cpp Snake.cpp Game.cpp SFML.cpp \
 			Menu.cpp GameOver.cpp Exception.cpp \
 			SideBar.cpp
@@ -18,9 +18,17 @@ SFML = -F SFML/Frameworks
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): sdl ncurses $(OBJ)
 	$(CC) $(FLAGS) $(OBJ) -o $(NAME) $(HDRS) $(LIBS) $(SFML)
 	echo "\033[32m[ ✔ ] "$(NAME) created" \033[0m"
+
+sdl:
+	@make -C SDL
+	@echo "\033[32mSDL Builded\033[39m"
+
+ncurses:
+	@make -C Ncurses
+	@echo "\033[32mNcurses Builded\033[39m"
 
 $(OBJ): $(OBJ_DIR)
 
@@ -31,10 +39,14 @@ $(OBJ_DIR)%.o:	$(SRC_DIR)%.cpp
 	@$(CC) -c $< -o $@ $(SFML) $(FLAGS) $(HDRS) $(INCLUDES) -std=c++11
 
 clean:
+	@make -C SDL clean
+	@make -C Ncurses clean
 	rm -f $(OBJ)
 	echo "\033[31m[ × ] "$(OBJ) removed" \033[0m"
 
 fclean: clean
+	@make -C SDL fclean
+	@make -C Ncurses fclean
 	rm -f $(NAME)
 	rm -rf $(OBJ_DIR)
 	echo "\033[31m[ × ] "$(NAME) removed" \033[0m"

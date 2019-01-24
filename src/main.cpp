@@ -2,8 +2,11 @@
 // Created by Anastasiia ORJI on 2019-01-15.
 //
 
+#include "../inc/Exception.hpp"
 #include "../inc/Game.hpp"
 #include <iostream>
+#include "../inc/IGUI.hpp"
+#include <dlfcn.h>
 #include <SFML/Graphics.hpp>
 #include <SFML.hpp>
 
