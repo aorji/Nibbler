@@ -10,7 +10,7 @@
 #include <string>
 #include <fstream>
 
-#define NUMBER_OF_SIDEBAR_FIELD 4
+#define NUMBER_OF_SIDEBAR_FIELD 8
 
 class SideBar {
 

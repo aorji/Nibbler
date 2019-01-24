@@ -22,17 +22,37 @@ SideBar::init( ){
     sideBar[1].setFont(font);
     sideBar[1].setFillColor(sf::Color(49, 145, 20));
     sideBar[1].setCharacterSize(40);
-    sideBar[1].setPosition(windowSize + 80, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 2);
+    sideBar[1].setPosition(windowSize + 80, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 3);
 
     sideBar[2].setFont(font);
     sideBar[2].setFillColor(sf::Color(49, 145, 20));
     sideBar[2].setCharacterSize(40);
-    sideBar[2].setPosition(windowSize + 80, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 3);
+    sideBar[2].setPosition(windowSize + 80, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 4);
 
     sideBar[3].setFont(font);
     sideBar[3].setFillColor(sf::Color(49, 145, 20));
     sideBar[3].setCharacterSize(40);
-    sideBar[3].setPosition(windowSize + 80, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 4);
+    sideBar[3].setPosition(windowSize + 80, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 5);
+
+    sideBar[4].setFont(font);
+    sideBar[4].setFillColor(sf::Color(49, 145, 20));
+    sideBar[4].setCharacterSize(40);
+    sideBar[4].setPosition(windowSize+ 10, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 7);
+
+    sideBar[5].setFont(font);
+    sideBar[5].setFillColor(sf::Color(49, 145, 20));
+    sideBar[5].setCharacterSize(40);
+    sideBar[5].setPosition(windowSize + 20, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 8);
+
+    sideBar[6].setFont(font);
+    sideBar[6].setFillColor(sf::Color(49, 145, 20));
+    sideBar[6].setCharacterSize(40);
+    sideBar[6].setPosition(windowSize + 20, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 9);
+
+    sideBar[7].setFont(font);
+    sideBar[7].setFillColor(sf::Color(49, 145, 20));
+    sideBar[7].setCharacterSize(40);
+    sideBar[7].setPosition(windowSize + 20, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 10);
 }
 void
 SideBar::update( ) {
@@ -43,6 +63,10 @@ SideBar::update( ) {
     sideBar[1].setString("Score " + score);
     sideBar[2].setString("Level " + level);
     sideBar[3].setString("MaxScore " + game.getMaxScore());
+    sideBar[4].setString(L"To change GUI press ");
+    sideBar[5].setString(L"1  NCURSES");
+    sideBar[6].setString(L"2  SDL");
+    sideBar[7].setString(L"3  SFML current");
 }
 
 void
