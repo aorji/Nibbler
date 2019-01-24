@@ -30,14 +30,9 @@ Game::createMap() {
 
 void
 Game::fillMap() {
-    for (auto i = 0; i < screenLength; ++i) {
-        for (auto j = 0; j < screenLength; ++j) {
+    for (auto i = 0; i < screenLength; ++i)
+        for (auto j = 0; j < screenLength; ++j)
             map[i][j] = '.';
-        }
-    }
-    std::vector<std::pair<int, int>> snakeBody = snake.getBody();
-    for(auto v : snakeBody)
-        map[v.second][v.first] = 's';
 }
 
 void
@@ -45,6 +40,8 @@ Game::fillSnakeWith(char c) {
     std::vector<std::pair<int, int>> snakeBody = snake.getBody();
     for(auto v : snakeBody)
         map[v.second][v.first] = c;
+    if (c == 's')
+        map[snakeBody.at(0).second][snakeBody.at(0).first] = 'o';
 }
 
 void
@@ -58,13 +55,13 @@ Game::printMap() {
 
 void
 Game::moveSnake(char c) {
-    if (c == 'w' || c == 126)
+    if (c == 126)
         snake.moveSnake(UpArrow);
-    else if (c == 's' || c == 125)
+    else if (c == 125)
         snake.moveSnake(DownArrow);
-    else if (c == 'a' || c == 123)
+    else if (c == 123)
         snake.moveSnake(LeftArrow);
-    else if (c == 'd' || c == 124)
+    else if (c == 124)
         snake.moveSnake(RightArrow);
 }
 bool

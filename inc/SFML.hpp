@@ -19,6 +19,7 @@ public:
     void execute(Game &game);
 
     void drawSnake(int i, int j);
+    void drawSnakeHead(int i, int j);
     void drawBarriers(int i, int j);
     void drawFood(int i, int j);
     void drawBg(int i, int j);

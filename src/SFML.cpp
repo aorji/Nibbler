@@ -32,6 +32,19 @@ Sfml::drawSnake(int i, int j){
 }
 
 void
+Sfml::drawSnakeHead(int i, int j){
+    float scale = squareSize/600.0;
+    sf::Texture texture;
+    texture.loadFromFile("img/nastushka.jpg");
+
+    sf::Sprite sprite;
+    sprite.setTexture(texture);
+    sprite.setScale(scale, scale);
+    sprite.setPosition(j * squareSize, i * squareSize);
+    window.draw(sprite);
+}
+
+void
 Sfml::drawBarriers(int i, int j){
 	sf::Texture texture;
     texture.loadFromFile("img/stone.jpg");
@@ -68,15 +81,14 @@ void Sfml::draw(char **map){
     for (auto i = 0; i < gameAreaSize; ++i) {
         for (auto j = 0; j < gameAreaSize; ++j) {
             drawBg(i, j);
-            if (map[i][j] == 's') {
+            if (map[i][j] == 's')
                 drawSnake(i, j);
-            }
-            if (map[i][j] == 'f') {
+            if (map[i][j] == 'o')
+                drawSnakeHead(i, j);
+            if (map[i][j] == 'f')
                 drawFood(i, j);
-            }
-            if (map[i][j] == 'b') {
+            if (map[i][j] == 'b')
                 drawBarriers(i, j);
-            }
         }
         for (auto j = gameAreaSize; j < gameAreaSize*2; ++j) {
             rectangle.setPosition(j * squareSize, i * squareSize);
