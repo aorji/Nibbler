@@ -18,6 +18,11 @@ public:
 	void drawInfo(Game &game);
 	int drawBeginWindow();
 	void drawEndWindow();
+
+	class ScreenException :public std::exception {
+	public:
+		const char    *what() const throw();
+	};
 };
 
 #endif
