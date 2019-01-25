@@ -70,6 +70,10 @@ int NCURSES::drawBeginWindow()
 
 	char ch = getch();
 	erase();
+
+	while (ch != 10 && ch != 27)
+		ch = getch();
+
 	if (ch == 10)
 		return 1;
 	if (ch == 27)
