@@ -134,7 +134,7 @@ int Sfml::execute(Game &game){
         sf::Time delayTime = sf::microseconds(300000 / game.getLevel()); //WHAT!!
         sf::Event event;
         while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed)
+            if (event.type == sf::Event::Closed || event.key.code == sf::Keyboard::Escape)
                 window.close();
             if (event.key.code == sf::Keyboard::Enter){
                 if (menu.isOpen() || menu.getSelectedField() == 1)
