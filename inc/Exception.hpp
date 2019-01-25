@@ -3,6 +3,12 @@
 
 #include <stdexcept>
 
+class BadArguments : public std::exception
+{
+	public:
+		const char *what() const throw();
+};
+
 class InvalidSize : public std::exception
 {
 	public:
