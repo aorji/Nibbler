@@ -18,11 +18,11 @@ Snake::createSnake() {
 
 void
 Snake::moveSnake(turnKey key) {
-    if ((int)key == -(int)headDirection)
-        return;
     for (int i = length - 1; i > 0; --i) //Tail
         body.at(i) = std::make_pair(body.at(i - 1).first, body.at(i - 1).second);
     //Head
+    if ((int)key == -(int)headDirection)
+        moveHeadByDirection();
     if ((int)key == (int)headDirection)
         moveHeadByDirection();
     else if (headDirection == Left || headDirection == Right)

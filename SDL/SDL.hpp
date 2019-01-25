@@ -33,7 +33,7 @@ class SDL : public IGUI
 	TTF_Font* font;
 
 public:
-	SDL(Game &game);
+	SDL(int screensize);
 	~SDL();
 
 	void draw(Game &game);

@@ -8,7 +8,7 @@ class NCURSES : public IGUI
 {
 	int				blocksize;
 public:
-	NCURSES(Game &game);
+	NCURSES(int screensize);
 	~NCURSES();
 
 	void draw(Game &game);

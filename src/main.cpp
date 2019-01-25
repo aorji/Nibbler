@@ -6,8 +6,8 @@
 
 IGUI*   chooseLib(int res, int map_size)
 {
-    IGUI   *(*create)(Game) = nullptr;
-    void *handle;
+    IGUI    *(*library)(int) = nullptr;
+    void    *handle = nullptr;
 
     if (res == 1)
         handle = dlopen("Ncurses/ncurses_lib.so", RTLD_LAZY);
@@ -17,16 +17,11 @@ IGUI*   chooseLib(int res, int map_size)
         handle = dlopen("SFML/sfml_lib.so", RTLD_LAZY);
 
     if (!handle)
-    {
-        // fprintf(stderr, "%s\n", dlerror());
         throw InvalidLibrary();
-    }
-
-    //newGUI - name of function in your library_name.cpp file. You create a pointer to this function and execute it.
-    if (( create = reinterpret_cast<IGUI* (*)(Game)>(dlsym(handle, "newGUI")) ) == nullptr)
+    if (( library = reinterpret_cast<IGUI* (*)(int)>(dlsym(handle, "newGUI")) ) == nullptr)
         throw InvalidLibraryFunction();
 
-    return create(map_size);
+    return library(map_size);
 }
 
 int main(int argc, char **argv)
@@ -37,33 +32,34 @@ int main(int argc, char **argv)
         std::cout << "Usage: ./nibbler [map_size]" << std::endl;
         return 0;
     }
-    try
-    {
-        int map_size = std::stoi(argv[1]);
+    try {
+
+        int map_size;
+
+        try {
+            map_size = std::stoi(argv[1]);
+        } catch (std::exception &e) {
+            throw InvalidSize();
+        }
+
         if (map_size < 20 || map_size > 50)
             throw InvalidSize();
-        Game game(map_size);
-        game.update(' ');
 
-        IGUI   *lib = chooseLib(1, map_size);
+        Game game(map_size);
+        IGUI   *lib = chooseLib(2, map_size);
         int res = 0; // 1 - ncurses, 2 - sdl, 3 - sfml
+
         while (1)
         {
             res = lib->execute(game);
-            if (!res)
-            {
-                delete lib;
-                break ;
-            }
+            delete lib;
             if (res > 0)
-            {
-                delete lib;
                 lib = chooseLib(res, map_size);
-            }
+            else
+                break;
         }
-    }
-    catch (std::exception &e)
-    {
+        
+    } catch (std::exception &e) {
         std::cout << e.what() << std::endl;
     }
 

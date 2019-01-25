@@ -2,12 +2,12 @@
 
 #include <unistd.h>
 
-extern "C" IGUI* newGUI(Game &game)
+extern "C" IGUI* newGUI(int screensize)
 {
-	return new SDL(game);
+	return new SDL(screensize);
 }
 
-SDL::SDL(Game &game) : IGUI(game)
+SDL::SDL(int screensize) : IGUI(screensize)
 {
 	if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
     	throw SDL::InitException();
@@ -44,7 +44,6 @@ SDL::SDL(Game &game) : IGUI(game)
 
     if (!drawBeginWindow())
     	exit(0);
-	draw(game);
 }
 
 SDL::~SDL()
@@ -255,13 +254,13 @@ int SDL::execute(Game &game)
 	    {
         	if (e.type == SDL_KEYDOWN)
         	{
-        		if (e.key.keysym.sym == SDLK_RIGHT && ch != 123)
+        		if (e.key.keysym.sym == SDLK_RIGHT)
         			ch = 124;
-        		else if (e.key.keysym.sym == SDLK_DOWN && ch != 126)
+        		else if (e.key.keysym.sym == SDLK_DOWN)
         			ch = 125;
-        		else if (e.key.keysym.sym == SDLK_LEFT && ch != 124)
+        		else if (e.key.keysym.sym == SDLK_LEFT)
         			ch = 123;
-        		else if (e.key.keysym.sym == SDLK_UP && ch != 125)
+        		else if (e.key.keysym.sym == SDLK_UP)
         			ch = 126;
         		else if (e.key.keysym.sym == SDLK_ESCAPE)
         			return 0;

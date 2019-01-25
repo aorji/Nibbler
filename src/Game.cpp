@@ -1,7 +1,7 @@
 
 #include "../inc/Game.hpp"
 
-Game::Game(long screenLength) {
+Game::Game(int screenLength) {
     srand(unsigned(std::time(0)));
     this->screenLength = screenLength;
     score = 0;

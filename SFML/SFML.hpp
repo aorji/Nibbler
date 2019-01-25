@@ -14,7 +14,7 @@
 
 class Sfml : public IGUI {
 public:
-    Sfml(Game &game);
+    Sfml(int screensize);
     ~Sfml();
     void draw(Game &game);
     int  execute(Game &game);

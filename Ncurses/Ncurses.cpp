@@ -8,12 +8,12 @@
 #define TEXT		5
 #define HEADSNAKE	6
 
-extern "C" IGUI* newGUI(Game &game)
+extern "C" IGUI* newGUI(int screensize)
 {
-	return new NCURSES(game);
+	return new NCURSES(screensize);
 }
 
-NCURSES::NCURSES(Game &game) : IGUI(game)
+NCURSES::NCURSES(int screensize) : IGUI(screensize)
 {
 	initscr();
 	start_color();
@@ -32,12 +32,12 @@ NCURSES::NCURSES(Game &game) : IGUI(game)
 
 	if (!drawBeginWindow())
     	exit(0);
-	draw(game);
 }
 
 NCURSES::~NCURSES()
 {
 	endwin();
+	std::system("clear");
 }
 
 int NCURSES::drawBeginWindow()
@@ -202,13 +202,13 @@ int NCURSES::execute(Game &game)
 			ch = dir;
 		else
 		{
-			if (ch == KEY_RIGHT && dir != 123)
+			if (ch == KEY_RIGHT)
     			ch = 124;
-    		else if (ch == KEY_DOWN && dir != 126)
+    		else if (ch == KEY_DOWN)
     			ch = 125;
-    		else if (ch == KEY_LEFT && dir != 124)
+    		else if (ch == KEY_LEFT)
     			ch = 123;
-    		else if (ch == KEY_UP && dir != 125)
+    		else if (ch == KEY_UP)
     			ch = 126;
     		else if (ch == 27)
     			return 0;

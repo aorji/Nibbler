@@ -4,15 +4,15 @@
 
 #include "SFML.hpp"
 
-extern "C" IGUI* newGUI(Game &game)
+extern "C" IGUI* newGUI(int screensize)
 {
-    return new Sfml(game);
+    return new Sfml(screensize);
 }
 
-Sfml::Sfml(Game &game): IGUI(game)
+Sfml::Sfml(int screensize): IGUI(screensize)
 {
     windowSize = sf::VideoMode::getDesktopMode().height / 2;
-    squareSize = windowSize / game.getScreenLength();
+    squareSize = windowSize / screensize;
     window.create(sf::VideoMode(windowSize + windowSize / 3, windowSize), "Nibbler");
     rectangle = sf::RectangleShape(sf::Vector2f(squareSize, squareSize));
 }
@@ -100,7 +100,6 @@ void Sfml::draw(Game &game){
 }
 
 int Sfml::execute(Game &game){
-	char c = 123;
     Menu menu(windowSize);
     menu.init();
     GameOver gameOver(windowSize);
@@ -108,16 +107,28 @@ int Sfml::execute(Game &game){
     SideBar sideBar(game);
     sideBar.init();
 
+	char c = 0;
+    switch (game.getSnake().getHeadDirection())
+    {
+        case Top:
+            c = 126;
+            break;
+        case Bottom:
+            c = 125;
+            break;
+        case Left:
+            c = 123;
+            break;
+        case Right:
+            c = 124;
+            break;
+    }
+
     sf::Time gameOverTime = sf::seconds(1.1f);
-//    int fps = 60;
-//    clock_t next = clock() + 1000 / fps;
+    
     while (window.isOpen()) {
         sf::Time delayTime = sf::microseconds(300000 / game.getLevel()); //WHAT!!
         sf::Event event;
-//        if (clock() >= next)
-//        {
-//            next = clock() + 1000 / fps;
-//        }
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();

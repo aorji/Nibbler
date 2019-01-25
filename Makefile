@@ -19,15 +19,15 @@ $(NAME): sdl ncurses sfml $(OBJ)
 
 sdl:
 	@make -C SDL
-	@echo "\033[32mSDL Builded\033[39m"
+	@echo "\033[32m[ ✔ ] "SDL Builded"\033[39m"
 
 ncurses:
 	@make -C Ncurses
-	@echo "\033[32mNcurses Builded\033[39m"
+	@echo "\033[32m[ ✔ ] "Ncurses Builded"\033[39m"
 
 sfml:
 	make -C SFML
-	echo "\033[32mSFML Builded\033[39m"
+	echo "\033[32m[ ✔ ] "SFML Builded"\033[39m"
 
 $(OBJ): $(OBJ_DIR)
 

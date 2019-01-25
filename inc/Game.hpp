@@ -11,7 +11,7 @@
 
 class Game{
 public:
-    Game( long screenLength );
+    Game( int screenLength );
     ~Game();
 
     bool update(char c);
@@ -44,7 +44,7 @@ private:
     char **map;
     int level;
     int score;
-    long screenLength;
+    int screenLength;
     Snake snake;
     std::string maxScore;
 };
