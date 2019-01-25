@@ -1,4 +1,4 @@
-NAME    =   snake
+NAME    =   nibbler
 OBJ_DIR =   ./obj/
 SRC_DIR =   ./src/
 INC_DIR =   ./inc/
