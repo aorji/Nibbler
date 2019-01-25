@@ -41,9 +41,6 @@ SDL::SDL(int screensize) : IGUI(screensize)
 
     if (!(font = TTF_OpenFont("SDL/font/BigCaslon.ttf", 26)))
     	throw SDL::FontException();
-
-    if (!drawBeginWindow())
-    	exit(0);
 }
 
 SDL::~SDL()
@@ -226,9 +223,10 @@ int SDL::execute(Game &game)
 {
 	char ch = 0;
 
+	if (!drawBeginWindow())
+    	return 0;
 	while (1)
 	{
-		// SDL_Event e;
 		switch (game.getSnake().getHeadDirection())
     	{
     		case Top:

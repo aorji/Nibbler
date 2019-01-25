@@ -38,9 +38,6 @@ NCURSES::NCURSES(int screensize) : IGUI(screensize)
 	init_pair(HEADSNAKE, COLOR_MAGENTA, COLOR_MAGENTA);
 
 	blocksize = 1;
-
-	if (!drawBeginWindow())
-    	exit(0);
 }
 
 NCURSES::~NCURSES()
@@ -185,6 +182,9 @@ void NCURSES::drawInfo(Game &game)
 
 int NCURSES::execute(Game &game)
 {
+	if (!drawBeginWindow())
+    	return 0;
+
 	int ch = 0;
 	int dir = 0;
 	keypad(stdscr, true);
