@@ -26,13 +26,10 @@ IGUI*   chooseLib(int res, int map_size)
 
 int main(int argc, char **argv)
 {
-    setlocale(LC_ALL, "en_US.UTF-8");
-    if (argc != 2)
-    {
-        std::cout << "Usage: ./nibbler [map_size]" << std::endl;
-        return 0;
-    }
     try {
+        setlocale(LC_ALL, "en_US.UTF-8");
+        if (argc != 3)
+            throw BadArguments();
 
         int map_size = 0;
 
@@ -45,8 +42,18 @@ int main(int argc, char **argv)
         if (map_size < 20 || map_size > 50)
             throw InvalidSize();
 
+        int libNumber = 1;
+        try {
+            libNumber = std::stoi(argv[2]);
+        } catch (std::exception &e) {
+            throw InvalidLibrary();
+        }
+
+        if (libNumber < 1 || libNumber > 3)
+            throw InvalidLibrary();
+
         Game game(map_size);
-        IGUI   *lib = chooseLib(2, map_size);
+        IGUI   *lib = chooseLib(libNumber, map_size);
         int res = 0; // 1 - ncurses, 2 - sdl, 3 - sfml
 
         while (1)
@@ -62,6 +69,6 @@ int main(int argc, char **argv)
     } catch (std::exception &e) {
         std::cout << e.what() << std::endl;
     }
-
+    system("leaks nibbler");
     return (0);
 }
