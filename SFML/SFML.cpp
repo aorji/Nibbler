@@ -15,12 +15,12 @@ Sfml::Sfml(int screensize): IGUI(screensize)
     squareSize = windowSize / screensize;
     window.create(sf::VideoMode(windowSize + windowSize / 3, windowSize), "Nibbler");
     rectangle = sf::RectangleShape(sf::Vector2f(squareSize, squareSize));
+    gameAreaSize = screensize;
 }
 
 Sfml::~Sfml(){
     window.clear();
     window.close();
-    // std::system("reset");
 }
 
 void
@@ -96,7 +96,7 @@ void Sfml::draw(Game &game){
             if (map[i][j] == 'b')
                 drawBarriers(i, j);
         }
-        for (auto j = gameAreaSize; j < gameAreaSize*2; ++j) {
+        for (auto j = gameAreaSize; j < gameAreaSize * 2; ++j) {
             rectangle.setPosition(j * squareSize, i * squareSize);
             rectangle.setFillColor(sf::Color::Black);
             window.draw(rectangle);
