@@ -9,7 +9,7 @@ SDL_LINK	=	-framework SDL2
 SDL_LNK_TTF	=	-framework SDL2_ttf
 
 PWD			= 	$(shell pwd)
-LIB_FLAG	=	-shared  -rpath $(PWD)/$(SDL_DIR) -nostartfiles -dynamiclib
+LIB_FLAG	=	-shared -rpath $(PWD)/$(SDL_DIR) -nostartfiles -dynamiclib
 
 SRC_FILES	=	../src/Game.cpp \
 				../src/Snake.cpp  \

@@ -34,7 +34,7 @@ int main(int argc, char **argv)
     }
     try {
 
-        int map_size;
+        int map_size = 0;
 
         try {
             map_size = std::stoi(argv[1]);

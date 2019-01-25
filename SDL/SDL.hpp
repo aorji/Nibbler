@@ -7,6 +7,9 @@
 #include "./SDL/SDL2_ttf.framework/Versions/A/Headers/SDL_ttf.h"
 #include "../inc/IGUI.hpp"
 
+#define SCREENWIDTH 900
+#define INFO_SIZE 300
+
 class SDL : public IGUI
 {
 	int blocksize;
@@ -42,7 +45,6 @@ public:
 	int execute(Game &game);
 	void getColor();
 
-	// void set_pixel(SDL_Surface *surface, int x, int y, Uint32 pixel);
 	void set_block(SDL_Surface *surface, int i, int j, Uint32 pixel);
 
 	class InitException :public std::exception {
