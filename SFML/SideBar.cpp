@@ -35,22 +35,22 @@ SideBar::init( ){
     sideBar[4].setFont(font);
     sideBar[4].setFillColor(sf::Color(49, 145, 20));
     sideBar[4].setCharacterSize(40);
-    sideBar[4].setPosition(windowSize+ 10, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 7);
+    sideBar[4].setPosition(windowSize+ 3, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 8);
 
     sideBar[5].setFont(font);
     sideBar[5].setFillColor(sf::Color(49, 145, 20));
     sideBar[5].setCharacterSize(40);
-    sideBar[5].setPosition(windowSize + 20, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 8);
+    sideBar[5].setPosition(windowSize + 40, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 9);
 
     sideBar[6].setFont(font);
     sideBar[6].setFillColor(sf::Color(49, 145, 20));
     sideBar[6].setCharacterSize(40);
-    sideBar[6].setPosition(windowSize + 20, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 9);
+    sideBar[6].setPosition(windowSize + 40, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 10);
 
     sideBar[7].setFont(font);
     sideBar[7].setFillColor(sf::Color(49, 145, 20));
     sideBar[7].setCharacterSize(40);
-    sideBar[7].setPosition(windowSize + 20, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 10);
+    sideBar[7].setPosition(windowSize + 40, windowSize/(NUMBER_OF_SIDEBAR_FIELD * 2) * 11);
 }
 void
 SideBar::update( ) {
@@ -64,7 +64,7 @@ SideBar::update( ) {
     sideBar[4].setString("To change GUI press ");
     sideBar[5].setString("1  NCURSES");
     sideBar[6].setString("2  SDL");
-    sideBar[7].setString("3  SFML current");
+    sideBar[7].setString("3  SFML now");
 }
 
 void
