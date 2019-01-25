@@ -10,6 +10,7 @@ protected:
 public:
 	IGUI(int screensize) : screensize(screensize) {}
 
+	virtual int getEvent() = 0;
 	virtual ~IGUI(){}
 	virtual void draw(Game &game) = 0;
 	virtual int execute(Game &game) = 0;
