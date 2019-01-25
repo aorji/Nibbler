@@ -101,6 +101,13 @@ void Sfml::draw(Game &game){
             window.draw(rectangle);
         }
     }
+    for (auto i = screensize * squareSize; i < windowSize; ++i) {
+        for (auto j = 0; j < windowSize; ++j) {
+            rectangle.setPosition(j, i);
+            rectangle.setFillColor(sf::Color::Black);
+            window.draw(rectangle);
+        }
+    }
 }
 
 int Sfml::execute(Game &game){
@@ -131,7 +138,6 @@ int Sfml::execute(Game &game){
     sf::Time gameOverTime = sf::seconds(1.1f);
     
     while (window.isOpen()) {
-        sf::Time delayTime = sf::microseconds(300000 / game.getLevel()); //WHAT!!
         sf::Event event;
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed || event.key.code == sf::Keyboard::Escape)
@@ -183,7 +189,7 @@ int Sfml::execute(Game &game){
             sideBar.draw(window);
             window.display();
         }
-        sf::sleep(delayTime);
+        usleep(300000 / game.getLevel());
     }
     return (0);
 }
