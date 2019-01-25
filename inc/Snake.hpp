@@ -53,4 +53,4 @@ private:
     std::vector<std::pair<int, int> > body; //(x1, y1),....(xn, yn) .push_back(std::make_pair(1,2));
 };
 
-#endif //NIBBLER_SNAKE_HPP
+#endif

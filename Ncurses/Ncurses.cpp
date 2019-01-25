@@ -16,6 +16,15 @@ extern "C" IGUI* newGUI(int screensize)
 NCURSES::NCURSES(int screensize) : IGUI(screensize)
 {
 	initscr();
+
+	int _winX, _winY;
+	getmaxyx(stdscr, _winX, _winY);
+
+	if (_winX < screensize + 10 || _winY < screensize * 2 + 20) {
+		endwin();
+		throw NCURSES::ScreenException();
+	}
+
 	start_color();
 	curs_set(0);
 	cbreak();
@@ -231,4 +240,8 @@ int NCURSES::execute(Game &game)
 		usleep(300000 / game.getLevel());
 	}
 	return 0;
+}
+
+const char*    NCURSES::ScreenException::what() const throw() {
+	return ("Size of terminal is too small for game.");
 }

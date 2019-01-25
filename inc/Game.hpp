@@ -50,4 +50,4 @@ private:
     std::string maxScore;
 };
 
-#endif //NIBBLER_GAME_HPP
+#endif

@@ -3,9 +3,6 @@
 
 #include "Game.hpp"
 
-#define SCREENWIDTH 900
-#define INFO_SIZE 300
-
 class IGUI
 {
 protected:
