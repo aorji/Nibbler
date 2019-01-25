@@ -110,6 +110,24 @@ void SDL::drawEndWindow()
 	sleep(3);
 }
 
+Uint32 SDL::get_pixel(SDL_Surface *sur, int x, int y)
+{
+	uint8_t *v;
+	int  bpp;
+
+	if (x < 0 || x >= sur->w || y < 0 || y >= sur->h)
+		return (0);
+	bpp = sur->format->BytesPerPixel;
+	v = (uint8_t *)sur->pixels + y * sur->pitch + x * bpp;
+	return (v[0] | v[1] << 8 | v[2] << 16);
+}
+
+void     SDL::set_pixel(SDL_Surface *surface, int x, int y, Uint32 pixel)
+{
+	Uint8 *target_pixel = (Uint8 *)surface->pixels + y * surface->pitch + x * 4;
+	*(Uint32 *)target_pixel = pixel;
+}
+
 void     SDL::set_block(SDL_Surface *surface, int i, int j, Uint32 pixel)
 {
 	for (int x = i; x < i + blocksize; ++x)
@@ -140,6 +158,15 @@ void SDL::draw(Game &game)
 				set_block(surface, i * blocksize, j * blocksize, 0x00CCCC);
 			else
 				set_block(surface, i * blocksize, j * blocksize, background_color);
+		}
+	}
+
+	for (int i = 0; i < SCREENWIDTH + INFO_SIZE; ++i)
+	{
+		for (int j = 0; j < SCREENWIDTH; ++j)
+		{
+			if (get_pixel(surface, i, j) == 0)
+				set_pixel(surface, i, j, 0x009999);
 		}
 	}
 

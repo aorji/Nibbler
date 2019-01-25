@@ -15,7 +15,6 @@ Sfml::Sfml(int screensize): IGUI(screensize)
     squareSize = windowSize / screensize;
     window.create(sf::VideoMode(windowSize + windowSize / 3, windowSize), "Nibbler");
     rectangle = sf::RectangleShape(sf::Vector2f(squareSize, squareSize));
-    gameAreaSize = screensize;
 }
 
 Sfml::~Sfml(){
@@ -84,8 +83,8 @@ void Sfml::drawBg(int i, int j){
 void Sfml::draw(Game &game){
     char** map = game.getMap();
 
-    for (auto i = 0; i < gameAreaSize; ++i) {
-        for (auto j = 0; j < gameAreaSize; ++j) {
+    for (auto i = 0; i < screensize; ++i) {
+        for (auto j = 0; j < screensize; ++j) {
             drawBg(i, j);
             if (map[i][j] == 's')
                 drawSnake(i, j);
@@ -96,7 +95,7 @@ void Sfml::draw(Game &game){
             if (map[i][j] == 'b')
                 drawBarriers(i, j);
         }
-        for (auto j = gameAreaSize; j < gameAreaSize * 2; ++j) {
+        for (auto j = screensize; j < screensize * 2; ++j) {
             rectangle.setPosition(j * squareSize, i * squareSize);
             rectangle.setFillColor(sf::Color::Black);
             window.draw(rectangle);

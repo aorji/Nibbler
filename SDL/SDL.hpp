@@ -45,6 +45,8 @@ public:
 	int execute(Game &game);
 	void getColor();
 
+	Uint32 get_pixel(SDL_Surface *sur, int x, int y);
+	void set_pixel(SDL_Surface *surface, int x, int y, Uint32 pixel);
 	void set_block(SDL_Surface *surface, int i, int j, Uint32 pixel);
 
 	class InitException :public std::exception {

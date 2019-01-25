@@ -38,7 +38,6 @@ public:
 private:
     int windowSize;   //FROM IGUI?
     int squareSize;
-    int gameAreaSize;
     sf::RenderWindow window;
     sf::RectangleShape rectangle;
 };
