@@ -1,25 +1,20 @@
-NAME    =   nibbler
+NAME    =   snake
 OBJ_DIR =   ./obj/
 SRC_DIR =   ./src/
 INC_DIR =   ./inc/
 
 CC      =   clang++
-FLAGS   =	-Wall -Wextra -Werror
-SRC     =   main.cpp Snake.cpp Game.cpp SFML.cpp \
-			Menu.cpp GameOver.cpp Exception.cpp \
-			SideBar.cpp
+FLAGS   =   -Wall -Wextra -Werror
+SRC     =   main.cpp Snake.cpp Game.cpp Exception.cpp
 OBJ     =   $(addprefix $(OBJ_DIR), $(SRC:.cpp=.o))
 HDRS    =   -I $(INC_DIR)
-
-LIBS = -framework sfml-graphics -framework sfml-window -framework sfml-system
-SFML = -F SFML/Frameworks
 
 .SILENT:
 
 all: $(NAME)
 
-$(NAME): sdl ncurses $(OBJ)
-	$(CC) $(FLAGS) $(OBJ) -o $(NAME) $(HDRS) $(LIBS) $(SFML)
+$(NAME): sdl ncurses sfml $(OBJ)
+	$(CC) $(FLAGS) $(OBJ) -o $(NAME) $(HDRS)
 	echo "\033[32m[ ✔ ] "$(NAME) created" \033[0m"
 
 sdl:
@@ -30,30 +25,33 @@ ncurses:
 	@make -C Ncurses
 	@echo "\033[32mNcurses Builded\033[39m"
 
+sfml:
+	make -C SFML
+	echo "\033[32mSFML Builded\033[39m"
+
 $(OBJ): $(OBJ_DIR)
 
 $(OBJ_DIR):
 	mkdir $(OBJ_DIR)
 
 $(OBJ_DIR)%.o:	$(SRC_DIR)%.cpp
-	@$(CC) -c $< -o $@ $(SFML) $(FLAGS) $(HDRS) $(INCLUDES) -std=c++11
+	@$(CC) -c $< -o $@ $(FLAGS) $(HDRS) -std=c++11
 
 clean:
 	@make -C SDL clean
 	@make -C Ncurses clean
+	@make -C SFML clean
 	rm -f $(OBJ)
 	echo "\033[31m[ × ] "$(OBJ) removed" \033[0m"
 
 fclean: clean
 	@make -C SDL fclean
 	@make -C Ncurses fclean
+	@make -C SFML fclean
 	rm -f $(NAME)
 	rm -rf $(OBJ_DIR)
 	echo "\033[31m[ × ] "$(NAME) removed" \033[0m"
 
 re: fclean all
 
-
-# ➜  nibbler_ git:(master) ✗ clang++ -F SFML/Frameworks main.cpp -c
-# ➜  nibbler_ git:(master) ✗ clang++ -framework sfml-graphics -framework sfml-window -framework sfml-system -F SFML/Frameworks main.o
-# ➜  nibbler_ git:(master) ✗ ./a.out
+.PHONY: all ncurses sdl sfml clean fclean re

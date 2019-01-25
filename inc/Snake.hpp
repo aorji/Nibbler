@@ -1,9 +1,6 @@
-//
-// Created by Anastasiia ORJI on 2019-01-15.
-//
 
-#ifndef NIBBLER_SNAKE_HPP
-#define NIBBLER_SNAKE_HPP
+#ifndef SNAKE_HPP
+#define SNAKE_HPP
 
 #include <vector>
 #include <cstdlib>
@@ -45,15 +42,15 @@ public:
 
     void showBodyCoordinates();
 
-    long getLength() const;
+    int getLength() const;
     snakeDirection getHeadDirection() const;
-    std::vector<std::pair<int, int>> getBody() const;
+    std::vector<std::pair<int, int> > getBody() const;
 
 private:
-//    long length;
+    long length;
     long screenLength;
     snakeDirection headDirection;
-    std::vector<std::pair<int, int>> body; //(x1, y1),....(xn, yn) .push_back(std::make_pair(1,2));
+    std::vector<std::pair<int, int> > body; //(x1, y1),....(xn, yn) .push_back(std::make_pair(1,2));
 };
 
 #endif //NIBBLER_SNAKE_HPP

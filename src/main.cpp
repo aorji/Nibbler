@@ -1,22 +1,71 @@
-//
-// Created by Anastasiia ORJI on 2019-01-15.
-//
 
-#include "../inc/Exception.hpp"
 #include "../inc/Game.hpp"
-#include <iostream>
 #include "../inc/IGUI.hpp"
 #include <dlfcn.h>
-#include <SFML/Graphics.hpp>
-#include <SFML.hpp>
+#include "../inc/Exception.hpp"
 
-int main() {
-    int squareSize = (sf::VideoMode::getDesktopMode().height / 2) * 0.05;
-    int windowSize = squareSize * 20;
-    int gameAreaSize = 20;
+IGUI*   chooseLib(int res, int map_size)
+{
+    IGUI   *(*create)(Game) = nullptr;
+    void *handle;
 
-    Game game(gameAreaSize);
+    if (res == 1)
+        handle = dlopen("Ncurses/ncurses_lib.so", RTLD_LAZY);
+    if (res == 2)
+        handle = dlopen("SDL/sdl_lib.so", RTLD_LAZY);
+    if (res == 3)
+        handle = dlopen("SFML/sfml_lib.so", RTLD_LAZY);
 
-    Sfml sfml(windowSize, squareSize);
-    sfml.execute(game);
+    if (!handle)
+    {
+        // fprintf(stderr, "%s\n", dlerror());
+        throw InvalidLibrary();
+    }
+
+    //newGUI - name of function in your library_name.cpp file. You create a pointer to this function and execute it.
+    if (( create = reinterpret_cast<IGUI* (*)(Game)>(dlsym(handle, "newGUI")) ) == nullptr)
+        throw InvalidLibraryFunction();
+
+    return create(map_size);
+}
+
+int main(int argc, char **argv)
+{
+    setlocale(LC_ALL, "en_US.UTF-8");
+    if (argc != 2)
+    {
+        std::cout << "Usage: ./nibbler [map_size]" << std::endl;
+        return 0;
+    }
+    try
+    {
+        int map_size = std::stoi(argv[1]);
+        if (map_size < 20 || map_size > 50)
+            throw InvalidSize();
+        Game game(map_size);
+        game.update(' ');
+
+        IGUI   *lib = chooseLib(1, map_size);
+        int res = 0; // 1 - ncurses, 2 - sdl, 3 - sfml
+        while (1)
+        {
+            res = lib->execute(game);
+            if (!res)
+            {
+                delete lib;
+                break ;
+            }
+            if (res > 0)
+            {
+                delete lib;
+                lib = chooseLib(res, map_size);
+            }
+        }
+    }
+    catch (std::exception &e)
+    {
+        std::cout << e.what() << std::endl;
+    }
+
+    return (0);
 }

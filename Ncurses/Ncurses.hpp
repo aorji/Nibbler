@@ -11,8 +11,6 @@ public:
 	NCURSES(Game &game);
 	~NCURSES();
 
-	// void init(Game &game);
-	// void destroy();
 	void draw(Game &game);
 	int execute(Game &game);
 

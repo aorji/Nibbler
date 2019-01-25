@@ -1,10 +1,7 @@
-//
-// Created by Anastasiia ORJI on 2019-01-15.
-//
 
 #include "../inc/Snake.hpp"
 
-Snake::Snake(unsigned length):
+Snake::Snake(unsigned length): length(4),
                           screenLength(length),
                           headDirection(Left)
                           { createSnake(); }
@@ -21,12 +18,11 @@ Snake::createSnake() {
 
 void
 Snake::moveSnake(turnKey key) {
-    int length = body.size();
-    for (auto i = length - 1; i > 0; --i) //Tail
+    if ((int)key == -(int)headDirection)
+        return;
+    for (int i = length - 1; i > 0; --i) //Tail
         body.at(i) = std::make_pair(body.at(i - 1).first, body.at(i - 1).second);
     //Head
-    if ((int)key == -(int)headDirection)
-        moveHeadByDirection();
     if ((int)key == (int)headDirection)
         moveHeadByDirection();
     else if (headDirection == Left || headDirection == Right)
@@ -73,7 +69,6 @@ Snake::moveHeadLeftRight(turnKey key) {
 
 void
 Snake::extendTail() {
-    int length = body.size();
     if (body.at(length - 2).second > body.at(length - 1).second)
         body.emplace_back(std::make_pair(body.at(length - 1).first, body.at(length - 1).second - 1));
     else if (body.at(length - 2).second < body.at(length - 1).second)
@@ -82,11 +77,11 @@ Snake::extendTail() {
         body.emplace_back(std::make_pair(body.at(length - 1).first - 1, body.at(length - 1).second));
     else if (body.at(length - 2).first < body.at(length - 1).first)
         body.emplace_back(std::make_pair(body.at(length - 1).first + 1, body.at(length - 1).second));
+    this->length++;
 }
 
 bool
 Snake::headBodyCollision() {
-    int length = body.size();
     std::pair<int, int> head = body.at(0);
     for(auto i = 1; i < length ; ++i)
         if (head == body.at(i))
@@ -96,11 +91,10 @@ Snake::headBodyCollision() {
 
 bool
 Snake::borderHeadCollision() {
-    for(auto i = 0; i < getLength(); ++i) {
+    for(auto i = 0; i < length ; ++i)
         if (body.at(i).first == screenLength || body.at(i).second == screenLength ||
-            body.at(i).first < 0 || body.at(i).second < 0)
+                body.at(i).first == -1 || body.at(i).second == -1)
             return true;
-    }
     return false;
 }
 
@@ -111,7 +105,7 @@ Snake::showBodyCoordinates() {
 }
 
 //get
-long
+int
 Snake::getLength() const {
     return body.size();
 }

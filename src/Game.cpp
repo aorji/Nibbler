@@ -64,10 +64,13 @@ Game::moveSnake(char c) {
     else if (c == 124)
         snake.moveSnake(RightArrow);
 }
+
 bool
 Game::update(char c) {
+
     static int flag = 0;
-    if (flag) {
+    if (flag)
+    {
         snake.extendTail();
         flag = 0;
     }
@@ -75,13 +78,15 @@ Game::update(char c) {
     moveSnake(c);
     if (checkCollisions())
         return false;
-    if (map[snake.getBody().at(0).second][snake.getBody().at(0).first] == 'f' && ++score){
+    if (map[snake.getBody().at(0).second][snake.getBody().at(0).first] == 'f' && ++score)
+    {
         flag = 1;
         fillSnakeWith('s');
         if (!(score % 5))
             changeLevel();
         createFood();
-    }else
+    }
+    else
         fillSnakeWith('s');
     return true;
 }
@@ -94,7 +99,7 @@ Game::changeLevel() {
 
 bool
 Game::checkCollisions(){
-    std::vector<std::pair<int, int>> snakeBody = snake.getBody();
+    std::vector<std::pair<int, int> > snakeBody = snake.getBody();
     for(auto v : snakeBody)
         if (snake.borderHeadCollision() || snake.headBodyCollision() || map[v.second][v.first] == 'b')
             return true;
@@ -154,20 +159,25 @@ Game::createFood()
         y = rand() % screenLength;
     }
     while (map[x][y] != '.');
+
     map[x][y] = 'f';
 }
 
 char**
-Game::getMap() const{ return map; }
+Game::getMap() const
+{
+    return map;
+}
 
-int
-Game::getLevel() const{ return level; }
+int Game::getLevel() const
+{
+    return level;
+}
 
-int
-Game::getScore() const{ return score; }
-
-std::string
-Game::getMaxScore() const{ return maxScore; }
+int Game::getScore() const
+{
+    return score;
+}
 
 int Game::getScreenLength() const
 {
@@ -178,6 +188,9 @@ Snake const & Game::getSnake() const
 {
     return snake;
 }
+
+std::string
+Game::getMaxScore() const{ return maxScore; }
 
 void
 Game::updateMaxScore() {
@@ -194,7 +207,7 @@ Game::updateMaxScore() {
 
 void 
 Game::saveMaxScore(){
-    if (stoi(maxScore) < score)
+    if (std::stoi(maxScore) < score)
         maxScore = std::to_string(score);
     std::ofstream ofs;
     ofs.open("maxScore.txt", std::ofstream::out | std::ofstream::trunc);

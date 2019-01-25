@@ -41,13 +41,12 @@ public:
 
 private:
     Game();
-    Snake snake;
-    long screenLength;
-    int score;
-    int level;
     char **map;
+    int level;
+    int score;
+    long screenLength;
+    Snake snake;
     std::string maxScore;
-
 };
 
 #endif //NIBBLER_GAME_HPP
