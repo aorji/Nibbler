@@ -5,9 +5,8 @@
 #include "SideBar.hpp"
 
 SideBar::SideBar(Game & game):windowSize(1500), game(game) {
-    if (!font.loadFromFile("SFML/font/Spantaran.otf")) {
-        //ERROR
-    }
+    if (!font.loadFromFile("SFML/font/Spantaran.otf"))
+        throw Sfml::BadFontAccess();
 }
 SideBar::~SideBar() = default;
 

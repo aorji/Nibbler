@@ -8,6 +8,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include "Exception.hpp"
 
 class Game{
 public:

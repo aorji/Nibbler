@@ -13,6 +13,7 @@ LIB_FLAG	=	-shared  -rpath $(PWD)/$(SDL_DIR) -nostartfiles -dynamiclib
 
 SRC_FILES	=	../src/Game.cpp \
 				../src/Snake.cpp  \
+				../src/Exception.cpp \
 				SDL.cpp
 
 INC_FILES	=	SDL.hpp

@@ -12,6 +12,7 @@ LIB_FLAG	=	-shared -rpath $(PWD)/$(SFML_FRM) -nostartfiles -dynamiclib					#.
 
 SRC_FILES	=	../src/Snake.cpp ../src/Game.cpp  \
 				GameOver.cpp Menu.cpp\
+				../src/Exception.cpp \
 				SideBar.cpp SFML.cpp
 
 INC_DIR		=	../inc/
@@ -31,7 +32,8 @@ $(NAME): $(OBJ_FILES)
 sfml_download:
 	curl -OL http://www.sfml-dev.org/files/SFML-2.5.0-macOS-clang.tar.gz
 	tar zxvfC 'SFML-2.5.0-macOS-clang.tar.gz' $(SFML_DIR)
-	rm -rf 'SFML-2.5.0-macOS-clang.tar.gz'												
+	rm -rf 'SFML-2.5.0-macOS-clang.tar.gz'
+	cd $(SFML_FRM) && ln -s ../extlibs/freetype.framework												
 	echo "\033[32m[ ✔ ] "SFML downloaded" \033[0m"
 
 sfml:

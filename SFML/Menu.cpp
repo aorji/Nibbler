@@ -9,9 +9,8 @@ Menu::~Menu() = default;
 
 void
 Menu::init(){
-    if (!font.loadFromFile("SFML/font/Spantaran.otf")){
-        //ERROR
-    }
+    if (!font.loadFromFile("SFML/font/Spantaran.otf"))
+        throw Sfml::BadFontAccess();
     menu[0].setFont(font);
     menu[0].setFillColor(sf::Color(49, 149, 20));
     menu[0].setString("NIBBLER");

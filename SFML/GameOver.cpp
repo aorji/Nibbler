@@ -10,9 +10,8 @@ GameOver::~GameOver() = default;
 
 void
 GameOver::init(){
-    font.loadFromFile("SFML/font/Spantaran.otf");
-    // if (!font.loadFromFile("font/Spantaran.otf"))
-        // throw FontIsNotFound();
+    if (!font.loadFromFile("SFML/font/Spantaran.otf"))
+        throw Sfml::BadFontAccess();
     text.setFont(font);
     text.setFillColor(sf::Color(49, 149, 20));
     text.setString("Game is Over");

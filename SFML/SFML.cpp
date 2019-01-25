@@ -17,13 +17,17 @@ Sfml::Sfml(int screensize): IGUI(screensize)
     rectangle = sf::RectangleShape(sf::Vector2f(squareSize, squareSize));
 }
 
-Sfml::~Sfml() = default;
+Sfml::~Sfml(){
+    window.clear();
+    window.close();
+    // std::system("reset");
+}
 
 void
 Sfml::drawSnake(int i, int j){
 	sf::Texture texture;
-    texture.loadFromFile("SFML/img/snake.png", sf::IntRect(0, 0, squareSize, squareSize));
-
+    if (!texture.loadFromFile("SFML/img/snake.png", sf::IntRect(0, 0, squareSize, squareSize)))
+        throw BadImgAccess();
     sf::Sprite sprite;
     sprite.setTexture(texture);
     sprite.setPosition(j * squareSize, i * squareSize);
@@ -34,8 +38,8 @@ void
 Sfml::drawSnakeHead(int i, int j){
     float scale = squareSize/600.0;
     sf::Texture texture;
-    texture.loadFromFile("SFML/img/nastushka.jpg");
-
+    if (!texture.loadFromFile("SFML/img/nastushka.jpg"))
+        throw BadImgAccess();
     sf::Sprite sprite;
     sprite.setTexture(texture);
     sprite.setScale(scale, scale);
@@ -46,7 +50,8 @@ Sfml::drawSnakeHead(int i, int j){
 void
 Sfml::drawBarriers(int i, int j){
 	sf::Texture texture;
-    texture.loadFromFile("SFML/img/stone.jpg");
+    if (!texture.loadFromFile("SFML/img/stone.jpg"))
+        throw BadImgAccess();
     sf::Sprite sprite;
     sprite.setTexture(texture);
     sprite.scale(0.5f, 0.5f);
@@ -58,8 +63,8 @@ void
 Sfml::drawFood(int i, int j) {
 	float scale = squareSize/772.0;
     sf::Texture texture;
-    texture.loadFromFile("SFML/img/donut.png");
-
+    if (!texture.loadFromFile("SFML/img/donut.png"))
+        throw BadImgAccess();
     sf::Sprite sprite;
     sprite.setTexture(texture);
     sprite.setScale(scale, scale);
@@ -138,7 +143,7 @@ int Sfml::execute(Game &game){
                 if (menu.isOpen() || menu.getSelectedField() == 2) {
                     gameOver.draw(window);
                     sf::sleep(gameOverTime);
-                    window.close();
+                    return 0;
                 }
             }
             if (event.key.code == sf::Keyboard::Up){
@@ -159,6 +164,10 @@ int Sfml::execute(Game &game){
                 c = 123;
             if (event.key.code == sf::Keyboard::Right)
                 c = 124;
+            if (event.key.code == sf::Keyboard::Num1)
+                return 1;
+            if (event.key.code == sf::Keyboard::Num2)
+                return 2;
         }
         if (menu.isOpen()) {
             menu.draw(window);
@@ -167,7 +176,7 @@ int Sfml::execute(Game &game){
             if (!game.update(c)){
                 gameOver.draw(window);
                 sf::sleep(gameOverTime);
-                window.close();
+                return 0;
             }
             window.clear();
             draw(game);
@@ -180,3 +189,12 @@ int Sfml::execute(Game &game){
     return (0);
 }
 
+const char *
+Sfml::BadImgAccess::what() const throw() {
+    return "Bad file access to images";
+}
+
+const char *
+Sfml::BadFontAccess::what() const throw() {
+    return "Bad file access to fonts";
+}

@@ -7,6 +7,7 @@ LIB_FLAG	=	-lncurses -shared -nostartfiles -dynamiclib
 
 SRC_FILES	=	../src/Game.cpp \
 				../src/Snake.cpp  \
+				../src/Exception.cpp \
 				Ncurses.cpp
 
 OBJ_FILES	= 	$(SRC_FILES:.cpp=.o)

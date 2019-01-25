@@ -194,7 +194,7 @@ Game::getMaxScore() const{ return maxScore; }
 
 void
 Game::updateMaxScore() {
-    std::ifstream ifs("maxScore.txt");
+    std::ifstream ifs("maxScore.txt", std::ios_base::in);
     if (ifs.is_open()) {
         std::stringstream buffer;
         buffer << ifs.rdbuf();
@@ -202,15 +202,22 @@ Game::updateMaxScore() {
         ifs.close();
     }
     else
-        maxScore = "0";
+        throw BadFileAccess();
 }
 
 void 
 Game::saveMaxScore(){
-    if (std::stoi(maxScore) < score)
-        maxScore = std::to_string(score);
-    std::ofstream ofs;
-    ofs.open("maxScore.txt", std::ofstream::out | std::ofstream::trunc);
-    ofs << maxScore << std::endl;
-    ofs.close();
+    try {
+        if (std::stoi(maxScore) < score)
+            maxScore = std::to_string(score);   
+    } catch (std::exception &e) {
+        throw BadMaxScore();
+    }
+    std::ofstream ofs("maxScore.txt", std::ios_base::out | std::ios_base::trunc);
+    if (ofs.is_open()) {
+        ofs << maxScore << std::endl;
+        ofs.close();
+    } 
+    else 
+        throw BadFileAccess();
 }

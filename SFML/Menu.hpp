@@ -5,6 +5,7 @@
 #define MENU_HPP
 
 #include "SFML.hpp"
+    #include <stdexcept>
 
 #define NUMBER_OF_MENU_FIELD 3
 

@@ -25,6 +25,16 @@ public:
     void drawFood(int i, int j);
     void drawBg(int i, int j);
 
+    class BadImgAccess: public std::exception {
+    public:
+        const char* what() const throw();
+    };
+    
+    class BadFontAccess: public std::exception {
+    public:
+        const char* what() const throw();
+    };
+
 private:
     int windowSize;   //FROM IGUI?
     int squareSize;

@@ -6,6 +6,7 @@
 #define NIBBLER_GAMEOVER_HPP
 
 #include "SFML.hpp"
+#include "Exception.hpp"
 
 class GameOver{
 public:
