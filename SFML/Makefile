@@ -31,8 +31,7 @@ $(NAME): $(OBJ_FILES)
 sfml_download:
 	curl -OL http://www.sfml-dev.org/files/SFML-2.5.0-macOS-clang.tar.gz
 	tar zxvfC 'SFML-2.5.0-macOS-clang.tar.gz' $(SFML_DIR)
-	rm -rf 'SFML-2.5.0-macOS-clang.tar.gz'
-	# cd $(SFML_FRM) && ln -s ../extlibs/freetype.framework								#.
+	rm -rf 'SFML-2.5.0-macOS-clang.tar.gz'												
 	echo "\033[32m[ ✔ ] "SFML downloaded" \033[0m"
 
 sfml:
