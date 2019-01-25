@@ -177,6 +177,11 @@ void NCURSES::drawInfo(Game &game)
 	mvprintw(12, screensize * blocksize * 2 + 5, maxScore.c_str());
 	mvprintw(14, screensize * blocksize * 2 + 5, score.c_str());
 	mvprintw(16, screensize * blocksize * 2 + 5, level.c_str());
+
+	mvprintw(19, screensize * blocksize * 2 + 5, "To change GUI press:");
+	mvprintw(20, screensize * blocksize * 2 + 5, "1 - Ncurses(now)");
+	mvprintw(21, screensize * blocksize * 2 + 5, "2 - SDL");
+	mvprintw(22, screensize * blocksize * 2 + 5, "3 - SFML");
 	attroff(COLOR_PAIR(TEXT));
 }
 
@@ -220,8 +225,6 @@ int NCURSES::execute(Game &game)
     		else if (ch == KEY_UP)
     			ch = 126;
     		else if (ch == 27)
-    			return 0;
-    		else if (ch == 'q')
     			return 0;
     		else if (ch == '2')
     			return 2;
